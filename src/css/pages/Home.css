@@ -1,0 +1,31 @@
+.section {
+    height: 20rem;
+}
+
+/*#region About Me*/
+
+.header img {
+    float: right;
+}
+
+img {
+    min-width: 100px;
+    min-height: 100px;
+    width: 20%;
+    height: 10%;
+    object-fit: cover;
+}
+
+/*#endregion*/
+
+/*#region Top Project*/
+
+/*#endregion*/
+
+/*#region Project List*/
+
+.project-list a {
+    text-decoration: none;
+}
+
+/*#endregion*/

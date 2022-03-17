@@ -1,0 +1,20 @@
+.logo
+{
+    margin: 0 10%;
+    display: flex;
+}
+
+.canvas__s__part
+{
+    height: calc(var(--logo--size) / 3);
+    width: calc(var(--logo--size) / 2);
+    border: 1px solid #fff;
+    display: block;
+}
+
+.canvas__t
+{
+    height: var(--logo--size);
+    width: calc(var(--logo--size) / 2);
+    border: 1px solid #fff;
+}

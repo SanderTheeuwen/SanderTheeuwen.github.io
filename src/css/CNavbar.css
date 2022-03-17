@@ -1,0 +1,104 @@
+/* Overrides */
+.navbar h2, .navbar p, .navbar a, .navbar summary {
+    text-shadow: none;
+    overflow: hidden;
+    overflow-wrap: normal;
+}
+
+.navbar {
+    --arrow-width: 5rem;
+    --arrow-height: 2rem;
+    display: block;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    z-index: 1;
+    text-align: left;
+    background-color: var(--colorpalette__navbar);
+    transition: background-color var(--colorpalette__animation--duration);
+    transition: 1s;
+}
+
+.navbar--collapsed {
+    width: 0%;
+    padding: 2% 5% 2% 5%;
+}
+
+.navbar--expanded {
+    width: 15%;
+    padding: 2% 1%;
+}
+
+.navbar .container {
+    height: var(--arrow-height);
+    width: var(--arrow-width);
+    position: absolute;
+    top: 1.5%;
+    right: 0;
+}
+
+/*#region Arrow*/
+
+.arrow {
+    --arrow-border-width: calc(var(--arrow-height) / 2);
+    position: relative;
+    width: 50%;
+    height: 40%;
+    margin: 0 auto;
+    top: 30%;
+    background-color: var(--colorpalette__navbar__arrow);
+    transition: 3s linear;
+}
+
+.arrow:after {
+    top: 50%;
+    border: solid transparent;
+    content: "";
+    position: absolute;
+    border-width: var(--arrow-border-width);
+    margin-top: calc(var(--arrow-border-width) * -1);
+    right: 100%;
+    border-right-color: var(--colorpalette__navbar__arrow);
+    transition: border-right-color var(--colorpalette__animation--duration);
+}
+
+.arrow--left {
+    transform: scaleX(1);
+    transition:
+        transform 1s,
+        background-color var(--colorpalette__animation--duration);
+}
+
+.arrow--right {
+    transform: scaleX(-1);
+    transition:
+        transform 1s,
+        background-color var(--colorpalette__animation--duration);
+}
+
+/*#endregion*/
+
+.navbar h2 {
+    top: var(--arrow-height);
+    left: .5%;
+    overflow: hidden;
+    overflow-wrap: normal;
+}
+
+.navbar summary:hover {
+    cursor: pointer;
+}
+
+.navbar p {
+    margin-left: 5%;
+    height: 15%;
+}
+
+.navbar p:hover {
+    cursor: pointer;
+}
+
+.navbar .list {
+    margin-top: calc(var(--arrow-height) * 2);
+    white-space: nowrap;
+}

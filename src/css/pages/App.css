@@ -1,0 +1,118 @@
+:root {
+  /* Top level variables, accessible by all elements / classes */
+  /* --colorpalette__background--light: #ff9;
+  --colorpalette__navbar--light: #ff5;
+  --colorpalette__navbar__arrow--light: #dd5;
+  --colorpalette__heading--light: #333;
+  --colorpalette__normal-text--light: #111;
+  --colorpalette__text-shadow--light: #fff; */
+  --colorpalette__background--light: #39f;
+  --colorpalette__navbar--light: #28f;
+  --colorpalette__navbar__arrow--light: #04d;
+  --colorpalette__heading--light: #333;
+  --colorpalette__normal-text--light: #111;
+  --colorpalette__text-shadow--light: #ccc;
+
+  --colorpalette__background--dark: #101;
+  --colorpalette__navbar--dark: #333;
+  --colorpalette__navbar__arrow--dark: #80b;
+  --colorpalette__heading--dark: #ccc;
+  --colorpalette__normal-text--dark: #aaa;
+  --colorpalette__text-shadow--dark: #000;
+
+  --colorpalette__background: var(--colorpalette__background--dark);
+  --colorpalette__navbar: var(--colorpalette__navbar--dark);
+  --colorpalette__navbar__arrow: var(--colorpalette__navbar__arrow--dark);
+  --colorpalette__heading: var(--colorpalette__heading--dark);
+  --colorpalette__normal-text: var(--colorpalette__normal-text--dark);
+  --colorpalette__text-shadow: var(--colorpalette__text-shadow--dark);
+
+  --colorpalette__hue-rotation: 315deg;/*135deg*/
+  --colorpalette__animation--duration: 1s;
+
+  --logo--size: 500px;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*#region Element Overrides*/
+
+* {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  background-color: var(--colorpalette__background);
+  transition: background-color var(--colorpalette__animation--duration);
+}
+
+h1, h2, h3, h4, h5, h6, summary {
+  color: var(--colorpalette__heading);
+  transition: color var(--colorpalette__animation--duration);
+}
+
+p, a, img {
+  color: var(--colorpalette__normal-text);
+  transition: color var(--colorpalette__animation--duration);
+}
+
+img.background {
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  width: 100%;
+  left: 0;
+}
+
+img.background.dark {
+  animation: background--todark var(--colorpalette__animation--duration) forwards;
+}
+
+img.background.light {
+  filter: hue-rotate(135deg) brightness(200%);
+  animation: background--tolight var(--colorpalette__animation--duration) forwards;
+}
+
+/*#region Animations*/
+
+@keyframes background--todark {
+  0% {
+    filter:
+      hue-rotate(var(--colorpalette__hue-rotation))
+      brightness(200%);
+  }
+  50% {
+    filter:
+      hue-rotate(calc(var(--colorpalette__hue-rotation) / 2))
+      brightness(20%);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes background--tolight {
+  0% {
+    filter: hue-rotate(360deg);
+  }
+  50% {
+    filter:
+      hue-rotate(calc(var(--colorpalette__hue-rotation) / 2))
+      brightness(20%);
+  }
+  100% {
+    filter:
+      hue-rotate(var(--colorpalette__hue-rotation))
+      brightness(200%);
+  }
+}
+
+/*#endregion*/
+
+/*#endregion*/
+
+.page {
+  width: 60%;
+  padding: 0 20%;
+}
