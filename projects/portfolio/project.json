@@ -1,11 +1,6 @@
 {
     "published": true,
     "name": "Test project",
-    "description": "Test project description",
-    "image": "",
-    "devlogs": [
-        {
-            "path": "devlogs/Loading and saving data in Unity.json"
-        }
-    ]
+    "description": "Test project description.",
+    "image": ""
 }
