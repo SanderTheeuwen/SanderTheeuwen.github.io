@@ -15,20 +15,18 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
+        uses: actions/setup-node@v18
 
-      - name: Run the project update script
+      - name: Generate paths JSON
         run: |
-          node generateProjects.js
+          node generatePaths.js
 
-      - name: Commit & push
+      - name: Commit and push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          git add projects/**
-          git commit -m "Auto-update projects" || echo "No changes to commit"
+          git add project-paths.json devlog-paths.json
+          git commit -m "Auto-generated path JSON files." || echo "No changes to commit"
           git push https://github.com/${{ github.repository }}.git HEAD:publish
