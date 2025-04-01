@@ -4,8 +4,8 @@ on:
   push:
     branches:
     - publish       # Trigger on changes to the 'publish' branch
-    paths:
-    - 'projects/**' # Trigger only when changes happen in the projects folder
+    #paths:
+    #- 'projects/**' # Trigger only when changes happen in the projects folder
 
 jobs:
   update:
@@ -25,7 +25,7 @@ jobs:
 
       - name: Commit & push
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
