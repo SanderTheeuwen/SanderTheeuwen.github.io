@@ -1,0 +1,35 @@
+name: Update Projects
+
+on:
+  push:
+    branches:
+    - publish       # Trigger on changes to the 'publish' branch
+    paths:
+    - 'projects/**' # Trigger only when changes happen in the projects folder
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run the project update script
+        run: |
+          node generateProjects.js
+
+      - name: Commit & push
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add projects/**
+          git commit -m "Auto-update projects" || echo "No changes to commit"
+          git push origin publish
