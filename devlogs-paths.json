@@ -1,6 +1,10 @@
 [
   {
-    "project": "portfolio",
-    "path": "projects/portfolio/devlogs/Loading and saving data in Unity.json"
+    "project": "Tanks",
+    "path": "projects/Tanks/devlogs/Block combiner.json"
+  },
+  {
+    "project": "Test project",
+    "path": "projects/Test project/devlogs/Loading and saving data in Unity.json"
   }
 ]

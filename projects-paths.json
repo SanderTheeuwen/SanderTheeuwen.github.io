@@ -1,6 +1,10 @@
 [
   {
-    "title": "portfolio",
-    "path": "projects/portfolio/"
+    "title": "Tanks",
+    "path": "projects/Tanks/"
+  },
+  {
+    "title": "Test project",
+    "path": "projects/Test project/"
   }
 ]
