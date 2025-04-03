@@ -1,0 +1,56 @@
+{
+    "published": true,
+    "name": "Block combiner",
+    "dates":
+    [
+        "21-04-2023",
+        "22-04-2023",
+        "23-04-2023",
+        "24-04-2023",
+        "25-04-2023"
+    ],
+    "goal": "The playing field of the game consists of the ground, the entities (tanks, bullets, etc.) and walls. The walls are made up by several blocks, which have colliders so bullets can ricochet. While implementing the ricochet on the bullets, I noticed that the raycast it uses detects two blocks if it is fired at the point where two blocks meet. This caused the bullet to count the ricochet twice. Combining colliders seemed the most suitable solution for the problem.",
+    "approach":
+    [
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature study",
+            "text": "I started out by searching for implementations to combine colliders, but found nothing"
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Expert interview",
+            "text": "Having found nothing, I turned to my classmates for help. They suggested to use ProBuilder, a tool to make complex structures quickly."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Tinkering",
+            "text": "I installed the ProBuilder tool and started playing around with it to figure out how it works. With the newly added panels, I got confused as to how the meshes were made. The tool takes some time to get used to, but I can see how it can be used to create objects quickly."
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature study",
+            "text": "Because I did not figure out how the meshes were made, I decided to look up some tutorials. I found the following sources: <<source Brackeys. (2019, September 22). MAKING YOUR FIRST LEVEL in Unity with ProBuilder! [Video]. YouTube. https: //www.youtube.com/watch?v=YtzIXCKr8Wo>>, and <<source Interacting with ProBuilder | Package Manager UI website. (n.d.). https://docs.unity3d.com/Packages/com.unity.probuilder@4.0/manual/overview-ui.html.>> It seemed rather complicated to have to use ProBuilder every time colliders need to be combined, so I decided to investigate some more on how to combine colliders."
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature study",
+            "text": "I found a script sample at <<source Technologies, U. (25-05-2023). Unity - Scripting API: Mesh.CombineMeshes. https://docs.unity3d.com/ScriptReference/Mesh.CombineMeshes.html>> where mesh colliders of children objects are combined. I learned how to add components are runtime from the following source: <<source myGameObject.AddComponent() to be of either Cube, Sphere or any other mesh? (2016, October 4). Unity Forums. Retrieved May 25, 2023, from https: //forum.unity.com/threads/mygameobject-addcomponent-meshfilter-to-be-of-either-cube-sphere-or-any-other-mesh.434656/>>"
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Tinkering",
+            "text": "I decided to take this code as a base and go through it line by line to figure out how it works. Because the script is only used at the start, I decided to make it a bit more self-sufficient, by adding the required components on runtime."
+        }
+    ],
+    "normalLearnings":
+    [
+        "I learned how to add external plugins to Unity.",
+        "I learned how to combine colliders programmatically.",
+        "I learned how to add components at runtime."
+    ],
+    "specialLearnings": [],
+    "result": "I created a script that combines the blocks at the start of the game. <<image 1.png>>",
+    "validation": "The BlockCombiner works and the raycast of the bullets are no longer detecting the 2 colliders seperately.",
+    "contribution": "This directly contributes to the end product."
+}

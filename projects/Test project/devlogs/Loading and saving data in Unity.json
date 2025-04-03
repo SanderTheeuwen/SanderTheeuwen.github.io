@@ -1,0 +1,36 @@
+{
+    "published": true,
+    "name": "Loading and saving data in Unity",
+    "dates":
+    [
+        "09-10-2021"
+    ],
+    "goal": "For saving (especially big amounts of) game data, JSON serializers are commonly used. A scriptable object is most useful for this.",
+    "approach":
+    [
+        {
+            "researchType": "Library",
+            "researchMethod": "Expert interview",
+            "text": "Game design teacher"
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Community research",
+            "text":"<<source Unity Text Change not working. (2015, September 4). Stack Overflow. https://stackoverflow.com/questions/32365977/unity-text-change-not-working>> <<source [JsonUtility] cannot deserialize json to new instances of type X - Unity Answers. (2020, February 18). Unity. https://answers.unity.com/questions/1308015/jsonutility-cannot-deserialize-json-to-new-instanc.html>>"
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature study",
+            "text": "<<source Input Field | Unity UI | 1.0.0. (2020, October 6). Unity Documentation. https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/script-InputField.html>> <<source Unity - Manual: JSON Serialization. (2021, October 16). Unity Documentation. https://docs.unity3d.com/Manual/JSONSerialization.html>> <<source Unity - Scripting API: Resources.Load. (2021, October 16). Unity Documentation. https://docs.unity3d.com/ScriptReference/Resources.Load.html>> <<source Unity - Scripting API: Path.DirectorySeparatorChar. (2021, October 16). Unity Documentation. https://docs.unity3d.com/ScriptReference/Path.DirectorySeparatorChar.html>> <<source Unity - Scripting API: Application.persistentDataPath. (2021, October 16). Unity Documentation. https://docs.unity3d.com/ScriptReference/Application-persistentDataPath.html>> <<source Unity - Scripting API: UI.InputField.onEndEdit. (n.d.). Unity Documentation. Retrieved October 19, 2021, from https://docs.unity3d.com/530/Documentation/ScriptReference/UI.InputField-onEndEdit.html>>"
+        }
+    ],
+    "normalLearnings":
+    [
+        "I can save data to a persistent path.",
+        "I can load data from a persistent path."
+    ],
+    "specialLearnings":["test"],
+    "result": "I created a script that combines <<video https://www.youtube.com/embed/OdVNWEkINVY>> the blocks at the start of the game. <<image 1.png>>",
+    "validation": "In a peer review, the work has been approved.",
+    "contribution": "Now that I have an understanding on how to save and load data, I will implement it in the duo game itself."
+}

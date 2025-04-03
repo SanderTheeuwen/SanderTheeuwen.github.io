@@ -5,7 +5,7 @@ on:
     branches:
     - publish       # Trigger on changes to the 'publish' branch
     #paths:
-    #- 'projects/**' # Trigger only when changes happen in the projects folder
+    - 'projects/**' # Trigger only when changes happen in the projects folder
 
 jobs:
   update:
