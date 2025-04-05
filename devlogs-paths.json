@@ -1,5 +1,29 @@
 [
   {
+    "project": "Miscellaneous",
+    "path": "projects/Miscellaneous/devlogs/Devlog.json"
+  },
+  {
+    "project": "Miscellaneous",
+    "path": "projects/Miscellaneous/devlogs/Method invoking (through name).json"
+  },
+  {
+    "project": "Miscellaneous",
+    "path": "projects/Miscellaneous/devlogs/Multiple GitHub accounts.json"
+  },
+  {
+    "project": "Miscellaneous",
+    "path": "projects/Miscellaneous/devlogs/Personal interaction.json"
+  },
+  {
+    "project": "Miscellaneous",
+    "path": "projects/Miscellaneous/devlogs/Resume.json"
+  },
+  {
+    "project": "Miscellaneous",
+    "path": "projects/Miscellaneous/devlogs/String argument index processing.json"
+  },
+  {
     "project": "Tanks",
     "path": "projects/Tanks/devlogs/Block combiner.json"
   },
