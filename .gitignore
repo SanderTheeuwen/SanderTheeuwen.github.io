@@ -1,3 +1,7 @@
+# Generated files
 projects-paths.json
 devlogs-paths.json
 products-paths.json
+
+# Template project
+projects/Template/

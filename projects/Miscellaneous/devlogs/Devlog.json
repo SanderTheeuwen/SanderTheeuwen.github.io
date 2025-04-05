@@ -1,0 +1,38 @@
+{
+    "published": true,
+    "name": "How to write a devlog",
+    "dates": [
+        "04-11-2021",
+        "07-11-2021"
+    ],
+    "goal": "Making devlogs is mandatory for monotoring progression. Devlogs however are continuously changing, so this is only a milestone in a long road.",
+    "approach": [
+        {
+            "researchType": "Showroom",
+            "researchMethod": "Product review",
+            "text": ""
+        },
+        {
+            "researchType": "Showroom",
+            "researchMethod": "Peer review",
+            "text": ""
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature study",
+            "text": "<<source Fontys. How To Devlog.pptx [Slides]. Instructure. https://fhict.instructure.com/courses/11849/files/1452943?module_item_id=698724>>"
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "College presentation",
+            "text": ""
+        }
+    ],
+    "normalLearnings": [
+        ""
+    ],
+    "specialLearnings": [],
+    "result": "I added sections for \"diamonds\", the things I have learned. I also started looking for different research methods, as I noticed I relied much on Literature Study and Thinkering.",
+    "validation": "",
+    "contribution": "This does not contribute to any product. However, it will amplify the time to finish a product."
+}

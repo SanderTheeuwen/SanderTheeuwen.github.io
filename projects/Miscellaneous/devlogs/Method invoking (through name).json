@@ -1,0 +1,32 @@
+{
+    "published": true,
+    "name": "Method Invoking (through name)",
+    "dates": [
+        "12-12-2021"
+    ],
+    "goal": "When I was working on my virtual personal assistant, I noticed my commands were very inefficient in adding them. I had to create the method and specify the name in the voice recognition and the \"RunCommand\" method. There must be a way to automatically add a command when the method is added.",
+    "approach": [
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Tinkering",
+            "text": ""
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Community research",
+            "text": "<<source How to gets protected internal methods with reflection. (2014, July 29). Stack Overflow. Retrieved December 12, 2021, from https://stackoverflow.com/questions/25020966/how-to-gets-protected-internal-methods-with-reflection>> <<source Generate List of methods of a class with method types. (2009, July 29). Stack Overflow. Retrieved December 12, 2021, from https://stackoverflow.com/questions/1198417/generate-list-of-methods-of-a-class-with-method-types>>"
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature study",
+            "text": "<<source Microsoft. (n.d.). MethodInfo.Invoke(Object, Object[]) Method (System.Reflection). Microsoft Docs. Retrieved December 12, 2021, from https://docs.microsoft.com/en-us/dotnet/api/system.reflection.methodinfo.invoke?view=netframework-1.1&viewFallbackFrom=netframework-1.1%5D>> <<source Microsoft. (n.d.-a). BindingFlags Enum (System.Reflection). Microsoft Docs. Retrieved December 12, 2021, from https://docs.microsoft.com/en-us/dotnet/api/system.reflection.bindingflags?view=net-5.0>> <<source Microsoft. (n.d.-c). Type.GetMethod Method (System). Microsoft Docs. Retrieved December 12, 2021, from https://docs.microsoft.com/en-us/dotnet/api/system.type.getmethod?view=net-5.0>>"
+        }
+    ],
+    "normalLearnings": [
+        "I can invoke methods based on a string input specifying a method name."
+    ],
+    "specialLearnings": [],
+    "result": "The solutions proved to work. Methods were invoked as expected according to the string that the user specified using the code shown below.<<image 1.png>>",
+    "validation": "",
+    "contribution": "Now creating commands has been simplified, I can add more commands."
+}

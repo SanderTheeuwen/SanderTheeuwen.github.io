@@ -1,8 +1,7 @@
 {
     "published": true,
     "name": "Block combiner",
-    "dates":
-    [
+    "dates": [
         "21-04-2023",
         "22-04-2023",
         "23-04-2023",
@@ -10,8 +9,7 @@
         "25-04-2023"
     ],
     "goal": "The playing field of the game consists of the ground, the entities (tanks, bullets, etc.) and walls. The walls are made up by several blocks, which have colliders so bullets can ricochet. While implementing the ricochet on the bullets, I noticed that the raycast it uses detects two blocks if it is fired at the point where two blocks meet. This caused the bullet to count the ricochet twice. Combining colliders seemed the most suitable solution for the problem.",
-    "approach":
-    [
+    "approach": [
         {
             "researchType": "Library",
             "researchMethod": "Literature study",
@@ -43,8 +41,7 @@
             "text": "I decided to take this code as a base and go through it line by line to figure out how it works. Because the script is only used at the start, I decided to make it a bit more self-sufficient, by adding the required components on runtime."
         }
     ],
-    "normalLearnings":
-    [
+    "normalLearnings": [
         "I learned how to add external plugins to Unity.",
         "I learned how to combine colliders programmatically.",
         "I learned how to add components at runtime."

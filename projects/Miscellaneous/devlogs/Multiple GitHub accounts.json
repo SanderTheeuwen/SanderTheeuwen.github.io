@@ -1,0 +1,34 @@
+{
+    "published": true,
+    "name": "Multiple GitHub accounts",
+    "dates": [
+        "13-06-2023"
+    ],
+    "goal": "As I have a Fontys account and a personal account on GitHub, I need to be able to toggle accounts for repositories. While working on two projects simultaneously (one for school, one personal), the right account needs to show up for commits.",
+    "approach": [
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Tinkering",
+            "text": "To get an understanding of how git stores the credentials, I created repositories in Chrome (school account) and Edge (personal account). I added a first commit in the school repository, where I noticed my personal account showed up as the one which commited. When I tried to push to the personal repository, I got an error saying the repository was not found. I knew that the credentials were stored in the Credential Manager, so I deleted that entry and made a second commit. Not having a password set, git asked me for my password or a token. I decided to create tokens for both accounts and used them to push the second commit. Unfortunately, in both repositories, my personal account still showed up as the one which commited."
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature study",
+            "text": "I decided to look up how other people removed their credentials, and came across the following source: <<source Zafar, B. R. (n.d.). How to Remove Credentials From Git in Windows. https://linuxhint.com/remove-credentials-from-git-windows/.>> It suggested to use \"git config --global --unset credential.helper\" After a third commit, the issue still was not resolved."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Tinkering",
+            "text": "The source gave me an idea how git worked. I remembered having to set my name and email globally in previous semesters. After using \"git config --global --unset user.name\" and \"git config --global --unset user.email\", it prompted me to enter my name and email. My name could be the same, so I set it using the global tag. For the email, I set it locally without the global tag, meaning that I have to set my email for every repository's first commit, a solution acceptable for me."
+        }
+    ],
+    "normalLearnings": [
+        "I know how git stores credentials.",
+        "I know how to set credentials both locally and globally.",
+        "I know how to clear a field using --unset"
+    ],
+    "specialLearnings": [],
+    "result": "After a fourth commit, the accounts showed up as expected as seen in the picture below: <<image 2.png>> The name 454406 is due to the account on GitHub itself having that set as its name.",
+    "validation": "As seen in the picture, the different repositories have a different email set, and the commits are made by two separate accounts.",
+    "contribution": "Being able to set an account per repository helps keeping projects managable and separated."
+}
