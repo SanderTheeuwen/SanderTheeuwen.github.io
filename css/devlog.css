@@ -82,6 +82,10 @@ ul li a {
     color: #66ccff;
 }
 
+.entryImage {
+    max-width: 100%;
+}
+
 /* Footer */
 footer {
     text-align: center;

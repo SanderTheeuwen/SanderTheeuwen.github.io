@@ -29,12 +29,13 @@ document.addEventListener("DOMContentLoaded", async function ()
             for (const devlogPath of devlogsPaths)
             {
                 const devlogResponse = await fetch("/" + devlogPath.path);
+                const devlogFilename = devlogPath.path.slice(devlogPath.path.lastIndexOf('/') + 1, -5);
                 const devlogData = await devlogResponse.json();
                 
                 if (devlogData.published)
                 {
                     const listItem = document.createElement("li");
-                    listItem.innerHTML = `<a href="devlog.html?project=${projectName}&devlog=${devlogData.name}">${devlogData.name}</a>`;
+                    listItem.innerHTML = `<a href="devlog.html?project=${projectName}&devlog=${devlogFilename}">${devlogData.name}</a>`;
                     devlogList.appendChild(listItem);
                 }
             }

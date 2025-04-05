@@ -2,8 +2,8 @@ document.addEventListener("DOMContentLoaded", async function ()
 {
     const urlParams = new URLSearchParams(window.location.search);
     const projectName = urlParams.get("project");
-    const devlogName = urlParams.get("devlog");
-    const devlogPath = `/projects/${projectName}/devlogs/${devlogName}.json`
+    const devlogFileName = urlParams.get("devlog");
+    const devlogPath = `/projects/${projectName}/devlogs/${devlogFileName}.json`
 
     if (!devlogPath)
     {
@@ -22,18 +22,18 @@ document.addEventListener("DOMContentLoaded", async function ()
         }
 
         // Set title and dates
-        document.getElementById("devlog-title").textContent = projectName + ": " + devlogName;
+        document.getElementById("devlog-title").innerHTML = projectName + "</br>" + devlogData.name;
         document.getElementById("devlog-dates").innerHTML = `Dates</br>${devlogData.dates.join("</br>")}`;
 
         // Set goal
-        document.getElementById("devlog-goal").textContent = devlogData.goal;
+        document.getElementById("devlog-goal").innerHTML = loadVideo(loadImage(devlogData.goal));
 
         // Set approach
         const approachList = document.getElementById("devlog-approach");
         devlogData.approach.forEach(entry =>
         {
             const listItem = document.createElement("li");
-            listItem.innerHTML = `<strong class="researchType">${entry.researchType}</strong> <strong>${entry.researchMethod}</strong></br>${loadSource(entry.text)}`;
+            listItem.innerHTML = `<strong class="researchType">${entry.researchType}</strong> <strong>${entry.researchMethod}</strong></br>${loadSource(loadVideo(loadImage(entry.text)))}`;
             approachList.appendChild(listItem);
         });
 
@@ -63,8 +63,8 @@ document.addEventListener("DOMContentLoaded", async function ()
 
         // Set result, validation, and contribution
         document.getElementById("devlog-result").innerHTML = loadVideo(loadImage(devlogData.result, projectName));
-        document.getElementById("devlog-validation").textContent = devlogData.validation;
-        document.getElementById("devlog-contribution").textContent = devlogData.contribution;
+        document.getElementById("devlog-validation").innerHTML = loadVideo(loadImage(devlogData.validation, projectName));
+        document.getElementById("devlog-contribution").innerHTML = loadVideo(loadImage(devlogData.contribution, projectName));
 
     } 
     catch (error)
