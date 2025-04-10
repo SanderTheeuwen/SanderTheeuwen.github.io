@@ -28,6 +28,42 @@
     "path": "projects/Tanks/devlogs/Block combiner.json"
   },
   {
+    "project": "Tanks",
+    "path": "projects/Tanks/devlogs/Cheat codes.json"
+  },
+  {
+    "project": "Tanks",
+    "path": "projects/Tanks/devlogs/Enemy aiming.json"
+  },
+  {
+    "project": "Tanks",
+    "path": "projects/Tanks/devlogs/Explosion particles.json"
+  },
+  {
+    "project": "Tanks",
+    "path": "projects/Tanks/devlogs/Fixing bullet ricochets.json"
+  },
+  {
+    "project": "Tanks",
+    "path": "projects/Tanks/devlogs/GameObject architecture.json"
+  },
+  {
+    "project": "Tanks",
+    "path": "projects/Tanks/devlogs/Making bullets ricochet.json"
+  },
+  {
+    "project": "Tanks",
+    "path": "projects/Tanks/devlogs/Nav Mesh agent.json"
+  },
+  {
+    "project": "Tanks",
+    "path": "projects/Tanks/devlogs/Navmesh agent walkable areas.json"
+  },
+  {
+    "project": "Tanks",
+    "path": "projects/Tanks/devlogs/Player tank movement rotation.json"
+  },
+  {
     "project": "Test project",
     "path": "projects/Test project/devlogs/Loading and saving data in Unity.json"
   }
