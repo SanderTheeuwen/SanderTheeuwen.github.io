@@ -1,0 +1,41 @@
+{
+    "published": true,
+    "name": "Explosion particles",
+    "dates": [
+        "07-06-2023"
+    ],
+    "goalName": "Create tank explosion particles",
+    "goal": "Whenever tanks are destroyed currently, they just vanish immediately, which is not very visually appealing. Since tanks pack a huge amount of firepower, anything they shoot usually explodes. Explosions also add to the game feel because it creates a feeling of destruction and power.",
+    "approach": [
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature study",
+            "text": "As explosions never look exactly the same, the best way to create an explosion is with particles. I never made an explosion before, so I wanted to look up how other people did it. I came across the following source: <<source Technologies, U. (08-12-2017). Unity - Manual: A Simple Explosion. https://docs.unity3d.com/2017.2/Documentation/Manual/PartSysExplosion.html>>. A tutorial to create an explosion seemed perfect."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Tinkering",
+            "text": "I never imported packages before, so I had to figure out how to add them to my assets and import them into the project. After a couple of minutes, I figured it out and had explosion particle textures at my disposal. Instead of a single particle, the texture looked like several particles in a grid shape. When I added the particle texture to the renderer of the particle system, the particles all had the grid in them, as seen in the image below:\n<<image 28.png>>\nI figured this was to randomize the look of the particles, but I was not sure as I never saw the grid pattern before."
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Community research",
+            "text": "Not knowing how to solve or even describe the grid pattern to look for answers, I decided to look up more tutorials for explosion effects. I came across the following source, which taught me what different modules in the particle system do and how the grid problem can be solved: <<source Tvtig. (2021, August 4). How To Create An Explosion Effect In Unity [Video]. YouTube. https://www.youtube.com/watch?v=cvQiQglPI18>>."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Tinkering",
+            "text": "With a base understanding, I played with the particle system untill the explosion looked good to me. While testing the explosion however, it looked weird as the tank disappeared after the explosion was finished. I destroyed the gameobject earlier than the duration of the particles, but that caused the particles to be destroyed too. As a solution, I made the particle system into a separate gameobject. Now I could destroy the other gameobjects of the tank in the middle of the explosion, and the rest of the tank after the explosion finished."
+        }
+    ],
+    "normalLearnings": [
+        "I learned how to create particles with animation.",
+        "I learned how to create explosion particles.",
+        "I learned how to import packages.",
+        "I learned what different modules in the particle system do."
+    ],
+    "specialLearnings": [],
+    "result": "As seen in the video below, the explosions look accurate and random.\n<<video https://www.youtube.com/embed/kli2UOZemDM>>",
+    "validation": "I showed the explosion to a playtester, who thought it looked beautiful.",
+    "contribution": "The explosion adds much to the game feel and realism of the game."
+}

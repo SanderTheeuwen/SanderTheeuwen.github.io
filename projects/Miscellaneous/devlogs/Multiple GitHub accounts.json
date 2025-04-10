@@ -4,6 +4,7 @@
     "dates": [
         "13-06-2023"
     ],
+    "goalName": "Create a way to easily toggle the account for repositories",
     "goal": "As I have a Fontys account and a personal account on GitHub, I need to be able to toggle accounts for repositories. While working on two projects simultaneously (one for school, one personal), the right account needs to show up for commits.",
     "approach": [
         {

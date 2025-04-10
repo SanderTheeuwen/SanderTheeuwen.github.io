@@ -1,0 +1,49 @@
+{
+    "published": true,
+    "name": "Nav Mesh agent",
+    "dates": [
+        "19-05-2023",
+        "20-05-2023",
+        "03-06-2023"
+    ],
+    "goalName": "Adding AI to enemy tanks",
+    "goal": "Some enemy tanks are stationary, some have a patrol route, but some need to be controlled by AI. I have never worked with AI before, so I need to figure out what the best way of doing so is.",
+    "approach": [
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Tinkering",
+            "text": "From earlier semesters, my peers used Nav Mesh Agents for AI pathfinding, so I decided to investigate to figure out what it is. Adding the Nav Mesh Agent component to the tank did not do anything."
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature study",
+            "text": "I thought there would be easy tutorials as an introduction to Nav Mesh Agents that could teach me the basics. <<source Code Monkey. (2021, June 14). How to use Unity NavMesh Pathfinding! (Unity Tutorial) [Video]. YouTube. https://www.youtube.com/watch?v=atCOd4o7tG4>> taught me how the agents work. <<source Brackeys. (2018, March 14). Unity NavMesh Tutorial - Basics [Video]. YouTube. https://www.youtube.com/watch?v=CHV1ymlw-P8>> taught me how to set waypoints for the agents."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Tinkering",
+            "text": "The sources gave me enough for an undisturbed path for the enemy tanks. I figured out how to create easily adjustable walkable areas (see Dev: Navmesh agent walkable areas ) and made a script to let the tank patrol 2 waypoints. Because the AI did not avoid obstacles like bullets or other tanks, I decided to look up some more sources."
+        },
+        {
+            "researchType": "Library",
+            "researchMethod":"Literature study",
+            "text": "<<source Technologies, U. (n.d.-a). Unity - Manual:  Nav Mesh Obstacle. https://docs.unity3d.com/Manual/class-NavMeshObstacle.html#LogicMovingObstacles>> gave me a first idea for 'smart AI'. In the Nav Mesh Agent component, I discovered Obstacle Avoidance as well. In the editor, I saw that objects with a Nav Mesh Obstacle component impacted the walkable area of the tanks."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Tinkering",
+            "text": "To further understand the obstacles, I decided to play with the variables in the components, and came across the following issue:\n<<video https://www.youtube.com/embed/tgGyC31-0HA>>\n The tanks would teleport because of the bullets being obstacles. The Nav Mesh Agent gets pushed to the nearest walkable area. When testing what would happen if the agent started off the Nav Mesh, it teleported to the nearest point on the Nav Mesh. This means that putting a Nav Mesh Obstacle on the bullets will not work, and a custom script has to be made to avoid getting hit. Nav Mesh Obstacles should only be used when the obstacle object is more powerful than the agent. A tank can be pushed by a big wall, but not by a bullet."
+        }
+    ],
+    "normalLearnings": [
+        "I learned how to create walkable surface for Nav MeshAgents.",
+        "I learned what the variables in the Nav MeshAgents entail.",
+        "I learned how to create waypoints for Nav MeshAgents to follow.",
+        "I learned how Nav Mesh Obstacles can be used for dynamic Nav Mesh(logically only for forces more powerful than the agent).",
+        "I learned how Nav Mesh Agents can avoid other agents."
+    ],
+    "specialLearnings": [],
+    "result": "As seen in the video below, the enemy tanks succesfully move between the waypoints and go off the shortest path to avoid colliding with each other.\n<<video https://youtube.com/embed/b21qWbPZpsg>>",
+    "validation": "I showed my work to peers, who approved the basic functionality of the agents.",
+    "contribution": "This directly contributes to the end product."
+}

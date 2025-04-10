@@ -1,0 +1,44 @@
+{
+    "published": true,
+    "name": "Enemy aiming",
+    "dates": [
+        "18-05-2023",
+        "19-05-2023",
+        "05-06-2023",
+        "06-06-2023"
+    ],
+    "goalName": "Create a script for rotating enemy tanks to check if they can hit the player",
+    "goal": "Some enemies are constantly rotating. They need a script to check if they can hit the player. It will have to include ricochets and needs to prevent friendly fire as much as possible. In this devlog, aiming means checking if the player can be hit, not rotating so the player can get hit.",
+    "approach": [
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Brainstorm",
+            "text": "First, I wrote down all the steps that need to happen for aiming.\n1. A coroutine.\nBecause the aiming needs to happen often, I needed to create a coroutine and put it on an small interval. The enemies rotate slowly, so putting the aiming method in the Update function is not necessary.\n2. Looping through the ricochets.\nFor every aiming point, the same procedure will be performed to check if the enemy can hit the player. If they cannot hit the player directly, they might be able to hit the player with a ricochet, as seen below.\n<<image 19.png>>\n3. Raycast.\nWith a raycast I get the objects the enemy can hit, but it would return all the objects. (later I realized there was a more efficient way) In the case of the upper example, it would return the wall and the player as hits.\n4. Can the enemy hit other enemies or itself?\nIn the example below, the enemy will be able to hit the player. However, if the enemy shoots and the player moves out of the way, the bullet will ricochet back at the enemy. Since this can happen too often, I decided to mark the aim as unsuccessful (so the enemy will not shoot) if there is any enemy or itself in the path. This is also the reason I decided to use RaycastAll instead of a single raycast.\n<<image 20.png>>"
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Tinkering",
+            "text": "I implemented the script, but came across the first issue. When a wall is between the enemy and the player, the enemy will still shoot. To fix this, I added a loop to check if there are walls in between the origin of the potential shot (so the enemy or a ricochet point) and the player.\nA second, more interesting issue occured, where the ricochet direction was off. During the development I used Debug.DrawRay to see the origin and direction of the potential shot. The following image shows the issue:\n<<image 21.png>>\nWhen the aim reaches the L-shaped wall, the raycasts were performed in very weird directions. I went through the code line by line to see what the problem was. Initially, I thought it had to do with the order of the raycasthits in the list, as it was not sorted by distance all the time. Eventually I found the issue. Whenever the raycast hits a wall, the new position and direction is set for the ricochet's raycast. In this case, two walls were hit: the outer walls (a rectangle surrounding the whole level) and the L-shaped wall. The following code snippet shows how I set the position and direction of the next raycast:\n<<image 22.png>>\nBecause there were two wall hits, the direction is changed twice. In the case of the top two odd angles, the outer wall hit point is horizontal (the top side of the outer walls):\n<<image 23.png>>\nIn the case of the bottom three rays, the outer wall hit point is vertical (the right side of the outer walls):\n<<image 24.png>>\nTo fix this, I made a variable to hold the closest wall raycasthit to use for the next raycast."
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Community research",
+            "text": "Since RaycastHit is not nullable, I had to look up how to create an empty raycast: <<source Raycashit Variable make empty/null/clear? - Unity Answers. (19-03-2011). https://answers.unity.com/questions/53234/raycashit-variable-make-emptynullclear.html>>. The code below worked, though I realized that I only used the raycasthit that had the least distance.\n<<image 25.png>>"
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Tinkering",
+            "text": "In rare cases, the bullets shot would still hit the enemy tanks. This is because the raycasts are very thin, whereas the bullets are bigger, so the enemy tanks can get hit by the side of the bullets. I decided to replace RaycastAll with BoxCastAll."
+        },
+        {
+            "researchType": "Showroom",
+            "researchMethod": "Benchmark test",
+            "text": "To test the accuracy of the new script, I decided to add simple counters for how many bullets are shot, how many are hitting the player, and how many are hitting enemy tanks (friendly fire). I left the game running for about two hours in the following setup:\n<<image 26.png>>"
+        }
+    ],
+    "normalLearnings": [],
+    "specialLearnings": [],
+    "result": "The benchmark shows that of the 2000 shots fired, 893 hit the player successfully and no shots hit the enemy tanks. The missed shots are a drawback for the use of the BoxCast, but it is a tradeoff I accept because the shots miss by just a little bit, and the player has to stand motionless, something that will not happen a lot. The result is achieved by the code below:\n<<image 27.png>>\nThe video below shows the result in action:\n<<video https://www.youtube.com/embed/XnD6O2rbV14>>",
+    "validation": "I showed my script and the result to peers, who approved of the solution.",
+    "contribution": "This directly contributes to the end product."
+}

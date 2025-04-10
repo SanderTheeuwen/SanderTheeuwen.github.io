@@ -5,9 +5,15 @@
     [
         "09-10-2021"
     ],
+    "goalName": "Test devlog",
     "goal": "For saving (especially big amounts of) game data, JSON serializers are commonly used. A scriptable object is most useful for this.",
     "approach":
     [
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature study",
+            "text": "Test <<source testy test>> test."
+        },
         {
             "researchType": "Library",
             "researchMethod": "Expert interview",

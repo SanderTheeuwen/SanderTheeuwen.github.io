@@ -1,0 +1,35 @@
+{
+    "published": true,
+    "name": "Cheat codes",
+    "dates": [
+        "04-06-2023"
+    ],
+    "goalName": "Implement an easy way to add cheats for debugging",
+    "goal": "While testing, especially with the enemy's shooting scripts added, I either have to disable the scripts or dodge the attacks. It would be easier to have cheats easily accessible for testing purposes.",
+    "approach": [
+        {
+            "researchType": "Library",
+            "researchMethod": "Available product analysis",
+            "text": "The experts from the first internship gave me code for the project to work with. To add cheats to my own project, I looked at how their code worked and tried replicating it. I understood how the UI was created."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Tinkering",
+            "text": "The given code was very complicated, so I decided to try finishing it myself. The execution of the UI was different than I expected, as the OnGUI method is invoked like the Update method. Especially the toggle gave me some trouble."
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Community research",
+            "text": "The following source gave me the idea of having the values of the toggles in a seperate list outside the OnGUI method: <<source How does GUI.Toggle work? - Unity Answers. (07-12-2012). https://answers.unity.com/questions/360635/strange-guitoggle-behavior.html>>. Using my previous knowledge of reflection and answers from other developers, I managed to create cheat codes in a flexible manner. First, I got a list of the classes in the namespace containing all cheat codes using the source <<source How can I get all classes within a namespace? (07-03-2018). Stack Overflow. https://stackoverflow.com/questions/949246/how-can-i-get-all-classes-within-a-namespace>>. The following source helped me get the static Cheat instance from the class to add to the list of cheats: <<source Get value of a public static field via reflection. (05-05-2011). Stack Overflow. https://stackoverflow.com/questions/5898385/get-value-of-a-public-static-field-via-reflection>>."
+        }
+    ],
+    "normalLearnings": [
+        "I learned how to create Unity editor windows.",
+        "I learned how to add controls and UI elements to a custom window.",
+        "I learned how to use reflection to get a list of classes."
+    ],
+    "specialLearnings": [],
+    "result": "The code below shows the implementation of the cheat codes and the window.\n<<image 15.png>>\n<<image 16.png>>\n<<image 17.png>>\n<<image 18.png>>",
+    "validation": "The video below show that the cheat code works.\n<<video https://www.youtube.com/embed/5M6gDAy34Jk>>",
+    "contribution": "The cheats and the window to enable the cheats will help make the testing easier, allowing for faster development."
+}

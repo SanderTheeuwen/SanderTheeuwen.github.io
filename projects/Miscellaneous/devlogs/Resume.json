@@ -1,9 +1,10 @@
 {
-    "published": false,
-    "name": "",
+    "published": true,
+    "name": "Resume",
     "dates": [
         "04-12-2021"
     ],
+    "goalName": "Create a clear, structured resume",
     "goal": "A resume is the most important document when applying for a job. A recruiter should be able to know your information, skills and experiences in a glance.",
     "approach": [
         {

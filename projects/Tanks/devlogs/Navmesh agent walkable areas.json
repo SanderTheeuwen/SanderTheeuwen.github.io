@@ -1,0 +1,29 @@
+{
+    "published": true,
+    "name": "Navmesh agent walkable areas",
+    "dates": [
+        "25-05-2023"
+    ],
+    "goalName": "Create custom walkable areas for navmesh agents in a structured and efficient manner",
+    "goal": "Some of the enemy tanks do not need a stationary point or a 'patrol route', but an area to guard in which they can move freely. As the ground itself is one big plane object, it cannot be used to bake the navmesh, or it will make the whole ground walkable.",
+    "approach": [
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Tinkering",
+            "text": "I started out by creating planes marked as walkable for every enemy tank. I quickly noticed that the planes needed to be added to a separate collective gameobject, containing all planes used for the navmesh. This worked well, but the process of baking the navmesh took very long: I had to enable all the gameobjects, go to the navigation dock, go to the bake panel, bake the navmesh, and disable all the gameobjects. A script that does this automatically would prove useful."
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Community research",
+            "text": "Looking online, I found an answer at <<source How to “bake” NavMesh from script at runtime? (19-06-2021). Stack Overflow. https://stackoverflow.com/questions/52187167/how-to-bake-navmesh-from-script-at-runtime on how to bake navmesh with code instead of the editor's UI>>. Using this, I created the following script to execute the whole process of baking the navmesh:\n<<image 2.png>>\nAs this is said not to work at runtime, it has to be invoked before starting, so it also does not affect the loading time. Putting the script in the parent of the area objects, I can simply invoke the method using the context menu, turning 7 clicks to 2."
+        }
+    ],
+    "normalLearnings": [
+        "I can bake the navmesh using code instead of the editor.",
+        "I learned to bake navmesh in an efficient and structured way."
+    ],
+    "specialLearnings": [],
+    "result": "As seen in the picture below, not the entire ground is made walkable, saving resources.\n<<image 3.png>>",
+    "validation": "While testing, the AI only uses the walkable area baked by the script, confirming the solution works.",
+    "contribution": "The script saves time and resources, contributing to quicker development and less loadup time."
+}

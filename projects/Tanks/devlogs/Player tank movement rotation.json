@@ -1,0 +1,40 @@
+{
+    "published": true,
+    "name": "Player tank movement rotation",
+    "dates": [
+        "01-04-2023",
+        "04-06-2023"
+    ],
+    "goalName": "Move the player's tank by the input and rotate the tank to face the new direction",
+    "goal": "In the tank game, the player can control their own tank with the WASD keys. The tank needs to move in that direction, and quickly rotate towards the new forward direction.",
+    "approach": [
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Tinkering",
+            "text": "I started out by trying to create a script myself. As I made player scripts before, I knew how to get the input from the player. I created a coroutine to use when the direction is changed, to prevent unnecessary execution of code. The first version is shown below:\n<<image 9.png>>\nSince there does not need to be a constant speed or new rotation, the IEnumerator ends quickly when the new direction is Vector3.zero."
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature study",
+            "text": "I learned the difference between Lerp, Slerp, and RotateTowards from this source: <<source LlamAcademy. (2022, March 29). Lerping Fundamentals - Learn How to Use It & When to Use Its Variants | Unity Tutorial [Video]. YouTube. https://www.youtube.com/watch?v=IymDGkzwJts>>. Because the rotation is constant (does not speed up / slow down, and is the same for every rotation), I decided to use RotateTowards."
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Community research",
+            "text": "The following source to help me rotate the Quaternion: <<source Unity Forum. (2011, May 28). Rotate a Quaternion 20 Degrees Around Y Axis. - Unity Forum. Retrieved April 1, 2023, from https://forum.unity.com/threads/rotate-a-quaternion-20-degrees-around-y-axis.90990/>>."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Tinkering",
+            "text": "I added a print statement to measure the efficiency of not changing direction every frame but only when different keys are held down. To my surprise, Input.GetAxis returned a float between 0 and 1 when the keys were just pressed or released. Using Mathf.RoundToInt, I managed to get the input I needed, and the coroutine ran efficient. Next I added a boolean \"finishedRotation\" so the loop did not do unnecessary calculation for the rotation if the rotation finished, as seen below:\n<<image 10.png>>\nBecause tanks can move both forward and backwards, I had to rotate the bottomObject 180 degrees when the new direction is the opposite of the bottomObject's forward direction. The following script was the result:\n<<image 11.png>>\nWhile playtesting, I encountered a weird rotation when I moved from a diagonal direction to the opposite diagonal (e.g. top-left to bottom-right). Because it is very unlikely that humans release both keys at the same time, the tank would stop rotating at a point in between the 8 directions. When I then pressed the opposite keys, the tank would rotate like shown in the below diagram:\n<<image 12.png>>\nIn both cases, the tank is pointing towards the top left (blue line). The gray line is an indication where the 45 degree rotation is. Expected: The tank rotates to the gray line and flips 180 degrees (to move backwards) to rotate as little as possible. Actual: The tank rotates all the way around, almost 180 degrees. To solve this, I flipped the tank if the rotation would be more than 90 degrees, like the diagram below explains:\n<<image 13.png>>\nFinally, the input seemed a bit delayed. Using the console, I found the origin of the problem. I should not have rounded the input, but normalized the Vector2 instead. The first couple of frames, the input is not fully at 1, so it would round it down to 0, which meant no movement."
+        }
+    ],
+    "normalLearnings": [
+        "I know the difference between Lerp, Slerp, and RotateTowards.",
+        "I know how to calculate the quickest rotation to 180 degrees."
+    ],
+    "specialLearnings": [],
+    "result": "The result is shown in the video here:\n<<video https://www.youtube.com/embed/708xIdaZMJk>>\nIt is achieved with the code below:\n<<image 14.png>>",
+    "validation": "I showed my work to others, who said it looked very good.",
+    "contribution": "This does not add functionality, but adds to the game feel of the end product."
+}

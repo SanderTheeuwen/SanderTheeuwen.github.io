@@ -4,6 +4,7 @@
     "dates": [
         "08-09-2023"
     ],
+    "goalName": "Create an algorithm to order the indices of the variables of a string",
     "goal": "I created a program where I can add commands using a dynamic format. Using a unique command, I can add commands on runtime using \"!command add {command name} {command text}\". When the command is then invoked (\"!{command name}\"), the command text will show and parameters are filled. Example: \"!command add cookie You are given a ${0} cookie!\". \"!cookie sweet\" will then result in \"You are given a sweet cookie!\". The variable ${0} is replaced by the first word after the command name. When a command is added, some variable indices can accidentally be skipped, especially the first one: 0. \"!command add cookie ${4} is given a ${1} cookie\"\"!cookie sweet Marco\" will then produce \"undefined is given a Marco cookie\". The algorithm must refactor the initial command to order the indices correctly. \"${4} is given a ${1} cookie\" will be refactored to \"${1} is given a ${0} cookie\", as non existing indices are skipped.",
     "approach": [
         {

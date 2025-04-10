@@ -1,0 +1,49 @@
+{
+    "published": true,
+    "name": "Making bullets ricochet",
+    "dates": [
+        "15-04-2023",
+        "16-04-2023",
+        "17-04-2023"
+    ],
+    "goalName": "Making bullets reflect off walls",
+    "goal": "Several tanks in the game have special abilities. Most tanks however, share one similarity: their bullets 'bounce' x times off walls. The bounce count can differentiate per tank type, but the bounce logic remains the same. I need to create a script which makes the bullet ricochet.",
+    "approach": [
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Brainstorming",
+            "text": "There are several parts of code that need to be created for the ricochet to work. \n1. Detection: The bullet needs to detect that it collided with a wall. \n2. Calculating the reflected forward: If the bullet has 'bounces' left, the new direction needs to be calculated.\n3. Rotating and setting the velocity."
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature study",
+            "text": "To detect the walls, I had to use OnTriggerEnter or OnColliderEnter. From the source <<source Coppens, G. (2022, January 6). ‘OnCollisionEnter vs OnTriggerEnter ‘ when to use them? Medium. https://medium.com/nerd-for-tech/oncollisionenter-vs-ontriggerenter-when-to-use-them-37b08f3249a5#:~:text=OnCollisionEnter()%20is%20often%20used,to%20detect%20and%20interact%20with.>>, I learned that OnCollisionEnter is used for physics, whereas OnTriggerEnter is not."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Tinkering",
+            "text": "The methods are invoked under different circumstances too. Letting physics be calculated by Unity caused the bullets to ricochet, but rotate continuously. Therefore, I had to calculate physics myself, and use the OnTriggerEnter method."
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Community research",
+            "text": "First I filtered out the entity collisions, like other bullets, tanks, and mines. If it was a wall, I just added a 90 degree rotation, as I tested it under a 45 degree angle. Using the source Add 90 Degrees to Transform.Rotation - Unity Answers. (19-11-2011). https: //answers.unity.com/questions/187506/add-90-degrees-to-transformrotation.html>> I found out it didn't work in all cases."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Tinkering",
+            "text": "The following diagrams explain why it didn't work:\n<<image 4.png>>\nIn the picture above the solution would work.\n<<image 5.png>>\nHere the solution does NOT work. Adding a 90* rotation results in the red direction. The correct direction, in green, rotates the bullet 45 degrees more. The problem gets more complicated if the bullet hits the walls from a different side, shown below:\n<<image 6.png>>\nThe normals of the point where the bullet hits the wall, decides where the bullet deflects to, shown in orange in the diagram below:\n<<image 7.png>>\nBy getting the rotation between the original direction and the normal (retrieved from a raycast), and adding it to the 'other side' of the normal, it produces the reflected direction. At this point, I thought other developers would have experienced the same problem, where they need to reflect something. I discovered that the Vector3 class had a static Reflect method that returns the new direction. With the new forward direction, it was easy to set the rotation and velocity of the bullet."
+        }
+    ],
+    "normalLearnings": [
+        "I learned the difference and different use cases for OnTriggerEnter and OnCollisionEnter.",
+        "I learned that problems may share similarities that have already been solved by other people, or Unity itself in this case.",
+        "I learned how to calculate reflection myself.",
+        "I learned how to use Debug.DrawRay for debugging.",
+        "I learned I need to visualize different use cases before attempting to solve the first one I find."
+    ],
+    "specialLearnings": [],
+    "result": "The code below makes the bullet reflect properly.\n<<image 8.png>>\nThe video below shows the bullets reflecting:<<video https://youtube.com/embed/tgGyC31-0HA>>",
+    "validation": "The bullets reflect properly as seen in the video.",
+    "contribution": "This directly contributes to the end product."
+}

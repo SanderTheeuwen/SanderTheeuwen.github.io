@@ -8,6 +8,7 @@
         "24-04-2023",
         "25-04-2023"
     ],
+    "goalName": "Combining colliders of gameobjects",
     "goal": "The playing field of the game consists of the ground, the entities (tanks, bullets, etc.) and walls. The walls are made up by several blocks, which have colliders so bullets can ricochet. While implementing the ricochet on the bullets, I noticed that the raycast it uses detects two blocks if it is fired at the point where two blocks meet. This caused the bullet to count the ricochet twice. Combining colliders seemed the most suitable solution for the problem.",
     "approach": [
         {
@@ -28,12 +29,12 @@
         {
             "researchType": "Library",
             "researchMethod": "Literature study",
-            "text": "Because I did not figure out how the meshes were made, I decided to look up some tutorials. I found the following sources: <<source Brackeys. (2019, September 22). MAKING YOUR FIRST LEVEL in Unity with ProBuilder! [Video]. YouTube. https: //www.youtube.com/watch?v=YtzIXCKr8Wo>>, and <<source Interacting with ProBuilder | Package Manager UI website. (n.d.). https://docs.unity3d.com/Packages/com.unity.probuilder@4.0/manual/overview-ui.html.>> It seemed rather complicated to have to use ProBuilder every time colliders need to be combined, so I decided to investigate some more on how to combine colliders."
+            "text": "Because I did not figure out how the meshes were made, I decided to look up some tutorials. I found the following sources: <<source Brackeys. (2019, September 22). MAKING YOUR FIRST LEVEL in Unity with ProBuilder! [Video]. YouTube. https://www.youtube.com/watch?v=YtzIXCKr8Wo>>, and <<source Interacting with ProBuilder | Package Manager UI website. (n.d.). https://docs.unity3d.com/Packages/com.unity.probuilder@4.0/manual/overview-ui.html.>> It seemed rather complicated to have to use ProBuilder every time colliders need to be combined, so I decided to investigate some more on how to combine colliders."
         },
         {
             "researchType": "Library",
             "researchMethod": "Literature study",
-            "text": "I found a script sample at <<source Technologies, U. (25-05-2023). Unity - Scripting API: Mesh.CombineMeshes. https://docs.unity3d.com/ScriptReference/Mesh.CombineMeshes.html>> where mesh colliders of children objects are combined. I learned how to add components are runtime from the following source: <<source myGameObject.AddComponent() to be of either Cube, Sphere or any other mesh? (2016, October 4). Unity Forums. Retrieved May 25, 2023, from https: //forum.unity.com/threads/mygameobject-addcomponent-meshfilter-to-be-of-either-cube-sphere-or-any-other-mesh.434656/>>"
+            "text": "I found a script sample at <<source Technologies, U. (25-05-2023). Unity - Scripting API: Mesh.CombineMeshes. https://docs.unity3d.com/ScriptReference/Mesh.CombineMeshes.html>> where mesh colliders of children objects are combined. I learned how to add components are runtime from the following source: <<source myGameObject.AddComponent() to be of either Cube, Sphere or any other mesh? (2016, October 4). Unity Forums. Retrieved May 25, 2023, from https://forum.unity.com/threads/mygameobject-addcomponent-meshfilter-to-be-of-either-cube-sphere-or-any-other-mesh.434656/>>"
         },
         {
             "researchType": "Workshop",

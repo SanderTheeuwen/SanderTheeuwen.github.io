@@ -1,0 +1,29 @@
+{
+    "published": true,
+    "name": "Fixing bullet ricochets",
+    "dates": [
+        "09-06-2023",
+        "10-06-2023"
+    ],
+    "goalName": "Rework the ricochet script so it takes the size of the bullet into account and reflects properly",
+    "goal": "When the bullets are fired at a corner of the block, they often would not ricochet and just go forward in the direction they were already going. Because this happened too often, I have to fix it.",
+    "approach": [
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Brainstorming",
+            "text": "I went through my code, putting breakpoints in various places of the script to see what was happening. When bullets were fired at corners, with the center of the bullet pointing past the corner, it would not ricochet. I noticed that the raycast used to get the normal of the impact point was empty. The following picture shows why:\n<<image 30.png>>\nThe impact point is shown in green, this causes the raycast to be fired, shown in red. Because the bullet hits near the corner, the raycast does not hit the block, resulting in the hit being empty."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Tinkering",
+            "text": "I replaced the raycast with a boxcast, which seemed to work fine at first. Later I realized that this was an issue were the bullets fired directly at the corners. The point it hits, and the boxcast hits, is always the same: the exact corner of the block. This makes the boxcast hit have a normal that is the exact opposite direction of the bullet.\n<<image 31.png>>\nIn the diagram above, the original direction of the bullet is shown in blue, and the impact point shown in green. The boxcast hit's normal is the same direction as the red line. The reflection of the bullet's direction is calculated using Vector3.Reflect. If the normal of the hit surface is the opposite direction of the original direction, it results in the new direction being the same as the normal of the hit, like when the bullet would hit the block's middle at a 90 degree angle resulting in it bouncing back. I tested my theory by adding an if statement and a debug log where it would log when the normal is the opposite of the original direction. This turned out to be true every time the corner was hit.\nWith the certainty of the case, I can implement an alternative reflection calculation when the normal is the opposite of the original direction. I can send a raycast similar to the blue line in the picture and use the normal of that hit to calculate the reflection."
+        }
+    ],
+    "normalLearnings": [
+        "I learned that boxcasts hitting corners result in an opposite normal."
+    ],
+    "specialLearnings": [],
+    "result": "The following code is used to solve the problem:\n<<image 32.png>>\nThe result can be seen in the video below.\n<<video https://www.youtube.com/embed/sHuTNmbTzTQ>>",
+    "validation": "While testing, there were some extreme specific cases where the outer corner of a block was hit and the bullet did not reflect, but this was so specific that I decided not to make a fix for it.",
+    "contribution": "This directly contributes to the end product."
+}

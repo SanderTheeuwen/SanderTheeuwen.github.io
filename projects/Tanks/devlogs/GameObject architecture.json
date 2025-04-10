@@ -1,0 +1,39 @@
+{
+    "published": true,
+    "name": "GameObject architecture",
+    "dates": [
+        "08-06-2023"
+    ],
+    "goalName": "Creating a flexible and easy architecture for gameobjects",
+    "goal": "When I added the explosion to the tanks, it looked weird with moving tanks, as the explosion would move too. This is because the object that causes the movement was attached to the top gameobject. When I shot a tank multiple times, it invoked the explosion multiple times as well, as the colliders also were attached to the top object. For flexibility, readability (having many components in a single object is not readable) and expandability, the architecture needs to change.",
+    "approach": [
+        {
+            "researchType": "Library",
+            "researchMethod": "Available product analysis",
+            "text": "From the internship company, I learned how to structure gameobjects in the whole scene. They used empty gameobjects to separate managers from the environment."
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature study",
+            "text": "The example from the internship company gave me the idea to separate the top level gameobjects, but not something like entities. I figured I was not the only one with this problem, so I decided to look online for examples. Surprisingly few results showed up, but I found one: <<source French, J. (2022). How to structure your Unity project (best practice tips). Game Dev Beginner. https://gamedevbeginner.com/how-to-structure-your-unity-project-best-practice-tips/>>. This source gave an example where components were also separated."
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Expert interview",
+            "text": "For a second opinion, I asked old classmates how they would give structure to the smaller gameobjects like a tank. They responded they handled it similar to the previous source, where they would separate it not by component, but by functionality. Things like health would be a separate component, or a particle system (though it is a component, it is a single responsibility), whereas the bottom part of the tank would contain the movement script."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Tinkering",
+            "text": "When I applied the strategy of the website, I ran into many issues with for example transforms being edited, resulting in weird or no movement as the script was on different objects. Colliders also gave many issues, as the scripts including the OnTriggerEnter method depended on the other collider being in the top object (tank instead of tank.bottom). To counter this, I decided to apply the strategy of my old classmates, as it would keep objects readable and relatively small. I ended up mixing both strategies, where the top object (tank) would contain the collider, with a separate object for effects (audio and particle system)."
+        }
+    ],
+    "normalLearnings": [
+        "I know how to structure top level objects.",
+        "I know how to structure low level objects."
+    ],
+    "specialLearnings": [],
+    "result": "I separated managers at the top of the hierarchy and categorised the underlying objects using empty game objects. I also separated functionalities like input, effects, and health, as seen below:\n<<image 29.png>>",
+    "validation": "The objects are much more organised and it is not making the scripts much more complicated.",
+    "contribution": "Having a structured architecture makes for easy maintainable and expandable code and objects."
+}
