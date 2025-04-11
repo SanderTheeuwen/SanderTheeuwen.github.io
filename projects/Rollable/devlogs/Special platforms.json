@@ -1,0 +1,41 @@
+{
+    "published": true,
+    "name": "Special platforms",
+    "dates": [
+        "02-11-2021",
+        "03-11-2021",
+        "04-11-2021"
+    ],
+    "goalName": "Make visually outstanding pads with various effects",
+    "goal": "Whenever a certain platform or pads have special effects, they need to stand out in comparison to the environment.",
+    "approach": [
+        {
+            "researchType": "Showroom",
+            "researchMethod": "Peer review",
+            "text": ""
+        },
+        {
+            "researchType": "Showroom",
+            "researchMethod": "Expert interview",
+            "text": ""
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Available product analysis",
+            "text": ""
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Community research",
+            "text": "<<source How can I slow-stop the RigidBody Speed? - Unity Answers. (2013, August 11). Unity. https://answers.unity.com/questions/512650/how-can-i-slow-stop-the-rigidbody-speed.html>>\n<<source Which Method is Optimal/Fastest - Raycast Vs Collider - Unity Answers. (n.d.). Unity. Retrieved October 3, 2021, from https://answers.unity.com/questions/708235/which-method-is-optimalfastest.html>>\n<<source Detecting whether a player is touching the ground - Unity Answers. (2013, April 7). Unity. https://answers.unity.com/questions/433411/detecting-whether-a-player-is-touching-the-ground.html>>"
+        }
+    ],
+    "normalLearnings": [
+        "Do not try to do things without looking up how others did it first.",
+        "Multiple ways to implement a bouncy floor."
+    ],
+    "specialLearnings": [],
+    "result": "As seen in the video below, the bouncing is very smooth and the speed pads modify the player's speed correctly.<<video https://www.youtube.com/embed/ylrI7QrIS8c>>",
+    "validation": "",
+    "contribution": "The pads contribute to the game directly."
+}

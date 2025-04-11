@@ -1,0 +1,29 @@
+{
+    "published": true,
+    "name": "Unity Animations",
+    "dates": [
+        "27-11-2021",
+        "12-12-2021"
+    ],
+    "goalName": "Create a moving platform in Unity",
+    "goal": "Unity supports animations, through which a developer can easily add movement to an object or entity without coding. This allows for fast and smooth creation of many movable objects, including a platform.",
+    "approach": [
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Peer review",
+            "text": ""
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature study",
+            "text": "<<source Technologies, U. (2021, November 20). Unity - Manual: Creating a new Animation Clip. Unity Documentation. Retrieved November 27, 2021, from https://docs.unity3d.com/Manual/animeditor-CreatingANewAnimationClip.html>>"
+        }
+    ],
+    "normalLearnings": [
+        "I am able to create an animation for an object"
+    ],
+    "specialLearnings": [],
+    "result": "As seen in the video below, the platform is moving in a rectangular motion. The player is able to physically interact with it.<<video https://www.youtube.com/embed/JKhhA--Fx_8>>In the screenshot below the animation setup can be seen.<<image 2.png>>",
+    "validation": "",
+    "contribution": ""
+}

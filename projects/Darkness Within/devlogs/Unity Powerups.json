@@ -1,0 +1,29 @@
+{
+    "published": true,
+    "name": "Unity: Powerups",
+    "dates": [
+        "07-01-2022"
+    ],
+    "goalName": "Create flexible powerups",
+    "goal": "In Darkness Within, the player can aquire powerups which boost the player's stats. Powerups can range from movement speed to attack damage. Since powerups could be added, changed, or removed, they need to be very flexible.",
+    "approach": [
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature study",
+            "text": "<<source Brackeys. (2018, January 3). SCRIPTABLE OBJECTS in Unity [Video]. YouTube. https://www.youtube.com/watch?v=aPXvoWVabPY>>\n<<source Unity Technologies. (2021a, December 23). Unity - Manual: ScriptableObject. Unity Documentation. Retrieved January 7, 2022, from https://docs.unity3d.com/Manual/class-ScriptableObject.html>>\n<<source Unity Technologies. (2021d, December 23). Unity - Scripting API: RuntimeInitializeOnLoadMethodAttribute. Unity Documentation. Retrieved January 7, 2022, from https://docs.unity3d.com/ScriptReference/RuntimeInitializeOnLoadMethodAttribute.html>>"
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Community research",
+            "text": "<<source C# How to Check If a Gameobject Contains a Certain Component - Unity Answers. (2013, May 12). Unity. Retrieved January 6, 2022, from https://answers.unity.com/questions/454590/c-how-to-check-if-a-gameobject-contains-a-certain.html>>\n<<source Instantiate existing components and assign to GameObject - Unity Answers. (2012, February 1). Unity. Retrieved January 6, 2022, from https://answers.unity.com/questions/212402/instantiate-existing-components-and-assign-to-game.html>>\n<<source How to copy values of a Component from object A to the same Component on object B? (2020, June 24). Stack Overflow. Retrieved January 6, 2022, from https://stackoverflow.com/questions/62553142/how-to-copy-values-of-a-component-from-object-a-to-the-same-component-on-object>>\n<<source How can I get the name of a scriptable object via code. (2020, August 10). Game Development Stack Exchange. Retrieved January 7, 2022, from https://gamedev.stackexchange.com/questions/185018/how-can-i-get-the-name-of-a-scriptable-object-via-code>>\n<<source keep sprite same size when changing - Unity Answers. (2019, January 9). Unity. Retrieved January 7, 2022, from https://answers.unity.com/questions/1588420/keep-sprite-same-size-when-changing.html>>\n<<source How do I size a UI Image to fit the sprite exactly? - Unity Answers. (2017, June 7). Unity. Retrieved January 7, 2022, from https://answers.unity.com/questions/1356655/how-do-i-size-a-ui-image-to-fit-the-sprite-exactly.html>>\n<<source Is there a convenient way to stop ScriptableObjects from suffering permanent changes during runtime? (2019, October 1). Reddit. Retrieved January 7, 2022, from https://www.reddit.com/r/Unity3D/comments/dblvol/is_there_a_convenient_way_to_stop/>>"
+        }
+    ],
+    "normalLearnings": [
+        "I can use scriptable objects to create a template and instances using that template",
+        "I can call methods based on object / property names / values for flexibility"
+    ],
+    "specialLearnings": [],
+    "result": "The video below shows the player picking up a movement speed powerup, increasing their speed by 50%.<<video https://www.youtube.com/ember/9fX0grjEXWo>>The picture below shows the PlayerPowerups script, the mothod invokation is solely based on the name of the powerup, allowing for easy addition, altering, and removing of powerup methods.<<image 1.png>>",
+    "validation": "I validated the feature with fellow teammates, who were enthusiastic about the results.",
+    "contribution": "This directly contributes to the game. Now I can focus on creating more powerups."
+}

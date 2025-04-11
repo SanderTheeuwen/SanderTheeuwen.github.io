@@ -1,0 +1,29 @@
+{
+    "published": true,
+    "name": "Unity: Melee, Ranged, Special attack",
+    "dates": [
+        "06-01-2022"
+    ],
+    "goalName": "Implement a melee, ranged and a special attack",
+    "goal": "In the Darkness Within, the character has the ability to do several attacks. The melee variant has a close range, but does more damage and is faster. The ranged attack does less damage and has a longer cooldown, but has a significantly larger range. The special attack is useful for damaging enemies surrounding the player, but has a huge cooldown.",
+    "approach": [
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature study",
+            "text": "<<source Unity Technologies. (2021, December 23). Unity - Scripting API: Physics.BoxCast. Unity Documentation. Retrieved January 6, 2022, from https://docs.unity3d.com/ScriptReference/Physics.BoxCast.html>>\n<<source Unity Technologies. (2021b, December 23). Unity - Scripting API: Quaternion. Unity Documentation. Retrieved January 6, 2022, from https://docs.unity3d.com/ScriptReference/Quaternion.html>>"
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Community research",
+            "text": "<<source Mouse Position with New Input System. (2020, February 15). Unity Forum. Retrieved January 6, 2022, from https://forum.unity.com/threads/mouse-position-with-new-input-system.829248/>>\n<<source Dunnett, G. (2013, July 3). How can I Raycast to multiple objects - Unity Answers. Unity. Retrieved January 6, 2022, from https://answers.unity.com/questions/486261/how-can-i-raycast-to-multiple-objects.html>>"
+        }
+    ],
+    "normalLearnings": [
+        "I can use raycasts and boxcasts in Unity",
+        "I can get the position of the mouse translated into a 3d environment"
+    ],
+    "specialLearnings": [],
+    "result": "The video below shows that there are three attacks, each one having its own damage value.<<video https://www.youtube.com/embed/eqnrFP5f4gA>>The fireballs (represented by the orange circles) have a range which is variable. The attack is pointed at the cursor, done by the code seen below:<<image 2.png>>All attacks are initiated through code with input events, but the damaging and summoning of fireballs is done with an animation event.",
+    "validation": "I validated my work with the group members, who were satisfied with the result.",
+    "contribution": "This directly contributes to the end product."
+}

@@ -1,0 +1,40 @@
+{
+    "published": true,
+    "name": "Unity Gravity Changer",
+    "dates": [
+        "6-11-2021",
+        "4-12-2021"
+    ],
+    "goalName": "Create a gravity switch which is able to invert the gravity",
+    "goal": "Players are (mostly) used to gravity dragging them down. A way to make the game more challenging and interesting is to modify that behavior. By changing the gravity, the player has to rethink their way of solving puzzles, especially if the gravity is changed only in a particular area.",
+    "approach": [
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Peer review",
+            "text": ""
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Expert interview",
+            "text": ""
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Community research",
+            "text": "<<source J. (2011, February 18). Rotate a Vector3 direction - Unity Answers. Unity. Retrieved November 6, 2021, from https://answers.unity.com/questions/46770/rotate-a-vector3-direction.html>>\n<<source changing gravity for one object. - Unity Answers. (2011, August 5). Unity. Retrieved November 6, 2021, from https://answers.unity.com/questions/24240/changing-gravity-for-one-object.html>>"
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature study",
+            "text": "<<source DocFX. (n.d.). Volumes | Universal RP | 7.1.8. Unity. Retrieved December 4, 2021, from https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@7.1/manual/Volumes.html>>"
+        }
+    ],
+    "normalLearnings": [
+        "I can create volumes in Unity with different aspects",
+        "I can create a gravity modifier through C# in Unity"
+    ],
+    "specialLearnings": [],
+    "result": "As seen in the video below, I created a modifiable gravity component, based on forces, so other objects are not affected.<<video https://www.youtube.com/embed/Gizz3ibVdY0>>Through the code show below, I took expandability into account and allowed for more gravity directions.<<image 3.png>>",
+    "validation": "I showed the gravity changer and variable to peers and experts, who gave me suggestions to improve the code by minor changes. They approved of the gravity changer and class.",
+    "contribution": "This is but one of the different mechanics to implement in the game. The next step is to create a reverse pad. (invert the player's controls)"
+}

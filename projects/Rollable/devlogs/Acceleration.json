@@ -1,0 +1,36 @@
+{
+    "published": true,
+    "name": "Unity Acceleration",
+    "dates": [
+        "02-11-2021"
+    ],
+    "goalName": "Make the player character accelerate when moving",
+    "goal": "For games where the player controls a ball, it is a bad user experience to be able to instantly move and stop the ball. Therefore, acceleration might come in handy. This is more difficult as there needs to be a maximum speed. Collision also has to be taken into account for this different approach.",
+    "approach": [
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Tinkering",
+            "text": ""
+        },
+        {
+            "researchType": "Showroom",
+            "researchMethod": "Peer review",
+            "text": ""
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Available product analysis",
+            "text": ""
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature study",
+            "text": "<<source How to limit a movement vector without affecting gravity - Unity Answers. (2018, November 9). Unity. https://answers.unity.com/questions/1569218/how-to-limit-a-movement-vector-but-not-touch-a-gra.html>>"
+        }
+    ],
+    "normalLearnings": [],
+    "specialLearnings": [],
+    "result": "<<video https://www.youtube.com/embed/3ZZYG0_zgoA>>As seen in the video above, the speed is not increasing after 10 as seen in \"Speed\" in the inspector, but this can be increased or decreased by the \"Max Speed\" property. After seeing the ball's speed did not go down quickly, I discovered the drag property in the rigidbody component. Afte playing with the force of the movement input I found a balance between the drag, max speed and force of the movement input. The code is shown below:<<image 1.png>>",
+    "validation": "I let fellow students look at the result and performed multiple tests to check if everything behaved correctly.",
+    "contribution": "Now that my movement is working as expected, I will focus on making the camera smooth. After that, I can start on making traps and other objects."
+}
