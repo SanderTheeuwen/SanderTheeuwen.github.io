@@ -1,5 +1,13 @@
 [
   {
+    "project": "Darkness Within",
+    "path": "projects/Darkness Within/devlogs/Unity Melee, Ranged, Special attack.json"
+  },
+  {
+    "project": "Darkness Within",
+    "path": "projects/Darkness Within/devlogs/Unity Powerups.json"
+  },
+  {
     "project": "Miscellaneous",
     "path": "projects/Miscellaneous/devlogs/Devlog.json"
   },
@@ -22,6 +30,22 @@
   {
     "project": "Miscellaneous",
     "path": "projects/Miscellaneous/devlogs/String argument index processing.json"
+  },
+  {
+    "project": "Rollable",
+    "path": "projects/Rollable/devlogs/Acceleration.json"
+  },
+  {
+    "project": "Rollable",
+    "path": "projects/Rollable/devlogs/Animations.json"
+  },
+  {
+    "project": "Rollable",
+    "path": "projects/Rollable/devlogs/Gravity changers.json"
+  },
+  {
+    "project": "Rollable",
+    "path": "projects/Rollable/devlogs/Special platforms.json"
   },
   {
     "project": "Tanks",
@@ -62,9 +86,5 @@
   {
     "project": "Tanks",
     "path": "projects/Tanks/devlogs/Player tank movement rotation.json"
-  },
-  {
-    "project": "Test project",
-    "path": "projects/Test project/devlogs/Loading and saving data in Unity.json"
   }
 ]
