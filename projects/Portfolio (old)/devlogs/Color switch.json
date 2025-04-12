@@ -1,0 +1,37 @@
+{
+    "published": true,
+    "name": "Color switch",
+    "dates": [
+        "11-01-2022",
+        "12-01-2022",
+        "13-01-2022"
+    ],
+    "goalName": "Select color palettes for a light and dark mode on the website",
+    "goal": "The colors used on a website is one of the first things the user notices. By selecting colors that raise are are associated with certain feelings / emotions, I might be able to steer the user's first impression. Websites often have a light and dark mode, which is why I want to choose two color palettes.",
+    "approach": [
+        {
+            "researchType": "Library",
+            "researchMethod": "Expert interview",
+            "text": ""
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Community research",
+            "text": "<<source Dimitriadis, G. (2014, May 31). CSS - How can I make a font readable over any color? Stack Overflow. Retrieved January 12, 2022, from https://stackoverflow.com/questions/23968961/css-how-can-i-make-a-font-readable-over-any-color>>\n<<source Carranza, T. T. (2012, October 20). CSS force image resize and keep aspect ratio. Stack Overflow. Retrieved January 11, 2022, from https://stackoverflow.com/questions/12991351/css-force-image-resize-and-keep-aspect-ratio>>\n<<source Afif, T. (2020, June 16). How can I create “sun like” lines around a circle? Stack Overflow. Retrieved January 12, 2022, from https://stackoverflow.com/questions/62403621/how-can-i-create-sun-like-lines-around-a-circle>>\n<<source Change color of PNG image via CSS? (2014, January 5). Stack Overflow. Retrieved January 12, 2022, from https://stackoverflow.com/questions/7415872/change-color-of-png-image-via-css?rq=1>>\n<<source Houdt, L. (2015, July 7). Use the HTML tag as a background image instead of the CSS background-image property? Stack Overflow. Retrieved January 12, 2022, from https://stackoverflow.com/questions/31267425/use-the-html-img-tag-as-a-background-image-instead-of-the-css-background-image>>\n<<source How to select an element with 2 classes. (2011, February 25). Stack Overflow. Retrieved January 12, 2022, from https://stackoverflow.com/questions/5116288/how-to-select-an-element-with-2-classes>>\n<<source Mullany, M. (2017, February 7). CSS Hue Rotate is Darkening Image. Stack Overflow. Retrieved January 12, 2022, from https://stackoverflow.com/questions/41853158/css-hue-rotate-is-darkening-image>>"
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature study",
+            "text": "<<source Cherry, K. (2020, May 28). Can Color Affect Your Mood and Behavior? Verywell Mind. Retrieved January 11, 2022, from https://www.verywellmind.com/color-psychology-2795824>>\n<<source Gremillion, A. S. (2020, June 30). Colors and emotions: how colors make you feel. 99designs. Retrieved January 11, 2022, from https://en.99designs.nl/blog/tips/how-color-impacts-emotions-and-behaviors/>>\n<<source O’Dwyer, S. (2021, May 25). How to Create Neon Text With CSS. CSS-Tricks. Retrieved January 12, 2022, from https://css-tricks.com/how-to-create-neon-text-with-css/>>\n<<source CSS text-shadow property. (n.d.). W3schools. Retrieved January 12, 2022, from https://www.w3schools.com/cssref/css3_pr_text-shadow.asp>>\n<<source McKay, R., & McKay, R. (2021, January 14). How to decorate with purple. Better Homes and Gardens. Retrieved January 13, 2022, from https://www.bhg.com.au/colours-that-go-with-purple>>\n<<source Schennink, R. (2021, April 22). Resize images proportionally while keeping the aspect ratio | PQINA. PQINA Blog. Retrieved January 11, 2022, from https://pqina.nl/blog/resize-images-proportionally-while-keeping-the-aspect-ratio/>>\n<<source Sun - CSS Icons. (2020, April 23). Css.Gg. Retrieved January 12, 2022, from https://css.gg/sun>>\n<<source Ohans, E. (2019, May 30). CSS Naming Conventions that Will Save You Hours of Debugging. FreeCodeCamp.Org. Retrieved January 12, 2022, from https://www.freecodecamp.org/news/css-naming-conventions-that-will-save-you-hours-of-debugging-35cea737d849/>>\n<<source Walsh, D. (2018, October 8). How to Get and Set CSS Variable Values with JavaScript. David Walsh Blog. Retrieved January 12, 2022, from https://davidwalsh.name/css-variables-javascript#:%7E:text=To%20set%20the%20value%20of,style%20>>\n<<source CSS filter Property. (n.d.). W3schools. Retrieved January 12, 2022, from https://www.w3schools.com/cssref/css3_pr_filter.asp>>\n<<source CSS object-fit Property. (n.d.). W3schools. Retrieved January 12, 2022, from https://www.w3schools.com/css/css3_object-fit.asp>>\n<<source CSS and JavaScript animation performance - Web Performance | MDN. (2021, October 14). MDN Web Docs. Retrieved January 12, 2022, from https://developer.mozilla.org/en-US/docs/Web/Performance/CSS_JavaScript_animation_performance>>\n<<source CSS Transitions. (n.d.). W3schools. Retrieved January 12, 2022, from https://www.w3schools.com/css/css3_transitions.asp>>\n<<source GeeksforGeeks. (2020, July 31). How to Draw a Half Moon using HTML and CSS? Retrieved January 12, 2022, from https://www.geeksforgeeks.org/how-to-draw-a-half-moon-using-html-and-css/>>"
+        }
+    ],
+    "normalLearnings": [
+        "I learned what effects certain colors have",
+        "I can create text shadows using CSS",
+        "I know the when to choose CSS transitions or animations"
+    ],
+    "specialLearnings": [],
+    "result": "As seen in the video below, I chose purple and yellow as base colors and a greyscale as text colors.<<video https://www.youtube.com/embed/BtAmidLP8kA>>The result is achieved using the code here:<<image 5.png>><<image 6.png>><<image 7.png>>",
+    "validation": "I showed the page to varios peers, who found the site easy to read and good looking color-wise.",
+    "contribution": "The color palettes are directly contnributing to the portfolio. Next, I will expand the home page to show my best work and a list of projects with a short description."
+}

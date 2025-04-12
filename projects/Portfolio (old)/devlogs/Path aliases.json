@@ -1,0 +1,41 @@
+{
+    "published": true,
+    "name": "Path aliases",
+    "dates": [
+        "09-01-2021",
+        "10-01-2021",
+        "11-01-2021",
+        "12-01-2021"
+    ],
+    "goalName": "Use aliases when importing modules",
+    "goal": "When working in projects, especially big ones, it is very handy to create path aliases. It gives more clarity as to where files are located and prevents \"../../..\" paths.",
+    "approach": [
+        {
+            "researchType": "Showroom",
+            "researchMethod": "Peer review",
+            "text": ""
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Tinkering",
+            "text": ""
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Community research",
+            "text": "<<source How to use javascript constant in javascript file from another javascript file. (2020, February 25). Stack Overflow. Retrieved January 11, 2022, from https://stackoverflow.com/questions/26650721/how-to-use-javascript-constant-in-javascript-file-from-another-javascript-file>>\n<<source Steves, B. (2018, December 9). how to navigate from one page to another in react js? Stack Overflow. Retrieved January 12, 2022, from https://stackoverflow.com/questions/37295377/how-to-navigate-from-one-page-to-another-in-react-js>>"
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature study",
+            "text": "<<source HTML File Paths. (n.d.). W3schools. Retrieved January 9, 2022, from https://www.w3schools.com/html/html_filepaths.asp>>\n<<source JavaScript Scope. (n.d.). W3schools. Retrieved January 11, 2022, from https://www.w3schools.com/js/js_scope.asp>>\n<<source Cicali, C. (2021, April 19). How to use module path aliases in Visual Studio Code, TypeScript and JavaScript. Medium. Retrieved January 10, 2022, from https://medium.com/zero-equals-false/how-to-use-module-path-aliases-in-visual-studio-typescript-and-javascript-e7851df8eeaa>>\n<<source Advanced Features: Absolute Imports and Module Path Aliases | Next.js. (n.d.). Next. Retrieved January 10, 2022, from https://nextjs.org/docs/advanced-features/module-path-aliases>>\n<<source Huang, W. (2021, December 15). Using Module Aliases in React and React Native - Wade Huang. Medium. Retrieved January 10, 2022, from https://wadehuang36.medium.com/using-module-aliases-in-react-and-react-native-7ea611f68c1c>>\n<<source Create Path Aliases in React. (2021, August 23). DEV Community. Retrieved January 10, 2022, from https://dev.to/rfornal/create-path-aliases-in-react-2oid>>\n<<source Ifeanyi, E. (2021, October 17). How to use absolute path in ReactJs. DEV Community. Retrieved January 10, 2022, from https://dev.to/emanuelone/how-to-use-absolute-path-in-reactjs-503i>>\n<<source The Coding Lab. (2020, October 22). React webpack alias | Use alias in react project [Video]. YouTube. https://www.youtube.com/watch?v=8qkyGp3uhuo>>"
+        }
+    ],
+    "normalLearnings": [
+        "I can create path aliases in React"
+    ],
+    "specialLearnings": [],
+    "result": "At the import statements at the top of the page, I use the aliases \"Pages\" and \"Components\" to import the files. I created them in a webpack.config.js file. The usage can be seen below:<<image 4.png>>",
+    "validation": "I ran the project and got no errors, warnings or other messages. When using the aliases in other use cases, like navigation urls, I got redirected successfully.",
+    "contribution": "This allows me to faster develop the project. It also gives a much more clear structure."
+}
