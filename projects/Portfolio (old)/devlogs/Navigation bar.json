@@ -1,0 +1,47 @@
+{
+    "published": true,
+    "name": "CSS navigation bar",
+    "dates": [
+        "04-01-2021",
+        "11-01-2021",
+        "12-01-2021"
+    ],
+    "goalName": "Create a collapsible navigation bar with menus",
+    "goal": "To quickly navigate my portfolio, I will create a navigation bar. It will contain all my projects, their products and devlogs.",
+    "approach": [
+        {
+            "researchType": "Showroom",
+            "researchMethod": "Peer review",
+            "text": ""
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "",
+            "text": ""
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature study",
+            "text": "<<source Højberg, S. (n.d.). CSS Arrow Please - By Simon Hoejberg - @shojberg. Cssarrowplease. Retrieved January 4, 2022, from https://cssarrowplease.com/>>\n<<source W3Schools online HTML editor. (n.d.). W3schools. Retrieved January 4, 2022, from https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation1>>"
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Community research",
+            "text": "<<source Sorial, S. (2008, October 12). How can I change an element’s class with JavaScript? Stack Overflow. Retrieved January 4, 2022, from https://stackoverflow.com/questions/195951/how-can-i-change-an-elements-class-with-javascript>>\n<<source How to reference nested classes with css? (2015, May 28). Stack Overflow. Retrieved January 12, 2022, from https://stackoverflow.com/questions/30505225/how-to-reference-nested-classes-with-css>>\n<<source Can I nest these tags? (2017, October 20). Stack Overflow. Retrieved January 12, 2022, from https://stackoverflow.com/questions/46853349/can-i-nest-these-tags>>\n<<source Caldwell, L. (2013, June 6). Hide text using css. Stack Overflow. Retrieved January 12, 2022, from https://stackoverflow.com/questions/471510/hide-text-using-css>>\n<<source CSS Sticky - How to sticky aside to fill available height? - Pretag. (n.d.). Pretag. Retrieved January 12, 2022, from https://pretagteam.com/question/css-sticky-how-to-sticky-aside-to-fill-available-height>>"
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature study",
+            "text": "<<source CSS Syntax. (n.d.). W3schools. Retrieved January 4, 2022, from https://www.w3schools.com/css/css_syntax.asp>>\n<<source Using CSS custom properties (variables) - CSS: Cascading Style Sheets | MDN. (2021, November 27). MDN Web Docs. Retrieved January 4, 2022, from https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties>>\n<<source HTML Reference. (n.d.). W3schools. Retrieved January 4, 2022, from https://www.w3schools.com/TAGS/default.ASP>>\n<<source HTML meta tag. (n.d.). W3schools. Retrieved January 4, 2022, from https://www.w3schools.com/TAGS/tag_meta.asp>>\n<<source HTML nav Tag. (n.d.). W3schools. Retrieved January 4, 2022, from https://www.w3schools.com/TAGS/tag_nav.asp>>\n<<source Basham, C. (n.d.). CSS Units Best Practices. Gist. Retrieved January 4, 2022, from https://gist.github.com/basham/2175a16ab7c60ce8e001>>\n<<source Projapati, A. (2019, March 26). How to choose the best CSS unit to create better site layouts. Layout | Creative Content for Designers, Developers, & Marketers. Retrieved January 4, 2022, from https://getflywheel.com/layout/choose-css-unit-create-better-site-layouts-how-to/>>\n<<source CSS ::before Selector. (n.d.). W3schools. Retrieved January 4, 2022, from https://www.w3schools.com/cssref/sel_before.asp>>\n<<source CSS Animations. (n.d.). W3schools. Retrieved January 4, 2022, from https://www.w3schools.com/css/css3_animations.asp>>\n<<source CSS transform property. (n.d.). W3schools. Retrieved April 1, 2022, from https://www.w3schools.com/cssref/css3_pr_transform.asp>>\n<<source Obong, I. (2021, December 20). How to use CSS variables like a pro. LogRocket Blog. Retrieved January 4, 2022, from https://blog.logrocket.com/how-to-use-css-variables-like-a-pro/>>\n<<source Coyier, C. (2017, January 14). A Couple of Use Cases for Calc(). CSS-Tricks. Retrieved January 4, 2022, from https://css-tricks.com/a-couple-of-use-cases-for-calc/>>\n<<source CSS Layout - Horizontal & Vertical Align. (n.d.). W3schools. Retrieved January 4, 2022, from https://www.w3schools.com/css/css_align.asp>>\n<<source How To Center an Element Vertically. (n.d.). W3schools. Retrieved January 4, 2022, from https://www.w3schools.com/howto/howto_css_center-vertical.asp>>\n<<source React | Font Awesome. (n.d.). Font Awesome. Retrieved January 11, 2022, from https://fontawesome.com/v5.15/how-to-use/on-the-web/using-with/react>>\n<<source How to include a Font Awesome icon in React’s render(). (2017, July 8). Stack Overflow. Retrieved January 11, 2022, from https://stackoverflow.com/questions/23116591/how-to-include-a-font-awesome-icon-in-reacts-render>>\n<<source Azouaoui, M. (2020, July 21). Customizable and responsive react sidebar library with dropdown menus. React.Js Examples. Retrieved January 11, 2022, from https://reactjsexample.com/customizable-and-responsive-react-sidebar-library-with-dropdown-menus/>>\n<<source CSS [attribute=value] Selector. (n.d.). W3schools. Retrieved January 12, 2022, from https://www.w3schools.com/cssref/sel_attribute_value.asp>>\n<<source Wrapping and breaking text - CSS: Cascading Style Sheets | MDN. (2021, August 15). MDN Web Docs. Retrieved January 12, 2022, from https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Text/Wrapping_Text>>\n<<source CSS overflow-wrap property. (n.d.). W3schools. Retrieved January 12, 2022, from https://www.w3schools.com/cssref/css3_pr_overflow-wrap.asp>>\n<<source Abrams, M. (2021, August 11). How To Prevent Line Breaks Using CSS. DigitalOcean. Retrieved January 12, 2022, from https://www.digitalocean.com/community/tutorials/css-prevent-line-break>>\n<<source HTML details Tag. (n.d.). W3schools. Retrieved January 12, 2022, from https://www.w3schools.com/tags/tag_details.asp>>\n<<source CSS Layout - The position Property. (n.d.). W3schools. Retrieved January 12, 2022, from https://www.w3schools.com/css/css_positioning.asp>>"
+        }
+    ],
+    "normalLearnings": [
+        "I can create fixed elements on a webpage",
+        "I can create several shapes using CSS",
+        "I can create pseudo elements using CSS"
+    ],
+    "specialLearnings": [],
+    "result": "As seen in the video below, the navigation bar can collapse and expand by clicking the arrow. Menu items inside the navigation bar will be hidden when collapsed.<<video https://www.youtube.com/embed/Jk9Xqi7tXR8>>Javascript code:<<image 1.png>>CSS code:<<image 2.png>><<image 3.png>>",
+    "validation": "I asked my peers what they think about the result, and they were satisfied.",
+    "contribution": "This directly contributes to the project. Next I will finish the home page."
+}
