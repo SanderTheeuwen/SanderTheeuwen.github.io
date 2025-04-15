@@ -86,9 +86,6 @@ ul li a {
     max-width: 100%;
 }
 
-.approach-text {
-}
-
 .source {
     color: #66ccff;
     display: contents;
@@ -96,6 +93,7 @@ ul li a {
 
 .source a {
     color: #2288bb;
+    word-break: break-all;
 }
 
 /* Footer */

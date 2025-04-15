@@ -5,7 +5,6 @@ function loadSources(text)
     {
         matches.forEach(match =>
         {
-            console.log(match);
             text = text.replace(match, `<p class="source"> ${match.slice(8, -2)} </p>`);
         });
     }
