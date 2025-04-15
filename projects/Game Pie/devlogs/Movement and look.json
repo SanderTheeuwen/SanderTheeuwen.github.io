@@ -1,0 +1,31 @@
+{
+    "published": true,
+    "name": "Movement and look",
+    "dates": [
+        "08-11-2021"
+    ],
+    "goalName": "Implement player movement (WASD) and looking around (mouse)",
+    "goal": "Standard PC controls allow the player to move using the WASD keys. They are also commonly able to use the mouse to operate the camera.",
+    "approach": [
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Tinkering",
+            "text": ""
+        },
+        {
+            "researchType": "Showroom",
+            "researchMethod": "Peer review",
+            "text": ""
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature study",
+            "text": "<<source Class PlayerInput | Input System | 1.0.2. (n.d.). Docs.Unity3d.Com. Retrieved September 23, 2021, from https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/api/UnityEngine.InputSystem.PlayerInput.html>>"
+        }
+    ],
+    "normalLearnings": [],
+    "specialLearnings": [],
+    "result": "As seen in the video below, the player is able to move and look around without the z rotation changing (this was a major issue). Also, the player object (a cylinder) does not tip over when moving (second major issue).<<video https://www.youtube.com/embed/4nRdhO5sT_Y>>",
+    "validation": "After showing my (with contribution from my teammate) to the other teammate, he found the solution very good.",
+    "contribution": "Now the movement and looking around mechanics are finished (for now), I will work on lasers. Lasers will be covered in another entry."
+}

@@ -1,0 +1,26 @@
+{
+    "published": true,
+    "name": "Git merge",
+    "dates": [
+        "15-11-2021"
+    ],
+    "goalName": "How do I solve a merge conflict when merging two branches in git?",
+    "goal": "When working in a group, a repository is (almost) necessary for an effecient work flow. You and your teammates can create branches to get a clear view of what everyone is doing. When merging branches, however, merge conflicts can occur. I will conduct research on what merge conflicts are and how to resolve them.",
+    "approach": [
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Tinkering",
+            "text": ""
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature study",
+            "text": "<<source Brown, J. (2021, May 18). Git Branching and Merging: A Step-By-Step Guide | Varonis. Inside Out Security. https://www.varonis.com/blog/git-branching/>>\n<<source Atlassian. (n.d.). Git Merge Conflict Tutorials. Retrieved September 15, 2021, from https://www.atlassian.com/git/tutorials/using-branches/merge-conflicts>>"
+        }
+    ],
+    "normalLearnings": [],
+    "specialLearnings": [],
+    "result": "Task failed succesfully! I got a merge conflict by editing the same file on seperate branches (without pushing) and merging those branches. I managed to fix it manually by editing the file, saving the resolved merge, and pushing it to the repository. For a bigger / more chaotic file like a scene from Unity, it will require more effort, but that will be researched in another entry.<<image 1.png>>",
+    "validation": "I validated my work with a teacher, who said the thinkering was performed excellent.",
+    "contribution": "Now I got an understanding on how to solve merge conflicts, I will create a Unity project and create a git repository for a test project. Furthermore, I will discuss a git branching strategy with my teammates."
+}

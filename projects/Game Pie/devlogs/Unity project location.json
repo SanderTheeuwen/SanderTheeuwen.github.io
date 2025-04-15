@@ -1,0 +1,26 @@
+{
+    "published": true,
+    "name": "Unity project location",
+    "dates": [
+        "15-11-2021"
+    ],
+    "goalName": "How to fix \"Failed to resolve project template: Failed to decompress [path]\"?",
+    "goal": "When creating a unity project (setup as Universal Render Pipeline) Unity gives an error and creates an invalid project.",
+    "approach": [
+        {
+            "researchType": "Library",
+            "researchMethod": "Expert interview",
+            "text": ""
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature study",
+            "text": "<<source “Failed to resolve project template: Failed to decompress.” (2017, May 23). Unity Forum. https://forum.unity.com/threads/failed-to-resolve-project-template-failed-to-decompress.663214/>>"
+        }
+    ],
+    "normalLearnings": [],
+    "specialLearnings": [],
+    "result": "Even though teachers said the issue wasn't the path, it turned out to be the path length. As I created projects in folders containing spaces and other special symbols, which worked, I tested the length of the path by creating a folder \"Suuuuuuuuuuuuuuuuuuuuuuuuuuuuper long name\". As expected, this gave me the same error seen below:<<image 6.png>>",
+    "validation": "After I found the source of the problem, I asked teachers if my conclusion was correct.",
+    "contribution": "Now I know about the limitation of path lengths, I will restructure the folders on my computer, having an 'Active' directory at the (near) root of the system, and a 'backup' folder structure for finished projects."
+}

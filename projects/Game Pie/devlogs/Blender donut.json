@@ -1,0 +1,31 @@
+{
+    "published": true,
+    "name": "Blender donut",
+    "dates": [
+        "09-11-2021"
+    ],
+    "goalName": "Several donut fixes in Blender",
+    "goal": "As a first step in 3d modeling, Blender was the recommended program to start out with. A donut tutorial was recommended to get to know the program and modeling in general. However, when adding sprinkles to the donut, they did not stick to the surface of the icing, as seen in the picture below<<image 3.png>>After that, adding gumball particles only putted them on one spot on the donut. This can be seen in the picture below<<image 4.png>>",
+    "approach": [
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Tinkering",
+            "text": ""
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Available product analysis",
+            "text": ""
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature study",
+            "text": "<<source Particles not sticking to object. (2020, October 8). Blender Artists Community. https://blenderartists.org/t/particles-not-sticking-to-object/1258054>>\n<<source Blender Guru. (2020, October 7). Donut Course trailer [Video]. YouTube. https://www.youtube.com/watch?v=NyJWoyVx_XI>>"
+        }
+    ],
+    "normalLearnings": [],
+    "specialLearnings": [],
+    "result": "As seen in the picture below, the sprinkles are sticking to the surface of the icing. The ball particles are also spread around the donut.<<image 5.png>>",
+    "validation": "",
+    "contribution": "Now the donut is finished and textured, I am able to model different objects. In the game I should take the low polygon count in mind while modeling though."
+}

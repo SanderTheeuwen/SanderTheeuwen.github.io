@@ -1,0 +1,26 @@
+{
+    "published": true,
+    "name": "Unity colliders, triggers, particles, and Git",
+    "dates": [
+        "15-11-2021"
+    ],
+    "goalName": "Create a unity project where you make clear how colliders and triggers work, adding particles and using Git",
+    "goal": "In order to make rigidbodies behave and interact with the world (or rather, other game objects) colliders are used. In order for hazards, pick-ups and bullet like objects, triggers are used instead. Particles can be used to add context to an action, for example an explosion or an electrified object. Git is used to work with multiple developers on the project. However, scene merging is not recommended.",
+    "approach": [
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Tinkering",
+            "text": ""
+        },
+        {
+            "researchType": "Showroom",
+            "researchMethod": "Peer review",
+            "text": ""
+        }
+    ],
+    "normalLearnings": [],
+    "specialLearnings": [],
+    "result": "As seen in the video, using a rigidbody on the player (the ball) and adding box colliders, the player is contained in the level. On the bottom wall, two box colliders are used, one of which being a trigger. The player controller script uses this trigger to enable particles when the player reaches the bottom. The particles indicate the player has 'won'. I uploaded the project with a git ignore file to prevent sensitive and unnecessary files from getting shared.<<video https://www.youtube.com/embed/5pXUc1woGeY>>",
+    "validation": "I performed tests to ensure the code and gameobjects behave like expected. In the peer review at the end, my teammates ensured the quality.",
+    "contribution": "Now I have a base understanding of colliders, triggers and particle systems, I can use these components for the Game Pie project."
+}

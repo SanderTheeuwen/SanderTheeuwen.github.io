@@ -1,0 +1,26 @@
+{
+    "published": true,
+    "name": "Laser wall",
+    "dates": [
+        "20-10-2021"
+    ],
+    "goalName": "How to make a laser wall in Unity?",
+    "goal": "The game needs a laser wall, consisting of multiple lasers, acting like a wall and a hazard. It should be movable as well.",
+    "approach": [
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Tinkering",
+            "text": ""
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature study",
+            "text": "<<source move object closer to other object unity - Google zoeken. (n.d.). www.google.com. Retrieved September 20, 2021, from https://www.google.com/search?q=move+object+closer+to+other+object+unity&rlz=1C1GCEA_enNL944NL944&oq=move+object+closer+to+other+object+unity&aqs=chrome..69i57j33i22i29i30l2.9701j0j4&sourceid=chrome&ie=UTF-8>>\n<<source How Do I bake Area Lights - Unity Answers. (n.d.). Answers.Unity.Com. Retrieved September 20, 2021, from https://answers.unity.com/questions/592589/how-do-i-bake-area-lights-1.html>>\n<<source Unity - Manual: Types of light. (n.d.). Docs.Unity3d.Com. Retrieved September 20, 2021, from https://docs.unity3d.com/Manual/Lighting.html>>"
+        }
+    ],
+    "normalLearnings": [],
+    "specialLearnings": [],
+    "result": "As seen in the video below, the laser wall emits light. It also follows a set path, with a set speed, following customisable waypoints. Developers can mark a movement type when the last waypoint is reached, to stop it, loop, or ping pong back. The wall has a collider that acts like a wall and one for triggering a damage event (needs to be in the PlayerController script).<<video https://www.youtube.com/embed/lF5MPu7vJJo>>",
+    "validation": "My fellow peers validated the component, as well as a teacher.",
+    "contribution": "Now the laser wall is finished, I will proceed with making a blender model for a hanging turret. The component is ready to be used in the level design."
+}

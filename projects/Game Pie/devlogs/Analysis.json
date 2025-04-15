@@ -1,0 +1,31 @@
+{
+    "published": true,
+    "name": "Analysis",
+    "dates": [
+        "31-08-2021"
+    ],
+    "goalName": "Analysis",
+    "goal": "How can I document the breakdown of a game for an analysis? When looking at a game, there are certain aspects that make it a good or a bad game. These aspects are (mostly) the same criteria judged unconsciously by the players.",
+    "approach": [
+        {
+            "researchType": "Showroom",
+            "researchMethod": "Pitch",
+            "text": ""
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Decomposition",
+            "text": ""
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature study",
+            "text": "<<source Game Dictionary https://fhict.instructure.com/courses/11849/files/1452905?wrap=1 (I don't know how to put this through APA)>>"
+        }
+    ],
+    "normalLearnings": [],
+    "specialLearnings": [],
+    "result": "The first few sentences I wrote were on a very high level, describing what happened. As I thought more about the why I dove more into the concepts described by the Game Dictionary. The result was finding the reasoning behind certain choices. The use of various components such as lighting, music and storyline to amplify or clarify for example the mood, game world or magic circle.\n\n<<source Game World:\nDownlink Prologue takes place in a lab / cellar setting.\nThere's not really much context, except that there's a puddle of blood at the beginning.\nThis means the character is vulnerable, and potentially close to death.\nAfter a short prologue, the player is given a gun with bullets.\nThe first, most reasonable thing I did was shoot everything to bits, finding that I couldn't.\nShooting my clip empty, the character reloaded and got all bullets back, which means there are an infinite amount of bullets, but a limited amount in the clip.\nAfter entering the first real level I immediately died...\nAs a conclusion, I stated that the actual environment\nStorytelling:\nWhen first loading the game, there is no start button, only a button that says \"initiate\".\nThis raises confusion, mystery which might be the purpose by the developer.\nTo make it more confusing, you \"wake up\" in a puddle of blood.\nThe only answers I get raise more questions: how did I get here? Did I escape?\nWho am I?\nAs you proceed with the game, you get a gun, which was placed on a table, indicating the player is meant to pick it up.\nLighting makes the game really mystical.>>",
+    "validation": "In a group Teams call at Tuesday 31-08-2021 at 14.00 I, fellow peers and teachers discussed our analysis. Although some aspects (not a specific aspect) could have been more thoroughly described, for a first analysis, it was not bad.",
+    "contribution": "Now that I have a clearer understanding and experience in making an in-depth analysis, I can utilize this technique to quickly find reasoning behind choices made by developers. I can use this technique in my own concepts and games as well, ensuring the quality of the product."
+}
