@@ -1,12 +1,12 @@
-function loadSource(text)
+function loadSources(text)
 {
     const matches = text.match(/<<source [^>]*>>/g);
     if (matches)
     {
         matches.forEach(match =>
         {
+            console.log(match);
             text = text.replace(match, `<p class="source"> ${match.slice(8, -2)} </p>`);
-            //text = text.replace(match, `${match.slice(8, -2)}`);
         });
     }
     return replaceLinks(text);
@@ -23,7 +23,6 @@ function replaceLinks(text)
             if (text[text.indexOf(match) - 1] != "\"")
             {
                 text = text.replace(match, `<a href="${match}">${match}</a>`);
-
             }
         });
     }

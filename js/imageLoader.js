@@ -1,4 +1,4 @@
-function loadImage(text, projectName)
+function loadImages(text, projectName)
 {
     var path = "/projects/" + projectName + "/images/";
 

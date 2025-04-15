@@ -1,3 +1,8 @@
+function processText(text, projectName)
+{
+    return loadElements(loadSources(loadVideos(loadImages(text, projectName))));
+}
+
 document.addEventListener("DOMContentLoaded", async function ()
 {
     const urlParams = new URLSearchParams(window.location.search);
@@ -26,8 +31,8 @@ document.addEventListener("DOMContentLoaded", async function ()
         document.getElementById("devlog-dates").innerHTML = `Dates</br>${devlogData.dates.join("</br>")}`;
 
         // Set goal
-        document.getElementById("devlog-goalName").innerHTML = loadElements(loadVideo(loadImage(devlogData.goalName, projectName)));
-        document.getElementById("devlog-goal").innerHTML = loadElements(loadVideo(loadImage(devlogData.goal, projectName)));
+        document.getElementById("devlog-goalName").innerHTML = processText(devlogData.goalName, projectName);
+        document.getElementById("devlog-goal").innerHTML = processText(devlogData.goal, projectName);
 
         // Set approach
         const approachList = document.getElementById("devlog-approach");
@@ -38,7 +43,7 @@ document.addEventListener("DOMContentLoaded", async function ()
                 <strong class="researchType">${entry.researchType}</strong>
                 <strong>${entry.researchMethod}</strong>
                 </br>
-                <div class="approach-text">${loadElements(loadSource(loadVideo(loadImage(entry.text, projectName))))}</div>`;
+                <div class="approach-text">${processText(entry.text, projectName) }</div>`;
             approachList.appendChild(listItem);
         });
 
@@ -67,9 +72,9 @@ document.addEventListener("DOMContentLoaded", async function ()
         }
 
         // Set result, validation, and contribution
-        document.getElementById("devlog-result").innerHTML = loadElements(loadVideo(loadImage(devlogData.result, projectName)));
-        document.getElementById("devlog-validation").innerHTML = loadElements(loadVideo(loadImage(devlogData.validation, projectName)));
-        document.getElementById("devlog-contribution").innerHTML = loadElements(loadVideo(loadImage(devlogData.contribution, projectName)));
+        document.getElementById("devlog-result").innerHTML = processText(devlogData.result, projectName);
+        document.getElementById("devlog-validation").innerHTML = processText(devlogData.validation, projectName);
+        document.getElementById("devlog-contribution").innerHTML = processText(devlogData.contribution, projectName);
 
     } 
     catch (error)

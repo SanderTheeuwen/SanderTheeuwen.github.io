@@ -1,4 +1,4 @@
-function loadVideo(text)
+function loadVideos(text)
 {
     const matches = text.match(/<<video [^ ]*>>/g);
     if (matches)
