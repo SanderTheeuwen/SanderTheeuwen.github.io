@@ -59,12 +59,14 @@ h2 {
     font-size: 24px;
 }
 
-#devlogs-list {
+#devlogs-list,
+#products-list {
     list-style: none;
     padding: 0;
 }
 
-#devlogs-list li {
+#devlogs-list li,
+#products-list li {
     background: #1e1e1e;
     padding: 10px 15px;
     margin: 8px 0;
@@ -72,16 +74,19 @@ h2 {
     transition: background 0.3s;
 }
 
-#devlogs-list li:hover {
+#devlogs-list li:hover,
+#products-list li:hover {
     background: #333333;
 }
 
-#devlogs-list a {
+#devlogs-list a,
+#products-list a {
     text-decoration: none;
     color: #66ccff;
     font-size: 18px;
 }
 
-#devlogs-list a:hover {
+#devlogs-list a:hover,
+#products-list a:hover {
     color: #ffffff;
 }

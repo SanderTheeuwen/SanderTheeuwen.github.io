@@ -14,6 +14,10 @@ document.addEventListener("DOMContentLoaded", async function ()
                 const projectResponse = await fetch(`${window.location.origin + "/" + projectPath.path}/project.json`);
                 const projectData = await projectResponse.json();
 
+                if (!projectData.published)
+                {
+                    continue;
+                }
                 const projectCard = document.createElement("a");
                 projectCard.classList.add("project-card");
                 projectCard.href = `project.html?project=${projectData.title}`; // Adjusted for linking

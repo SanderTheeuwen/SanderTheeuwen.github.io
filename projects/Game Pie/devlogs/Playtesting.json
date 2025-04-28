@@ -1,0 +1,31 @@
+{
+    "published": true,
+    "name": "Playtesting",
+    "dates": [
+        "23-09-2021"
+    ],
+    "goalName": "Improve the game using feedback from playtesters",
+    "goal": "As the game ofter feels fair, obvious and good to the developers, one of the most important stakeholders is the player. They should feel that it is fair, well designed and interesting enough to keep them playing. To accomplish this, feedback is mandatory.",
+    "approach": [
+        {
+            "researchType": "Field",
+            "researchMethod": "Observation",
+            "text": ""
+        },
+        {
+            "researchType": "Field",
+            "researchMethod": "Survey",
+            "text": ""
+        },
+        {
+            "researchType": "Field",
+            "researchMethod": "Problem analysis",
+            "text": ""
+        }
+    ],
+    "normalLearnings": [],
+    "specialLearnings": [],
+    "result": "Me and my teammates gave a link to itch.io with our game on it so the playtesters (from another group) got to play it. We asked them to think out loud so we could do an observation on how they played the game. Afterwards they filled in a survey I made. The results were varying (because we did not have many players) for some questions. The questions where the answers were pretty much the same for everyone were interesting. Some mentioned the game was too hard, so I scaled down the difficulty by moving lasers and removing one laser. This way the game was made more fair.<<document Labyrinth.csv>>",
+    "validation": "As the playtest was the final time to work on the project, the quality of this result could not be ensured.",
+    "contribution": "Now the Game Pie project is finished, I can use all the feedback to create a better project in the Duo Game."
+}

@@ -1,0 +1,38 @@
+{
+    "published": true,
+    "type": "pdf",
+    "fileName": "Ten pager.pdf",
+    "title": "Ten pager",
+    "name": "Ten page game design document",
+    "description": "A in-depth document containing the details of the design of the game.",
+    "stakeholders": [
+        {
+            "type": "Teachers",
+            "people": [
+                "Michael Schifferling",
+                "Jack Hoefnagel"
+            ]
+        },
+        {
+            "type": "Team members",
+            "people": [
+                "Nick Brouwhuis",
+                "Isabel Pijnenburg",
+                "Sander Theeuwen",
+                "Svetoslav Stanoev",
+                "Prakasa Kandasamy Pandian Sivanesa Pandian"
+            ]
+        },
+        {
+            "type": "External collaborators",
+            "people": [
+                "Brian Vlaar",
+                "Daan Snoeijen",
+                "Jonatan Faneyte",
+                "Julian Tekstra",
+                "Robbert Lengton",
+                "Tristan Ubbens"
+            ]
+        }
+    ]
+}

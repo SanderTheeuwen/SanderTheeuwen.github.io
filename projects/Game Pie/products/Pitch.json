@@ -1,0 +1,26 @@
+{
+    "published": true,
+    "type": "image",
+    "fileName": "Brainstorm.jpg",
+    "title": "Pitch",
+    "name": "Pitch",
+    "description": "A brainstorm for the game.",
+    "stakeholders": [
+        {
+            "type": "Teachers",
+            "people": [
+                "Michael Schifferling"
+            ]
+        },
+        {
+            "type": "Team members",
+            "people": [
+                "Nick Brouwhuis",
+                "Isabel Pijnenburg",
+                "Sander Theeuwen",
+                "Svetoslav Stanoev",
+                "Prakasa Kandasamy Pandian Sivanesa Pandian"
+            ]
+        }
+    ]
+}

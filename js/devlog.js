@@ -1,6 +1,6 @@
 function processText(text, projectName)
 {
-    return loadElements(loadSources(loadVideos(loadImages(text, projectName))));
+    return loadElements(loadSources(loadDocuments(loadVideos(loadImages(text, projectName)), projectName)));
 }
 
 document.addEventListener("DOMContentLoaded", async function ()
@@ -8,11 +8,11 @@ document.addEventListener("DOMContentLoaded", async function ()
     const urlParams = new URLSearchParams(window.location.search);
     const projectName = urlParams.get("project");
     const devlogFileName = urlParams.get("devlog");
-    const devlogPath = `/projects/${projectName}/devlogs/${devlogFileName}.json`
+    const devlogPath = `/projects/${projectName}/devlogs/${devlogFileName}.json`;
 
     if (!devlogPath)
     {
-        document.getElementById("devlog-title").textContent = "Devlog Not Found";
+        document.getElementById("devlog-title").textContent = "Devlog not found";
         return;
     }
 
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", async function ()
 
         if (!devlogData.published)
         {
-            throw "Devlog is private";
+            throw "Devlog is not published";
         }
 
         // Set title and dates

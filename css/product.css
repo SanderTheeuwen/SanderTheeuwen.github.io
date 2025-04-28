@@ -1,4 +1,4 @@
-/* General Reset */
+/* General reset */
 * {
     margin: 0;
     padding: 0;
@@ -72,35 +72,13 @@ ul li {
     font-size: 1rem;
 }
 
-ul li strong.researchType {
-    color: #84b7ff;
-    font-size: 1.5rem;
-}
-
-ul li a {
-    text-decoration: none;
-    color: #66ccff;
-}
-
-.entryImage {
-    max-width: 100%;
-}
-
-.entryDocument {
-    max-width: 100%;
-}
-
-a.link {
+#product-preview a {
     text-decoration: none;
     color: #2288bb;
 }
 
-.source {
-    color: #66ccff;
-    display: contents;
-}
-
-.source a {
-    color: #2288bb;
-    word-break: break-all;
+.embed {
+    width: 100%;
+    height: 100vh;
+    border: none;
 }
