@@ -134,9 +134,5 @@
   {
     "project": "Tanks",
     "path": "projects/Tanks/devlogs/Player tank movement rotation.json"
-  },
-  {
-    "project": "Template",
-    "path": "projects/Template/devlogs/devlog.json"
   }
 ]
