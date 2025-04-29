@@ -34,7 +34,7 @@ async function loadProject()
 
 async function loadProducts(projectName)
 {
-    const response = await fetch(`${window.location.origin}/products-paths.json`);
+    const response = await fetch(`${window.location.origin}/generated/products-paths.json`);
 
     // Filter products based on project
     const productsPaths = (await response.json()).filter((productPath) => productPath.path.startsWith("projects/" + projectName));
@@ -42,9 +42,8 @@ async function loadProducts(projectName)
     const productList = document.getElementById("products-list");
     for (const productPath of productsPaths)
     {
-        const productResponse = await fetch("/" + productPath.path);
         const productFileName = productPath.path.slice(productPath.path.lastIndexOf('/') + 1, -5);// -5 to remove ".json"
-        const productData = await productResponse.json();
+        const productData = await (await fetch("/" + productPath.path)).json();
 
         if (productData.published)
         {
@@ -57,7 +56,7 @@ async function loadProducts(projectName)
 
 async function loadDevlogs(projectName)
 {
-    const response = await fetch(`${window.location.origin}/devlogs-paths.json`);
+    const response = await fetch(`${window.location.origin}/generated/devlogs-paths.json`);
 
     // Filter devlogs based on project
     const devlogsPaths = (await response.json()).filter((devlogPath) => devlogPath.path.startsWith("projects/" + projectName));
@@ -65,9 +64,8 @@ async function loadDevlogs(projectName)
     const devlogList = document.getElementById("devlogs-list");
     for (const devlogPath of devlogsPaths)
     {
-        const devlogResponse = await fetch("/" + devlogPath.path);
         const devlogFileName = devlogPath.path.slice(devlogPath.path.lastIndexOf('/') + 1, -5);// -5 to remove ".json"
-        const devlogData = await devlogResponse.json();
+        const devlogData = await (await fetch("/" + devlogPath.path)).json();
 
         if (devlogData.published)
         {

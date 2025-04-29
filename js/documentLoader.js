@@ -1,18 +1,16 @@
 function loadDocuments(text, projectName)
 {
-    var path = "/projects/" + projectName + "/documents/";
+    var path = `/projects/${projectName}/documents/`;
 
     const matches = text.match(/<<document [a-z]*\.[a-z]*>>/gi);/* <<document Example.pdf */
     if (matches)
     {
-        matches.forEach(match =>
+        for (const match of matches)
         {
             const type = match.slice(match.lastIndexOf('.') + 1, -2);
             const fileName = match.slice(11, -2);
             const filePath = path + fileName;
 
-            console.log(type);
-            console.log(filePath);
             var element;
             switch (type)
             {
@@ -22,7 +20,7 @@ function loadDocuments(text, projectName)
             }
             text = text.replace(match, element);
             console.log(text);
-        });
+        }
     }
     return text;
 }

@@ -6,12 +6,12 @@ document.addEventListener("DOMContentLoaded", async function ()
     {
         try
         {
-            const response = await fetch(window.location.origin + "/projects-paths.json");
+            const response = await fetch(`${window.location.origin}/generated/projects-paths.json`);
             const projectPaths = await response.json();
 
             for (const projectPath of projectPaths)
             {
-                const projectResponse = await fetch(`${window.location.origin + "/" + projectPath.path}/project.json`);
+                const projectResponse = await fetch(`${window.location.origin}/${projectPath.path}/project.json`);
                 const projectData = await projectResponse.json();
 
                 if (!projectData.published)

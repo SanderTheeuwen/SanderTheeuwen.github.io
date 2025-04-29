@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", async function ()
 
         // Stakeholders
         const stakeholdersDiv = document.getElementById("product-stakeholders");
-        productData.stakeholders.forEach(group =>
+        for (const group of productData.stakeholders)
         {
             /*
             <div>
@@ -49,16 +49,16 @@ document.addEventListener("DOMContentLoaded", async function ()
             groupElement.appendChild(title);
 
             const list = document.createElement("ul");
-            group.people.forEach(person =>
+            for (const person of group.people)
             {
                 const li = document.createElement("li");
                 li.textContent = person;
                 list.appendChild(li);
-            });
+            }
 
             groupElement.appendChild(list);
             stakeholdersDiv.appendChild(groupElement);
-        });
+        }
 
     }
     catch (error)

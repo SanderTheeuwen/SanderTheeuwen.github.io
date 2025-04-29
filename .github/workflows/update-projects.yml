@@ -29,6 +29,6 @@ jobs:
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          git add -f projects-paths.json devlogs-paths.json products-paths.json
+          git add -f generated/projects-paths.json generated/devlogs-paths.json generated/products-paths.json
           git commit -m "Auto-generated path JSON files." || echo "No changes to commit"
           git push https://github.com/${{ github.repository }}.git HEAD:publish

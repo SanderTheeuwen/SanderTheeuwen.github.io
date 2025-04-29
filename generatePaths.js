@@ -2,62 +2,76 @@ const fs = require("fs");
 const path = require("path");
 
 const projectsDir = path.join(__dirname, "projects");
-const projectsPathsFile = path.join(__dirname, "projects-paths.json");
-const devlogsPathsFile = path.join(__dirname, "devlogs-paths.json");
-const productsPathsFile = path.join(__dirname, "products-paths.json");
+const projectsPathsFile = path.join(__dirname, "generated", "projects-paths.json");
+const projects = [];
+const objects = []; // [{ name: "devlogs", entries: [{ project: "X", path: "Y" }] }]
 
-function generateProjectPaths()
+function readProjects()
 {
-    const projects = [];
-    const devlogs = [];
-    const products = [];
-
     // Read the "projects" directory
-    fs.readdirSync(projectsDir, { withFileTypes: true }).forEach((dir) =>
+    fs.readdirSync(projectsDir, { withFileTypes: true }).forEach(dir =>
     {
         if (dir.isDirectory())
         {
             // Add project path
-            const projectPath = `projects/${dir.name}/`;
-            projects.push({ title: dir.name, path: projectPath });
-
-            // Look for devlogs in the "devlogs" folder inside the project
-            const devlogsDir = path.join(projectsDir, dir.name, "devlogs");
-            if (fs.existsSync(devlogsDir))
-            {
-                fs.readdirSync(devlogsDir).forEach((file) =>
-                {
-                    if (file.endsWith(".json"))
-                    {
-                        // Add devlog path
-                        devlogs.push({ project: dir.name, path: `${projectPath}devlogs/${file}` });
-                    }
-                });
-            }
-
-            // Look for products in the "products" folder inside the project
-            const productsDir = path.join(projectsDir, dir.name, "products");
-            if (fs.existsSync(productsDir))
-            {
-                fs.readdirSync(productsDir).forEach((file) =>
-                {
-                    if (file.endsWith(".json"))
-                    {
-                        // Add product path
-                        products.push({ project: dir.name, path: `${projectPath}products/${file}` });
-                    }
-                });
-            }
+            console.log(`-- Project ${dir.name}`);
+            projects.push({ title: dir.name, path: `projects/${dir.name}` });
         }
     });
-
-    // Save to JSON files
-    fs.writeFileSync(projectsPathsFile, JSON.stringify(projects, null, 2));
-    fs.writeFileSync(devlogsPathsFile, JSON.stringify(devlogs, null, 2));
-    fs.writeFileSync(productsPathsFile, JSON.stringify(products, null, 2));
-
-    console.log("✅ Projects JSON files generated successfully!");
 }
 
-// Run the function
-generateProjectPaths();
+function readEntries()
+{
+    getEntries("products");
+    getEntries("devlogs");
+}
+
+function getEntries(entryName)
+{
+    const entries = [];
+    projects.forEach(project =>
+    {
+        // Look for entries in the "entryName" folder inside the project
+        const entryDir = path.join(projectsDir, project.title, entryName);
+
+        if (fs.existsSync(entryDir))
+        {
+            fs.readdirSync(entryDir).forEach((file) =>
+            {
+                if (file.endsWith(".json"))
+                {
+                    // Add devlog path
+                    console.log(`---- ${project.title} - ${entryName} - ${file}`);
+                    entries.push({ project: project.title, path: `projects/${project.title}/${entryName}/${file}` });
+                }
+            });
+        }
+    });
+    objects.push({ name: entryName, entries: entries});
+}
+
+function writeProjectPaths()
+{
+    // Save to JSON files
+    fs.writeFileSync(projectsPathsFile, JSON.stringify(projects, null, 2));
+    objects.forEach(object =>
+    {
+        const objectPath = path.join(__dirname, "generated", `${object.name}-paths.json`);
+        console.log(`--Writing ${object.name}`);
+        fs.writeFileSync(objectPath, JSON.stringify(object.entries, null, 2));
+    });
+}
+
+// Read
+console.log("Reading projects");
+readProjects();
+console.log("Reading entries");
+readEntries();
+console.log("✅ Reading successful\n")
+
+
+// Write
+console.log("Writing project paths");
+writeProjectPaths();
+console.log("Writing entry paths");
+console.log("✅ Writing successful\n");

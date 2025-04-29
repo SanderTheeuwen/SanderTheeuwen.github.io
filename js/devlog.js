@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", async function ()
 
         // Set approach
         const approachList = document.getElementById("devlog-approach");
-        devlogData.approach.forEach(entry =>
+        for (const entry of devlogData.approach)
         {
             const listItem = document.createElement("li");
             listItem.innerHTML = `
@@ -45,30 +45,30 @@ document.addEventListener("DOMContentLoaded", async function ()
                 </br>
                 <div class="approach-text">${processText(entry.text, projectName) }</div>`;
             approachList.appendChild(listItem);
-        });
+        }
 
         // Set normal learning outcomes
         if (devlogData.normalLearnings)
         {
             const normalLearningList = document.getElementById("devlog-normal-learning");
-            devlogData.normalLearnings.forEach(outcome =>
+            for (const outcome of devlogData.normalLearnings)
             {
                 const listItem = document.createElement("li");
                 listItem.textContent = outcome;
                 normalLearningList.appendChild(listItem);
-            });
+            }
         }
 
         // Set special learning outcomes
         if (devlogData.specialLearnings)
         {
             const specialLearningList = document.getElementById("devlog-special-learning");
-            devlogData.specialLearnings.forEach(outcome =>
+            for (const outcome of devlogData.specialLearnings)
             {
                 const listItem = document.createElement("li");
                 listItem.textContent = outcome;
                 specialLearningList.appendChild(listItem);
-            });
+            }
         }
 
         // Set result, validation, and contribution
