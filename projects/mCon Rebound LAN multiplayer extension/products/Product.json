@@ -1,0 +1,28 @@
+{
+    "published": false,
+    "type": "word",
+    "fileName": "Project plan.docx",
+    "title": "Project plan",
+    "name": "Project plan",
+    "description": "The project plan containing the most crucial information for the project's organization",
+    "stakeholders": [
+        {
+            "type": "Team members",
+            "people": [
+                "Sander Theeuwen"
+            ]
+        },
+        {
+            "type": "Client / company mentor",
+            "people": [
+                "Ruben Been"
+            ]
+        },
+        {
+            "type": "Teacher / first assessor",
+            "people": [
+                "Michael Schifferling"
+            ]
+        }
+    ]
+}

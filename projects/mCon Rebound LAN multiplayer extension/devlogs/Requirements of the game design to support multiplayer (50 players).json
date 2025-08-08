@@ -1,0 +1,38 @@
+{
+    "published": false,
+    "name": "Requirements of the game design to support multiplayer (50 players)",
+    "dates": [
+        "02-06-2025",
+        "10-06-2025",
+        "30-06-2025",
+        "02-07-2025",
+        "07-07-2025",
+        "08-07-2025"
+    ],
+    "goalName": "Find the requirements to make mCon: Rebound's design support 50-multiplayer",
+    "goal": "To support 50-multiplayer, the design of the game must change, as the current state supports 2 to 4 players. Therefore the requirements of the design also change. The requirements must be supported by research.",
+    "approach": [
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature study",
+            "text": "To find the requirements, the target group must be defined properly. Using the source <<source Concorde Games. (2022, February 8). What does an esports athlete do? - Concorde Games. Concorde Games. Retrieved June 2, 2025, from https://concordeeducation.com/games/blog/what-does-an-esports-athlete-do/>> I defined the target group. Next, I had to figure out what makes a game fair and balanced, which I did using the source <<source Caruso, M. C., & Pankratyeva, A. P. (2025, April 18). What makes a video game an esport? Competitive titles explained. Esports Insider. Retrieved June 10, 2025, from https://esportsinsider.com/what-makes-video-game-esports#:~:text=TL%3BDR,titles%20are%20rarely%20considered%20esports.>>."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Brainstorm",
+            "text": "I had a brainstorm session where I made a mindmap as to what makes games fair and balanced for myself, which can be seen in the image below.<<image 2.png>>"
+        },
+        {
+            "researchType": "Field",
+            "researchMethod": "Interview",
+            "text": "I asked several casual gamers what they value in games to support balancing and fairness. Together, their answers formed a list of which some elements are noteworthy for the decision of the framework."
+        }
+    ],
+    "normalLearnings": [
+        "I recalled the importance of using multiple strategies to find data."
+    ],
+    "specialLearnings": [],
+    "result": "The resulting research can be found in the Research Document, which is also listed as a product of this project.<<document Research Document.docx>>",
+    "validation": "",
+    "contribution": "This research is necessary to design the game for 50-multiplayer, so it can be implemented properly."
+}
