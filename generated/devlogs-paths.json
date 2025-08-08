@@ -44,14 +44,6 @@
     "path": "projects/Game Pie/devlogs/Unity project location.json"
   },
   {
-    "project": "mCon Rebound LAN multiplayer extension",
-    "path": "projects/mCon Rebound LAN multiplayer extension/devlogs/Project plan.json"
-  },
-  {
-    "project": "mCon Rebound LAN multiplayer extension",
-    "path": "projects/mCon Rebound LAN multiplayer extension/devlogs/Requirements of the game design to support multiplayer (50 players).json"
-  },
-  {
     "project": "Miscellaneous",
     "path": "projects/Miscellaneous/devlogs/Devlog.json"
   },
@@ -144,7 +136,11 @@
     "path": "projects/Tanks/devlogs/Player tank movement rotation.json"
   },
   {
-    "project": "Template",
-    "path": "projects/Template/devlogs/devlog.json"
+    "project": "mCon Rebound LAN multiplayer extension",
+    "path": "projects/mCon Rebound LAN multiplayer extension/devlogs/Project plan.json"
+  },
+  {
+    "project": "mCon Rebound LAN multiplayer extension",
+    "path": "projects/mCon Rebound LAN multiplayer extension/devlogs/Requirements of the game design to support multiplayer (50 players).json"
   }
 ]
