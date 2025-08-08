@@ -8,6 +8,10 @@
     "path": "projects/Game Pie"
   },
   {
+    "title": "mCon Rebound LAN multiplayer extension",
+    "path": "projects/mCon Rebound LAN multiplayer extension"
+  },
+  {
     "title": "Miscellaneous",
     "path": "projects/Miscellaneous"
   },
@@ -24,7 +28,7 @@
     "path": "projects/Tanks"
   },
   {
-    "title": "mCon Rebound LAN multiplayer extension",
-    "path": "projects/mCon Rebound LAN multiplayer extension"
+    "title": "Template",
+    "path": "projects/Template"
   }
 ]

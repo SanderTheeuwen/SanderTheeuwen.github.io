@@ -1,7 +1,7 @@
-function getProductPreview(productData, projectName)
+function getDocumentPreview(productData, projectName)
 {
     const link = document.createElement("a");
-    link.href = `/projects/${projectName}/products/files/${productData.fileName}`;
+    link.href = `/projects/${projectName}/documents/${productData.fileName}`;
     link.target = "_blank";
 
     switch (productData.type)
@@ -13,13 +13,13 @@ function getProductPreview(productData, projectName)
             link.textContent = `Open document in new window`;
             const iframe = document.createElement("iframe");
             iframe.className = "embed";
-            iframe.src = `/projects/${projectName}/products/files/${productData.fileName}`;
+            iframe.src = `/projects/${projectName}/documents/${productData.fileName}`;
             link.append(iframe);
             break;
         case "image":
             const image = document.createElement("img");
             image.className = "embed";
-            image.src = `/projects/${projectName}/products/files/${productData.fileName}`;
+            image.src = `/projects/${projectName}/documents/${productData.fileName}`;
             image.alt = `An image of ${productData.title}`;
             link.appendChild(image);
             break;

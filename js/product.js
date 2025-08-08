@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", async function ()
 
         // Product preview/link
         const preview = document.getElementById("product-preview");
-        const link = getProductPreview(productData, projectName);
+        const link = getDocumentPreview(productData, projectName);
         preview.appendChild(link);
 
         // Stakeholders
