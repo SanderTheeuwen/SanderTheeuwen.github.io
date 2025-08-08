@@ -14,5 +14,9 @@
   {
     "project": "Game Pie",
     "path": "projects/Game Pie/products/Ten pager.json"
+  },
+  {
+    "project": "mCon Rebound LAN multiplayer extension",
+    "path": "projects/mCon Rebound LAN multiplayer extension/products/Product.json"
   }
 ]

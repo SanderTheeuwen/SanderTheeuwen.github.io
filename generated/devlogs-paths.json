@@ -134,5 +134,13 @@
   {
     "project": "Tanks",
     "path": "projects/Tanks/devlogs/Player tank movement rotation.json"
+  },
+  {
+    "project": "mCon Rebound LAN multiplayer extension",
+    "path": "projects/mCon Rebound LAN multiplayer extension/devlogs/Project plan.json"
+  },
+  {
+    "project": "mCon Rebound LAN multiplayer extension",
+    "path": "projects/mCon Rebound LAN multiplayer extension/devlogs/Requirements of the game design to support multiplayer (50 players).json"
   }
 ]

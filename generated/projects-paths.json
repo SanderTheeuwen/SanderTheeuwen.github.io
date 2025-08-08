@@ -22,5 +22,9 @@
   {
     "title": "Tanks",
     "path": "projects/Tanks"
+  },
+  {
+    "title": "mCon Rebound LAN multiplayer extension",
+    "path": "projects/mCon Rebound LAN multiplayer extension"
   }
 ]
