@@ -44,6 +44,70 @@
     "path": "projects/Game Pie/devlogs/Unity project location.json"
   },
   {
+    "project": "Kingdoms Saviour",
+    "path": "projects/Kingdoms Saviour/devlogs/Unity Camera Movement.json"
+  },
+  {
+    "project": "Kingdoms Saviour",
+    "path": "projects/Kingdoms Saviour/devlogs/Unity Collision Detection.json"
+  },
+  {
+    "project": "Kingdoms Saviour",
+    "path": "projects/Kingdoms Saviour/devlogs/Unity Coroutines.json"
+  },
+  {
+    "project": "Kingdoms Saviour",
+    "path": "projects/Kingdoms Saviour/devlogs/Unity Health Bar.json"
+  },
+  {
+    "project": "Kingdoms Saviour",
+    "path": "projects/Kingdoms Saviour/devlogs/Unity Loading and Saving Data.json"
+  },
+  {
+    "project": "Kingdoms Saviour",
+    "path": "projects/Kingdoms Saviour/devlogs/Unity Movement.json"
+  },
+  {
+    "project": "Kingdoms Saviour",
+    "path": "projects/Kingdoms Saviour/devlogs/Unity Pause Menu.json"
+  },
+  {
+    "project": "Kingdoms Saviour",
+    "path": "projects/Kingdoms Saviour/devlogs/Unity Polishing.json"
+  },
+  {
+    "project": "Kingdoms Saviour",
+    "path": "projects/Kingdoms Saviour/devlogs/Unity Soundscape.json"
+  },
+  {
+    "project": "mCon Rebound LAN Multiplayer Extension",
+    "path": "projects/mCon Rebound LAN Multiplayer Extension/devlogs/Connecting as host and client.json"
+  },
+  {
+    "project": "mCon Rebound LAN Multiplayer Extension",
+    "path": "projects/mCon Rebound LAN Multiplayer Extension/devlogs/Current state analysis.json"
+  },
+  {
+    "project": "mCon Rebound LAN Multiplayer Extension",
+    "path": "projects/mCon Rebound LAN Multiplayer Extension/devlogs/Displaying Single-Elimination Tournament Type.json"
+  },
+  {
+    "project": "mCon Rebound LAN Multiplayer Extension",
+    "path": "projects/mCon Rebound LAN Multiplayer Extension/devlogs/Framework research.json"
+  },
+  {
+    "project": "mCon Rebound LAN Multiplayer Extension",
+    "path": "projects/mCon Rebound LAN Multiplayer Extension/devlogs/Match visibility.json"
+  },
+  {
+    "project": "mCon Rebound LAN Multiplayer Extension",
+    "path": "projects/mCon Rebound LAN Multiplayer Extension/devlogs/Netcode for GameObjects introduction.json"
+  },
+  {
+    "project": "mCon Rebound LAN Multiplayer Extension",
+    "path": "projects/mCon Rebound LAN Multiplayer Extension/devlogs/Requirements of the game design to support multiplayer (50 players).json"
+  },
+  {
     "project": "Miscellaneous",
     "path": "projects/Miscellaneous/devlogs/Devlog.json"
   },
@@ -136,11 +200,7 @@
     "path": "projects/Tanks/devlogs/Player tank movement rotation.json"
   },
   {
-    "project": "mCon Rebound LAN multiplayer extension",
-    "path": "projects/mCon Rebound LAN multiplayer extension/devlogs/Project plan.json"
-  },
-  {
-    "project": "mCon Rebound LAN multiplayer extension",
-    "path": "projects/mCon Rebound LAN multiplayer extension/devlogs/Requirements of the game design to support multiplayer (50 players).json"
+    "project": "Template",
+    "path": "projects/Template/devlogs/devlog.json"
   }
 ]

@@ -1,0 +1,47 @@
+{
+    "published": true,
+    "name": "Match Visibility",
+    "dates": [
+        "20-10-2025"
+    ],
+    "goalName": "How can I make a match visible to only the participants",
+    "goal": "Since a match between two players calls upon many objects in the scene (soundmanager, arena collision, projectiles, special abilities), it is in the best interest to set the visibility of the match (and therefore the invocation of the objects) to be visible only by the participants.",
+    "approach": [
+        {
+            "researchType": "Library",
+            "researchMethod": "Problem Analysis",
+            "text": "I started out by listing what the players need to start the match. The specific arena they play in, the opponent, and the spawning objects: the projectiles and the special abilities are all objects that are not necessary for other players to see, only the match participants. I then separated the actions that are taken when a round is played and put them in a diagram, distinguishing the server's and client's responsibilities:\n<<image 16.png>>From the arena spawning to the match ending, the server does not have to interact with the match. It is only required for synchronization of the objects.\n\nAs an alternative, I could chose to put the arenas in different positions outside the clients' camera's view rather than change the visibility. I chose to work with network visibility due to the match invoking sounds and effects that would be noticeable by other clients. It also reduces the network traffic as the server only has to synchronize the transforms."
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature Study",
+            "text": "Using the following source, I learned how to set the invisibility of networked objects: <<source Unity Technologies. (2025c). Method NetworkShow | NetCode for GameObjects | 1.7.1. Unity. Retrieved October 20, 2025, from https://docs.unity3d.com/Packages/com.unity.netcode.gameobjects@1.7/api/Unity.Netcode.NetworkObject.NetworkShow.html>>."
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Community Research",
+            "text": "During the development, I ran into a unique problem where the server sets the visibility of an object, but threw an exception indicating the method was not called from the server. After isolating the problem using log methods to depict whether the server methods were invoked correctly, I searched online and found a flaw in the code of Netcode for GameObjects, where the exception message was wrong: <<source cerestorm. (2025, January 11). Netcode Object Visibility NotServerException on Server. Unity Discussions. Retrieved October 20, 2025, from https://discussions.unity.com/t/netcode-object-visibility-notserverexception-on-server/1550742/6>>. When a networked object's visibility is set to be shown when it is already shown, and the authority mode is set to be host + clients, the exception states that only the server can change the visibility, while in reality, the problem was that the object was already shown. I fixed this using a simple check for visibility before setting the value."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Tinkering",
+            "text": "I used client RPCs targeted at specific clients to instruct them to spawn the specific arena and start the match. The arenas are objects that do not move, so they do not require to be networked as it will only affect the amount of network traffic. Both players can instantiate the arena locally as the projectiles' collision can be synchronized from with the clients' authority. Using the visibility from the literature study, I could hide the heroes and make the match networked objects (projectiles and specials) visible to the corresponding players. Though this solution worked for the clients, the host could still see all the players and projectiles, which I suspected had to do with the host being the server and networked objects not being able to be hidden from the server. I tried to disable the game objects for the host, but this also disabled the networked properties, meaning the objects did not function for the clients who saw them. As I could not find a way to fix this problem, I decided to work around this by putting the arenas in different positions."
+        },
+        {
+            "researchType": "Lab",
+            "researchMethod": "Component Test",
+            "text": "The product was tested locally through multiple instances of the build."
+        }
+    ],
+    "normalLearnings": [
+        "I can change the visibility of networked objects.",
+        "I can more effectively decide what has to be a networked object and what can be instantiated locally on the clients.",
+        "I can use network visibility effectively."
+    ],
+    "specialLearnings": [
+        "I found a bug in the error logging of the framework of NGO."
+    ],
+    "result": "The players can only see their opponent and the arena they battle in.",
+    "validation": "The feature was tested multiple times to validate the quality of the feature.",
+    "contribution": "Match visibility is a mandatory feature for the game."
+}

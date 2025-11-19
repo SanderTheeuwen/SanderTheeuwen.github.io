@@ -1,0 +1,32 @@
+{
+    "published": true,
+    "name": "Unity Camera Movement",
+    "dates": [
+        "17-09-2021",
+        "23-09-2021"
+    ],
+    "goalName": "Make the camera follow a path using waypoints with smooth movement and rotation",
+    "goal": "For our game, we need an uncontrollable camera, which follows a preset path. To make it look good, there needs to be smooth rotation and movement. (no snapping)",
+    "approach": [
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Thinkering",
+            "text": ""
+        },
+        {
+            "researchType": "Showroom",
+            "researchMethod": "Peer Review",
+            "text": ""
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Community Research",
+            "text": "<<source How to know if an object is looking at an other - Unity Answers. (2015, July 19). Answers.Unity.Com. https://answers.unity.com/questions/1010169/how-to-know-if-an-object-is-looking-at-an-other.html>>\n<<source Smooth look at. (2009, Summer). Unity Forum. https://forum.unity.com/threads/smooth-look-at.26141/>>"
+        }
+    ],
+    "normalLearnings": [],
+    "specialLearnings": [],
+    "result": "As seen in the video below, the camera moves on its own and turns automatically to the next waypoint. The movement and rotation is smooth as well.<<video https://www.youtube.com/embed/27YT8_-qdtE>>",
+    "validation": "I tested the script with multiple waypoints on different locations. Each test result was a succes. My fellow peers said the result was looking good.",
+    "contribution": "Now the camera and waypoints are in place, I can resume to make enemies. These need to be loaded in at specific points. The camera also needs to stop as soon as the player encounters the enemies."
+}

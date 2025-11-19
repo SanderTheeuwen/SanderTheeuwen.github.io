@@ -23,6 +23,17 @@ function getDocumentPreview(productData, projectName)
             image.alt = `An image of ${productData.title}`;
             link.appendChild(image);
             break;
+        case "video":
+            const video = document.createElement("iframe");
+            video.classList.add("embed");
+            video.classList.add("youtube");
+            video.allowFullscreen = true;
+            video.src = productData.fileName;
+            return video;
+        case "link":
+            link.href = productData.fileName;
+            link.textContent = "Link";
+            break;
     }
 
     return link;

@@ -1,0 +1,44 @@
+{
+    "published": true,
+    "name": "Netcode for GameObjects Prototype",
+    "dates": [
+        "17-07-2025"
+    ],
+    "goalName": "How does NGO (Netcode for GameObjects) function?",
+    "goal": "In order to implement the multiplayer framework effectively in the project, I must create a prototype that showcases how the framework works.",
+    "approach": [
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature Study",
+            "text": "Starting with the official documentation of NGO, I learned about the most important concepts of multiplayer game development: connecting, spawning / despawning, network synchronisation, and scene management using the source <<source Unity Technologies. (2025b). NetCode for GameObjects | Netcode for GameObjects | 2.6.0. Unity. Retrieved September 2, 2025, from https://docs.unity3d.com/Packages/com.unity.netcode.gameobjects@2.6/manual/index.html>>. NGO supports a server + client relationship, as well as host + client. To make the game accessible and playable on LAN for every player that owns the game, I decided to use the host + client relationship, as a dedicated server will require significantly more setup with 2 instances of the game. The host acts as both the server and one client, allowing the host to play and to be the connection centerpoint of the session."
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Available product analysis",
+            "text": "I analysed the tutorial on the official documentation: <<source Unity Technologies. (2025a). Client-server quickstart for Netcode for GameObjects | Netcode for GameObjects | 2.6.0. Unity. Retrieved September 2, 2025, from https://docs.unity3d.com/Packages/com.unity.netcode.gameobjects@2.6/manual/tutorials/get-started-with-ngo.html>>. From this tutorial I created the following diagram that shows how the framework works.<<image 7.png>>In general, for mCon: Rebound, the server has authority, meaning the clients will send RPCs for requesting changes to variables / invocation of methods, and the server can deny or approve the request and synchronize.\nFor player specific actions, like moving or shooting a projectile, the client has authority. The server will then only synchronize these actions.\n\nFor the transform of networked objects like the player or projectiles, NGO has the NetworkTransform component, which automatically synchronizes the transform of the objects.\nFor custom variables, the variable must be a simple struct (like booleans, FixedString etc.) as these are predefined by NGO. The variable must be marked as a NetworkVariable for it to synchronize.\nComplex variables can be synchronized, but must implement their own serialization.\nTo keep the synchronization packets as small as possible, I will refrain from adding complex variables.\n\nAside from updating variables, clients can also request the invocation of methods using RPCs. These must be made towards the server and require authority to invoke. Similarly, the server can also use RPCs for clients. This works the same as requesting variable updates in the diagram, as variables do the same in essence: sending a server RPC to invoke the variable update and the server sending an RPC to the clients to synchronize.\n\nFinally, spawning objects works the same as normal, except the server must spawn the objects with a NetworkObject component in order to synchronize. Switching scenes also works the same, using NGO's scene management."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Prototyping",
+            "text": "I created a small prototype based on the knowledge I aquired, which can be seen in <<video https://www.youtube.com/embed/0tlffKj1ffU>>"
+        },
+        {
+            "researchType": "Lab",
+            "researchMethod": "System Test",
+            "text": "I tested the whole prototype locally using Unity's editor and a built version."
+        },
+        {
+            "researchType": "Showroom",
+            "researchMethod": "Product Review",
+            "text": "When the prototype worked locally, I tested the product on my LAN network using 2 different PCs."
+        }
+    ],
+    "normalLearnings": [
+        "I learned the basics of Netcode for GameObjects.",
+        "I learned about different connection types for multiplayer."
+    ],
+    "specialLearnings": [],
+    "result": "Using the prototype, I was able to better apply the framework to the product.",
+    "validation": "The connection was fast, the movement, animation, player actions (shooting) and switching scenes worked as expected.",
+    "contribution": "This research teaches me how network types work and gives me a basic understanding of Netcode for GameObjects. This is required to make an accurate comparison."
+}

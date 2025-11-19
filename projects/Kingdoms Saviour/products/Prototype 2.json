@@ -1,0 +1,25 @@
+{
+    "published": true,
+    "type": "video",
+    "fileName": "https://www.youtube.com/embed/27YT8_-qdtE",
+    "title": "Prototype 2",
+    "name": "Prototype 2",
+    "description": "A prototype showcasing the camera movement in Unity",
+    "stakeholders": [
+        {
+            "type": "Teachers",
+            "people": [
+                "Michael Schifferling",
+                "Jack Hoefnagel",
+                "Wilrik de Loose"
+            ]
+        },
+        {
+            "type": "Team members",
+            "people": [
+                "Isabel Pijnenburg",
+                "Sander Theeuwen"
+            ]
+        }
+    ]
+}

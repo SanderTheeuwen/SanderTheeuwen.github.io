@@ -1,5 +1,5 @@
 {
-    "published": false,
+    "published": true,
     "name": "Requirements of the game design to support multiplayer (50 players)",
     "dates": [
         "02-06-2025",
@@ -15,24 +15,29 @@
         {
             "researchType": "Library",
             "researchMethod": "Literature study",
-            "text": "To find the requirements, the target group must be defined properly. Using the source <<source Concorde Games. (2022, February 8). What does an esports athlete do? - Concorde Games. Concorde Games. Retrieved June 2, 2025, from https://concordeeducation.com/games/blog/what-does-an-esports-athlete-do/>> I defined the target group. Next, I had to figure out what makes a game fair and balanced, which I did using the source <<source Caruso, M. C., & Pankratyeva, A. P. (2025, April 18). What makes a video game an esport? Competitive titles explained. Esports Insider. Retrieved June 10, 2025, from https://esportsinsider.com/what-makes-video-game-esports#:~:text=TL%3BDR,titles%20are%20rarely%20considered%20esports.>>."
+            "text": "To find out the requirements, my target group must be defined properly. As I have no connections with the esports community, I used the following sources to get an understanding of what makes esports players different from casual players: <<source Concorde Games. (2022, February 8). What does an esports athlete do? - Concorde Games. Concorde Games. Retrieved June 2, 2025, from https: //concordeeducation.com/games/blog/what-does-an-esports-athlete-do/>>\n\nTo find initial requirements, I studied the source <<source Caruso, M. C., & Pankratyeva, A. P. (2025, April 18). What makes a video game an esport? Competitive titles explained. Esports Insider. Retrieved June 10, 2025, from https: //esportsinsider.com/what-makes-video-game-esports#:~:text=TL%3BDR,titles%20are%20rarely%20considered%20esports>>"
         },
         {
             "researchType": "Workshop",
             "researchMethod": "Brainstorm",
-            "text": "I had a brainstorm session where I made a mindmap as to what makes games fair and balanced for myself, which can be seen in the image below.<<image 2.png>>"
+            "text": "In a brainstorm session, I made a mindmap as to what makes games fair and balanced for myself, which I then combined with the requirements from the literature study to see if what I came up with also affects esports games.<<image 6.png>>"
         },
         {
             "researchType": "Field",
             "researchMethod": "Interview",
-            "text": "I asked several casual gamers what they value in games to support balancing and fairness. Together, their answers formed a list of which some elements are noteworthy for the decision of the framework."
+            "text": "I asked several casual gamers that play competitive games (that are also played in esports) what they value in games to support balancing and fairness. As these interviews took place on live streams, I had no means of recording the questions. However, their answers formed a list that add to the requirements for the project, which can be seen in the result."
+        },
+        {
+            "researchType": "Showroom",
+            "researchMethod": "Expert Interview",
+            "text": "I asked my an alumni if my research was valid. They indicated it was very thorough."
         }
     ],
     "normalLearnings": [
         "I recalled the importance of using multiple strategies to find data."
     ],
     "specialLearnings": [],
-    "result": "The resulting research can be found in the Research Document, which is also listed as a product of this project.<<document Research Document.docx>>",
-    "validation": "",
-    "contribution": "This research is necessary to design the game for 50-multiplayer, so it can be implemented properly."
+    "result": "The brainstorm and interviews resulted in the following requirements, where the ones marked in italics are taken into account for the selection of the multiplayer framework:\n- Balanced maps: Players find balanced maps important. In asymmetrical games, one party usually has an advantage. In mCon: Rebound, this is less of a problem as the maps can be made symmetrical very easily.\n- Character selection: Interviewees indicate that character selection heavily contributes to balancing, as all parties should have access to the same characters and abilities.\n- Expandability: This projects aims to develop the game to support LAN connection, though the client desires to eventually release the game on Steam, including online lobbies, thus requiring an internet connection.\n- Hitboxes: The framework must be able to handle semi-complicated hitboxes well. Spheres and other primitive shapes are used for the projectiles and characters, yet in the future they may be replaced by more accurate hitboxes. In anticipation of this change, the framework must be selected accordingly.\n- Learnability: The game should be easy to learn. Several players of Dead by Daylight indicate that the game is very hard to learn because there are very many characters that all have different abilities. The game can be designed for expansion, but should not become overwhelming for new players, especially as the game is designed to attract new people into the esports side of gaming.\n- Low latency: Especially in fast paced games, low latency is crucial for the gameplay to feel fair for anticipation and counterplay. Interviewees heavily support this statement as they feel like it adds a whole new difficulty level when playing with high ping. Especially with games that require quick strategizing, they must think several steps ahead to take the latency into account.\n- Matchmaking: Making fair matches is a crucial baseline, as both players should have equal experience to make the match balanced. The outcome of matches will influence their rating. One player mentioned a concept where the players had the option to deliberately increase the matchmaking time to make better matches, pointing out that some players do not mind the wait but value a fair match, whereas others might just want to play, even if they or their opponent(s) have a significantly higher win-rate.\n- Network quality: Bad networks are a possibility in the game. The framework should be able to take this into account and not immediately lock the player out.\n- No randomness: Players should win / lose based on solely their skills. If random factors (for example pickups or unpredictable hazards that are not on both parties) are added, this can impact the match outcome.\n- Number of players: The more players are playing, the heavier the workload is for the game. The framework should support this. With expansion in mind, the framework should support up to 50 players, as this is the capacity for the mCon esports area.\n- Skill expression: Players should be able to express their skills in the game. Players have mentioned games can become when there is one single strategy that works flawlessly. Exceptional plays should be rewarded.\n- Special abilities: Even though the special abilities are more powerful than regular attacks, they should be balanced compared to each other in terms of power, cooldown, and functionality.\n- Speed (projectiles / players): Along with the general balancing of the speed of projectiles and players in the game itself, this is also important for multiplayer features in combination with latency. The entities should be moving slowly enough so the hits are not based on latency as much.",
+    "validation": "Both the alumni and assessor indicated the work was of good quality.",
+    "contribution": "Gathering requirements is part of the baseline of a clean start of the project. It will help in the decision for the most suitable framework to use for the project as well as defining the testing criteria."
 }

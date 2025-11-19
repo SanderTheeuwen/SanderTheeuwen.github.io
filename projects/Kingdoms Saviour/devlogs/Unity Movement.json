@@ -1,0 +1,32 @@
+{
+    "published": true,
+    "name": "Unity Movement",
+    "dates": [
+        "29-09-2021",
+        "30-09-2021"
+    ],
+    "goalName": "Implement input, movement, look and camera in first person and third person",
+    "goal": "These are basic concepts required in (almost) every game. An important note is to keep SOLID in mind, as this provides structure for a clear overview. A good structure is not only important for yourself, but also when you share your work.",
+    "approach": [
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Thinkering",
+            "text": ""
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Available Product Analysis",
+            "text": ""
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature Study",
+            "text": "<<source How to think about Quaternions. (2018, June 27). Scriptinghelpers. https://scriptinghelpers.org/blog/how-to-think-about-quaternions>>\n<<source c# if vector2 is 0 - Google Search. (n.d.). Google. Retrieved September 29, 2021, from https://www.google.com/search?q=c%23+if+vector2+is+0&rlz=1C1GCEA_enNL944NL944&oq=c%23+if+vector2+is+0&aqs=chrome..69i57j69i58.5517j0j1&sourceid=chrome&ie=UTF-8>>\n<<source How to stop player from clipping through objects? (2016, December 26). Unity Forum. https://forum.unity.com/threads/how-to-stop-player-from-clipping-through-objects.461665/>>\n<<source Technologies, U. (n.d.). Unity - Scripting API: Transform.RotateAround. Unity Documentation. Retrieved September 29, 2021, from https://docs.unity3d.com/ScriptReference/Transform.RotateAround.html>>\n<<source Rotate a Vector3 direction - Unity Answers. (2011, February 8). Unity. https://answers.unity.com/questions/46770/rotate-a-vector3-direction.html>>\n<<source Technologies, U. (n.d.-b). Unity - Scripting API: Vector2.Vector3. Unity Documentation. Retrieved September 29, 2021, from https://docs.unity3d.com/ScriptReference/Vector2-operator_Vector2.html>>\n<<source LookAt To Only Rotate on Y Axis - How? - Unity Answers. (2010, December 1). Unity. https://answers.unity.com/questions/36255/lookat-to-only-rotate-on-y-axis-how.html>>\n<<source Technologies, U. (n.d.-a). Unity - Scripting API: Quaternion.Euler. Unity Documentation. Retrieved September 29, 2021, from https://docs.unity3d.com/ScriptReference/Quaternion.Euler.html>>\n<<source How to Set a Single Axis Rotation of a GameObject? - Unity Answers. (2009, December 28). Unity. https://answers.unity.com/questions/9019/how-to-set-a-single-axis-rotation-of-a-gameobject.html>>\n<<source Copying all the transform values of a gameObject? (2019, June 27). Stack Overflow. https://stackoverflow.com/questions/56794066/copying-all-the-transform-values-of-a-gameobject/65152796>>"
+        }
+    ],
+    "normalLearnings": [],
+    "specialLearnings": [],
+    "result": "The result is achieved using the code below, in which I did much thinkering.<<image 0.png>><<image 1.png>>The first person movement was fairly easy to implement. For third person however, I tried many times to figure it out and searched online for solutions. At the end of the day, I read the spoiler script and saw the solution was way easier than my tries. Although I had to look up the solution, I got a better understanding of rotation and quaternions. My result can be seen in the following video:<<video https://www.youtube.com/embed/sM10hW5GFak>>",
+    "validation": "I sent the first person movement to an expert, who was surprised by the way I implemented it (in a good way). I did many tests, to see if gravity behaved, and the rotation worked as expected.",
+    "contribution": "Now that I got basic movement setup and structured, it is time to work on other mechanics."
+}

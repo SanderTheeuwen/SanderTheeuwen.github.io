@@ -1,0 +1,9 @@
+.hidden {
+    display: none !important;
+}
+
+.youtube {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 16 / 9;
+}

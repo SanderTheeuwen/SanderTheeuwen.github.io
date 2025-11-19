@@ -1,6 +1,7 @@
 {
+    "id": "Game Pie",
     "published": true,
-    "title": "Game Pie",
+    "name": "Game Pie",
     "description": "Puzzle game where the player needs to avoid lasers to get to the end of the level.",
-    "image": ""
+    "image": "project.png"
 }

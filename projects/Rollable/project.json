@@ -1,6 +1,7 @@
 {
+    "id": "Rollable",
     "published": true,
-    "title": "Rollable",
+    "name": "Rollable",
     "description": "Puzzle game in which the player controls a ball and has to solve puzzles and complete challenges.",
-    "image": ""
+    "image": "project.png"
 }

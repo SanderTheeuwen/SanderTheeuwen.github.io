@@ -1,0 +1,57 @@
+{
+    "published": true,
+    "name": "Analysing the current state of mCon: Rebound",
+    "dates": [
+        "09-05-2025",
+        "12-05-2025",
+        "13-05-2025",
+        "14-05-2025"
+    ],
+    "goalName": "What is the current state of the game in terms of technical aspects and completed features?",
+    "goal": "To make an accurate problem analysis and define the scope of the project properly, I must analyse the current state of the project. This includes the gameplay, code, assets, and the advice document provided by the previous developer.",
+    "approach": [
+        {
+            "researchType": "Field",
+            "researchMethod": "Document Analysis",
+            "text": "Before I started analysing the game itself, I went through the Advice Document from the previous developer, after which I created a table of finished features and desired updates / additions:<<image 4.png>>"
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Available Product Analysis",
+            "text": "First I analysed the gameplay. How the game works, what the win condition is and how the game flows (success scenarios). Afterwards, I analysed the scenes, structure of the folders and the objects in the scene. The structure should be organized for efficient development. If folders and / or objects are chaotic, is it fixable within a reasonable time limit?\n\nFolder Structure:\nThe structure of the current game is easy to understand. The previous developer used clear names and categories that do not make folders cluttered or redundant. The biggest file count in a folder is 11, which is around the limit for the Developer to work with. Should changes be necessary, then these will be easy to make as Unity allows for easy movement of files and folders by editing the file path references in the Editor automatically.\n\nUnity Objects:\nThe game objects used in the scene are well named and put in empty game objects where necessary. One thing to look out for is the combination of in-game objects and UI. This will be separated by the Developer when the implementation phase begins. The highest number of objects within an empty game object lies around 15 and can only be found in the wall objects of the levels, so it does not pose a problem."
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature Study",
+            "text": "To refresh my memory on how to measure code quality, I used the source <<source Indeed Editorial Team. (2025, February 10). Code Quality: What It Is and How To Measure It (With Tips). Indeed. Retrieved May 13, 2025, from https://www.indeed.com/career-advice/career-development/what-is-code-quality.>>"
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Expert Interview",
+            "text": "Though the code seemed initially understandable and clear, I asked the previous developer to show me the project and the most important scripts in depth to help me understand them better."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Code Review",
+            "text": "I analysed the code of the current state of the project, where I discovered the usage of a God class, the Hero script, which has several components that could be further separated according to the SOLID principles, separating movement, attacks, input, and health. Functions are short, are commented, naming conventions are used, making the scripts easy to understand.\n\nThe overall code looks easy to understand and avoids God-scripts except for the Hero script, which is separable by function (movement, attacks, input, health). Functions are kept short and have comments to clarify when necessary. The code follows clear naming conventions and separation in the Unity Inspector. The scripts are functional, consistent, easy to understand, and reusable. The previous developer made effective use of inheritance and interfaces with the appropriate naming conventions."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Requirements Prioritization",
+            "text": "I used my analyses with the advice document from the previous developer to create a list of desired updates / additions that I gave small descriptions which can be found in the Project Plan, I then put them in a Moscow table to separate the tasks by importance.<<image 5.png>>"
+        },
+        {
+            "researchType": "Showroom",
+            "researchMethod": "Expert Review",
+            "text": "I showed my results to the previous developer, who had a few minor remarks that I immediately implemented. This cannot be shown as they left comments in the document itself."
+        }
+    ],
+    "normalLearnings": [
+        "I learned to more effectively analyse the current state of a project.",
+        "I refreshed what to look for during code analyses."
+    ],
+    "specialLearnings": [],
+    "result": "The result can be found in the Project Plan:<<document Project Plan.docx>>",
+    "validation": "The previous developer and first assessor approved of the document.",
+    "contribution": "The analysis of the current state of the project is crucial for determining if the project can start or not. If the current state was non-sufficient, I would have to find a different project."
+}

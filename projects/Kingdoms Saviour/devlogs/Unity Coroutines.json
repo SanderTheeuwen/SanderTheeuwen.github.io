@@ -1,0 +1,27 @@
+{
+    "published": true,
+    "name": "Unity Coroutines",
+    "dates": [
+        "06-10-2021",
+        "14-10-2021"
+    ],
+    "goalName": "Coroutines",
+    "goal": "To prevent rapid code in the Update functions, coroutines were created. In a coroutine, you as a developer can specify how long to wait after each \"yield\". In addition, the function the coroutine runs only executes once, preventing the need of a loop.",
+    "approach": [
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Thinkering",
+            "text": ""
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature Study",
+            "text": "<<source yield contextual keyword - C# Reference. (2021, September 15). Microsoft Docs. https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/yield>>\n<<source Technologies, U. (2021, May 10). Unity - Manual: Coroutines. Unity Documentation. https://docs.unity3d.com/Manual/Coroutines.html>>"
+        }
+    ],
+    "normalLearnings": [],
+    "specialLearnings": [],
+    "result": "As seen in the picture below, coroutines are in some way asynchronous, as the method they're called from continues after the first 'yield'. The evidence contains a simple example of a coroutine, creating an 'endless' road (the max is 50 tiles).<<image 2.png>><<video https://www.youtube.com/embed/XWnD4A2Z5-4>>",
+    "validation": "There is a peer review scheduled in the future to validate my work.",
+    "contribution": "Coroutines are not useful for my duo game, Kingdom's Saviour. However, it might be useful in future projects."
+}

@@ -1,0 +1,70 @@
+{
+    "published": true,
+    "name": "Connecting as Host and Client",
+    "dates": [
+        "22-09-2025"
+    ],
+    "goalName": "Implement an automatic connection between the host and client",
+    "goal": "It can be bothersome to have to look up the IP of the host's computer and manually enter it on the client's computer. There must be a system that automatically connects to the host.",
+    "approach": [
+        {
+            "researchType": "Lab",
+            "researchMethod": "Process Flow Modeling",
+            "text": "I created a flowchart that I used as a guide on how to implement the code. This expanded as I added the guaranteed free port and encryption of the UDP broadcasted message. This is the final version of the flowchart:<<image 8.png>>"
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Community Research",
+            "text": "Using the following source, I learned to set the IP and port of the Network Manager from Netcode for GameObjects during runtime: <<source dudemanem. (2025, January 9). How do I change Unity Transport IP Address and Port during runtime? Unity Discussions. Retrieved September 22, 2025, from https://discussions.unity.com/t/how-do-i-change-unity-transport-ip-address-and-port-during-runtime/889222/5>>.\n\nThe port I kept hardcoded at the start, but the IP is different per computer and must be retrieved automatically, for which I used the source <<source Mrchief. (2011, July 23). Get local IP address. Stack Overflow. Retrieved September 22, 2025, from https: //stackoverflow.com/questions/6803073/get-local-ip-address>>."
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature Study",
+            "text": "For the client to be able to know the IP of the host, I must broadcast the IP over LAN. There are two main types of network communication for this: TCP and UDP, which I learned from <<source Link11 - Defend. Control. Own. (2024, August 15). Network Port: What is it? Retrieved September 22, 2025, from https://www.link11.com/en/glossar/network-port/#:~:text=Well%2DKnown%20Ports:%20These%20are%20ports%200%2D1023%2C%20which%20are%20reserved%20for%20widely%20used%2C%20standardized%20services>>.\nWhile TCP is a back-and-forth type of communication, ensuring data is sent without loss and able to receive data back, UDP is faster as it does not always send data sequentially and does not always arrive. As the client only needs to listen to the broadcast and does not need a request-response connection, UDP is more suitable to communicate the IP for the game."
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Community Research",
+            "text": "While making the prototype and using the UDP's Receive method to retrieve data, the application froze as it blocked the thread waiting for data to be received. Using the following source, I tried using the Blocking property and the Poll method to periodically poll if there is data ready to be read: <<source forsvarir. (2011, April 21). Non blocking UDP socket .NET “A non-blocking socket operation could not be completed immediately” exception. Stack Overflow. Retrieved September 22, 2025, from https://stackoverflow.com/questions/5743304/non-blocking-udp-socket-net-a-non-blocking-socket-operation-could-not-be-compl>>.\nThis resulted in errors that I did not manage to work around."
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature Study",
+            "text": "While researching the UPD class in Visual Studio, I learned about the Available property. According to the following source, it changes values if there is data to be read: <<source Microsoft. (2025). Socket.Available property (System.Net.Sockets). Retrieved September 22, 2025, from https://learn.microsoft.com/en-us/dotnet/api/system.net.sockets.socket.available?view=net-9.0>>."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Prototyping",
+            "text": "I applied the knowledge iteratively to the prototype. Eventually the prototype worked."
+        },
+        {
+            "researchType": "Showroom",
+            "researchMethod": "Product Review",
+            "text": "Though there were still some open problems: The port the game uses is not guaranteed to be free and the IP is broadcasted non-encrypted for any computer to listen to."
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature Study",
+            "text": "From the following source, I learned to get a guaranteed free port for the game to use: <<source LaBelle, J. (2021, October 9). Get Random unused TCP port. Snippets. Retrieved September 22, 2025, from https://jonlabelle.com/snippets/view/csharp/get-random-unused-tcp-port>>. It is not possible to assign a random port for the UDP broadcasting and listening to use, this will remain hardcoded as a dynamic port.\n\nThe IP and port to use for the game are now broadcasted over LAN but not encrypted yet. For LAN this is not a big risk, but still one I want to secure as the game can be played in a public area and broadcasts the IP and an exposed port. Using the following source, I applied AES encryption as it uses a key to encrypt and decrypt the data: <<source How to implement a C# AES-256 encrypt and decrypt function？ - Microsoft Q&A. (2023, May 26). Microsoft. Retrieved September 22, 2025, from https: //learn.microsoft.com/en-us/answers/questions/1291569/how-to-implement-a-c-aes-256-encrypt-and-decrypt-f>>."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Prototyping",
+            "text": "I applied the solution to the product and cleaned up the code. Then I applied it to the product."
+        },
+        {
+            "researchType": "Lab",
+            "researchMethod": "System Test",
+            "text": "Using 2 different computers at home, they both were able to start as host with the other connecting succesfully. The connection was made within a second, which is the value I set the host to broadcast to not use 100% of the CPU. The client can also listen for the host without the host broadcasting yet, making it more accessible compared to requiring the host to create a session first."
+        }
+    ],
+    "normalLearnings": [
+        "I learned the difference between UDP and TCP",
+        "I learned how to securely encrypt data using AES",
+        "I learned that different ranges of ports are used for specific functionalities and programs"
+    ],
+    "specialLearnings": [],
+    "result": "The updated prototype can be seen in the following video:<<video https://www.youtube.com/embed/G-MXQHjvvUM>>",
+    "validation": "The prototype and the product were tested dozens of times, every time with success.",
+    "contribution": "Connecting to the host automatically saves a lot of time and effort for players, thus improving the player experience. It also eliminates the trouble for players who do not know how to find their IP information."
+}

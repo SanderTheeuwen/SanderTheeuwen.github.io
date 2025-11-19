@@ -1,0 +1,25 @@
+{
+    "published": true,
+    "type": "word",
+    "fileName": "Duo Game Concept.docx",
+    "title": "One Page Game Design Document",
+    "name": "One Page Game Design Document",
+    "description": "The document containing analyses and details about the design of the game.",
+    "stakeholders": [
+        {
+            "type": "Teachers",
+            "people": [
+                "Michael Schifferling",
+                "Jack Hoefnagel",
+                "Wilrik de Loose"
+            ]
+        },
+        {
+            "type": "Team members",
+            "people": [
+                "Isabel Pijnenburg",
+                "Sander Theeuwen"
+            ]
+        }
+    ]
+}

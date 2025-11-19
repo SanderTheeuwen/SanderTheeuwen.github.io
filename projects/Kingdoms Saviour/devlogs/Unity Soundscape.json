@@ -1,0 +1,27 @@
+{
+    "published": true,
+    "name": "Unity: Soundscape",
+    "dates": [
+        "05-10-2021",
+        "06-10-2021",
+        "07-10-2021",
+        "08-10-2021"
+    ],
+    "goalName": "Create an environment with multiple regions with different sounds.",
+    "goal": "Many games have multiple areas in the same scene, where audio is more local than global. The loops used in the audio should not have a recognizable point where the loop starts anew. Furthermore, some events (like monkeys screaming) should be random, not on an interval.",
+    "approach": [
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature Study",
+            "text": "<<source Presentation 05-10-2021 from T. A. Langhorst>>"
+        }
+    ],
+    "normalLearnings": [
+        "I know how to edit sound files using Audacity.",
+        "I know how to adjust sound settings in Unity."
+    ],
+    "specialLearnings": [],
+    "result": "As seen in the video below, depending on the location of the player, even the direction the player looks in, changes the audio of the game. From sublte chimes to random screaming monkeys, various audio effects have been implemented.<<video https://www.youtube.com/embed/H046GBnM4mo>>",
+    "validation": "I validated my work with a teacher, who said it was perfect.",
+    "contribution": "Now that I have an understanding of the sound system in Unity, I will incorporate this in the duo game."
+}

@@ -20,14 +20,23 @@ document.addEventListener("DOMContentLoaded", async function ()
                 }
                 const projectCard = document.createElement("a");
                 projectCard.classList.add("project-card");
-                projectCard.href = `project.html?project=${projectData.title}`; // Adjusted for linking
-                projectCard.target = "_blank"; // Opens in a new tab
+                projectCard.href = `project.html?project_id=${projectData.id}`; // Adjusted for linking
 
-                projectCard.innerHTML = `
-                    <img src="${projectData.image}" alt="${projectData.title} picture">
-                    <h3>${projectData.title}</h3>
-                    <p>${projectData.description}</p>
-                `;
+                if (!projectData.image)
+                {
+                    projectCard.innerHTML = `
+                        <h3>${projectData.name}</h3>
+                        <p>${projectData.description}</p>
+                    `;
+                }
+                else
+                {
+                    projectCard.innerHTML = `
+                        <img src="${window.location.origin}/projects/${projectData.id}/images/${projectData.image}" alt="${projectData.name} picture">
+                        <h3>${projectData.name}</h3>
+                        <p>${projectData.description}</p>
+                    `;
+                }
 
                 projectContainer.appendChild(projectCard);
             }

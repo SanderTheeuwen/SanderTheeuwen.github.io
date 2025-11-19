@@ -1,0 +1,51 @@
+{
+    "published": true,
+    "name": "Framework research",
+    "dates": [
+        "02-06-2025",
+        "10-06-2025",
+        "30-06-2025",
+        "02-07-2025",
+        "07-07-2025",
+        "08-07-2025",
+        "09-07-2025",
+        "17-07-2025",
+        "21-07-2025",
+        "23-07-2025",
+        "25-07-2025",
+        "07-08-2025",
+        "11-08-2025",
+        "12-08-2025",
+        "15-08-2025",
+        "18-08-2025",
+        "19-08-2025",
+        "20-08-2025",
+        "29-08-2025"
+    ],
+    "goalName": "Choosing a Unity multiplayer framework",
+    "goal": "Making a multiplayer functionality from scratch is too complex and time consuming for the project. I must research and select an existing framework to use.",
+    "approach": [
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature Study",
+            "text": "Using the following sources, I created a list of the most popular Unity multiplayer frameworks:\n<<source Reeve, A. R. (2025, May 1). About NetCode for GameObjects | Unity Multiplayer. Unity Multiplayer. Retrieved July 9, 2025, from https://docs-multiplayer.unity3d.com/netcode/current/about/>><<source oxintrix. (2025, April 22). What’s the best networking approach for Unity 6 in 2025? Reddit. Retrieved July 9, 2025, from https://www.reddit.com/r/unity/comments/1k543mf/whats_the_best_networking_approach_for_unity_6_in/>>\n<<source Dreyer, E. D. (2025). Open-source multiplayer framework for Node.js | Colyseus. Colyseus. Retrieved July 9, 2025, from https://colyseus.io/>>\n<<source marijnz. (2013, October 16). Which multiplayer Framework? Unity Discussions. Retrieved July 9, 2025, from https://discussions.unity.com/t/which-multiplayer-framework/517503>>\n\nFor each of these frameworks, I looked at the documentation, searched how much online support there was, and looked at the pricing. For this I used the following sources:\n<<source Stephens, N. S. (2025, April 2). Client-server quickstart | Unity Multiplayer. Unity Multiplayer. Retrieved July 16, 2025, from https: //docs-multiplayer.unity3d.com/netcode/current/tutorials/get-started-ngo/>><<source Fusion 2 - 1 - Getting started | Photon Engine. (n.d.). Photon. Retrieved July 16, 2025, from https://doc.photonengine.com/fusion/current/tutorials/host-mode-basics/1-getting-started>>\n<<source Photon fusion pricing. (n.d.). Photon. Retrieved July 16, 2025, from https://www.photonengine.com/fusion/pricing Quantum 3 - Tutorials - Asteroids - 1 - Overview | Photon Engine. (n.d.). Photon. Retrieved July 23, 2025, from https: //doc.photonengine.com/quantum/current/tutorials/asteroids/1-overview>>\n<<source Mirror Networking. (2022, September 25). Mirror | Network | Unity Asset Store. Unity Asset Store. Retrieved July 25, 2025, from https://assetstore.unity.com/packages/tools/network/mirror-129321?srsltid=AfmBOooYmSczPDmKj7TPEoybronxoeA9hQ5SFKyDcOEp3IKSfAXxKEnE>>\n<<source Guides | Mirror. (2021, February 26). Mirror. Retrieved July 25, 2025, from https://mirror-networking.gitbook.io/docs/manual/guides>>\n<<source FractalIT & derHugo. (2023, November 3). How to change a server variable on behalf of the client (unity mirror). Stackoverflow. Retrieved July 25, 2025, from https://stackoverflow.com/questions/77414794/how-to-change-a-server-variable-on-behalf-of-the-client-unity-mirror/77538109>>\n<<source Dreyer, E. D. (2025, May 20). unity Unity SDK – Colyseus. Colyseus. Retrieved August 15, 2025, from https://docs.colyseus.io/getting-started/unity>>\n<<source Dreyer, E. D. (2025). Pricing | Colyseus. Colyseus. Retrieved August 15, 2025, from https://colyseus.io/pricing/Doxygen. (2017, March 15). TNET 3: Class list. TNet 3. Retrieved August 18, 2025, from https: //www.tasharen.com/tnet/docs/index.html>>\n<<source NeilM. (2016, February 4). TNET 3 Tutorials. Tasharen Entertainment. Retrieved August 18, 2025, from https://www.tasharen.com/forum/index.php?topic=13953.0>>\n<<source Unity Realtime Multiplayer Sample | AppWarp Unity Sample. (2025). AppWarp. Retrieved August 19, 2025, from https://appwarp.shephertz.com/game-development-center/unity-walkThrough/>>\n<<source Realtime Multiplayer Cloud Gaming Engine basic Concepts. (2025). AppWarp. Retrieved August 19, 2025, from https://appwarp.shephertz.com/game-development-center/basic-concepts/>>\n<<source AppWarp Multiplayer Pricing | FREE for Indie developers. (2025). AppWarp. Retrieved August 19, 2025, from https://appwarp.shephertz.com/pricing/.>>\n\nI put the results in a table to put the frameworks in an overview.<<image 1.png>>"
+        },
+        {
+            "researchType": "Field",
+            "researchMethod": "Expert Interview",
+            "text": "To make the best decision, I asked alumni to share their experiences with the frameworks.\n<<image 2.png>>\n<<image 3.png>>\nFrom their feedback, the analyses I did myself and the requirements found by previous research, I found Netcode for GameObjects the most suitable framework to use."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Prototyping",
+            "text": "To validate the choice, I will create a small prototype as a proof of concept. This prototype is shown in the following video:\n<<video https://www.youtube.com/embed/0tlffKj1ffU>>"
+        }
+    ],
+    "normalLearnings": [
+        "I learned to analyse frameworks effectively."
+    ],
+    "specialLearnings": [],
+    "result": "I will be using Netcode for GameObjects to create the multiplayer functionality.",
+    "validation": "The framework is easy enough to understand, development is quick and structured, and there are enough online sources to troubleshoot if necessary, both on community platforms and the official documentation.",
+    "contribution": "The framework allows for much faster and less complicated development."
+}

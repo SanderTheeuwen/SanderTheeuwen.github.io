@@ -1,0 +1,31 @@
+{
+    "published": true,
+    "name": "Unity Collision Detection",
+    "dates": [
+        "30-09-2021"
+    ],
+    "goalName": "How to detect collision while preserving a good file structure?",
+    "goal": "In order for our enemy waves to work, we need two collision boxes. One is for loading the enemies so they do not take up more resources than needed. The second box is for setting the player's speed to 0 and activating the enemies. This needs to be done without compromising the structure of classes and files.",
+    "approach": [
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Thinkering",
+            "text": ""
+        },
+        {
+            "researchType": "Showroom",
+            "researchMethod": "Peer Review",
+            "text": ""
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature Study",
+            "text": "<<source How do i get the source collider on an OnTriggerEnter? - Unity Answers. (2010, August 12). Unity. https://answers.unity.com/questions/24809/how-do-i-get-the-source-collider-on-an-ontriggeren.html>>\n<<source OnTriggerEnter not working, tried everything! :( (C#) - Unity Answers. (2014, July 21). Unity. https://answers.unity.com/questions/753481/ontriggerenter-not-working-tried-everything-c.html>>"
+        }
+    ],
+    "normalLearnings": [],
+    "specialLearnings": [],
+    "result": "After some thinkering, I added a script that would load and activate enemies when the player triggers the collision box. The wave, however, did not load or activate. After some logging, I noticed the event was not raised. I fixed this by adding a rigidbody to the player, which was needed according to the last source. I further thought about expandability by making the wave load and activate only when the player triggers the event. This way, arrows or other entities with rigidbodies will not be able to trigger the event. The result is seen in the video below:<<video https://www.youtube.com/embed/w_FjUIDidxA>>",
+    "validation": "I performed many tests and let my teammate take a look at it. After analysing the result, she said it was behaving exactly as expected.",
+    "contribution": "Now that the wave works (for loading and activating (the event)) I will focus on making the items. My teammate will add the models. Then, we will be able to make a Wave_Completed event."
+}

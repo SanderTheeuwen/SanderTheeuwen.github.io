@@ -1,0 +1,23 @@
+{
+    "published": true,
+    "name": "Unity: Pause Menu",
+    "dates": [
+        "07-10-2021"
+    ],
+    "goalName": "Pause the entire game except a specific object (pause menu)",
+    "goal": "In most games, there is a pause menu, which (in singleplayer) freezes the whole game, except that menu. Since Unity does not have such function built in, I have to do it myself.",
+    "approach": [
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature Study",
+            "text": "<<source Technologies, U. (n.d.). Unity - Scripting API: Resources.Load. Unity Documentation. Retrieved October 7, 2021, from https://docs.unity3d.com/ScriptReference/Resources.Load.html>>\n<<source Technologies, U. (n.d.-a). Unity - Manual: ScriptableObject. Unity Documentation. Retrieved October 7, 2021, from https://docs.unity3d.com/Manual/class-ScriptableObject.html>>\n<<source French, J. (2021, May 12). The right way to pause a game in Unity. Game Dev Beginner. https://gamedevbeginner.com/the-right-way-to-pause-the-game-in-unity/>>"
+        }
+    ],
+    "normalLearnings": [
+        "I can halt certain events when a pause menu is being shown"
+    ],
+    "specialLearnings": [],
+    "result": "As seen in the image below, the pause menu is shown like a layer in front of the game. The gray layer on the game indicates the game is frozen.<<image 3.png>>",
+    "validation": "I showed my result to various users and peers.",
+    "contribution": "The game is now one step closer to being finished now that the player can pause it."
+}

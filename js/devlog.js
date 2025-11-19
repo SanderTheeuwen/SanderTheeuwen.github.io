@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", async function ()
         }
 
         // Set normal learning outcomes
-        if (devlogData.normalLearnings)
+        if (devlogData.normalLearnings.length != 0)
         {
             const normalLearningList = document.getElementById("devlog-normal-learning");
             for (const outcome of devlogData.normalLearnings)
@@ -58,9 +58,13 @@ document.addEventListener("DOMContentLoaded", async function ()
                 normalLearningList.appendChild(listItem);
             }
         }
+        else
+        {
+            document.getElementById("devlog-normal-learning-section").className = "hidden";
+        }
 
         // Set special learning outcomes
-        if (devlogData.specialLearnings)
+        if (devlogData.specialLearnings.length != 0)
         {
             const specialLearningList = document.getElementById("devlog-special-learning");
             for (const outcome of devlogData.specialLearnings)
@@ -69,6 +73,10 @@ document.addEventListener("DOMContentLoaded", async function ()
                 listItem.textContent = outcome;
                 specialLearningList.appendChild(listItem);
             }
+        }
+        else
+        {
+            document.getElementById("devlog-special-learning-section").className = "hidden";
         }
 
         // Set result, validation, and contribution

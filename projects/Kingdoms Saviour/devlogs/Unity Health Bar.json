@@ -1,0 +1,31 @@
+{
+    "published": true,
+    "name": "Unity Health Bar",
+    "dates": [
+        "22-09-2021"
+    ],
+    "goalName": "Make a health bar, using MVC structure, supporting multiple resolutions",
+    "goal": "Many games use a health bar, so I will be making one to practise. The MVC structure allows for easy navigation and seperation of code. As there exist multiple platforms / displays, the project has to support multiple resolutions.",
+    "approach": [
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Thinkering",
+            "text": ""
+        },
+        {
+            "researchType": "Showroom",
+            "researchMethod": "Peer Review",
+            "text": ""
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature Study",
+            "text": "<<source Teams meeting Wednesday 22 September 2021 from 9.45 until 11.15>>\n<<source How to Use UI Anchors in Unity [Unity Tutorial]. (2021, March 12). YouTube. https://www.youtube.com/watch?v=w3sMD-3OJro>>\n<<source Unity 4.6 UI button highlight color staying after button clicked - Unity Answers. (2014, December 15). Answers.Unity.Com. https://answers.unity.com/questions/854724/unity-46-ui-button-highlight-color-staying-after-b.html>>"
+        }
+    ],
+    "normalLearnings": [],
+    "specialLearnings": [],
+    "result": "As seen in the video below, the UI is shown correctly for all resolutions. The health bar behaves as expected, with the health not becoming less than 0 or higher than the maximum health.<<video https://www.youtube.com/embed/R0zUboJ9xQ4>>",
+    "validation": "I asked feedback from fellow peers, writing down their suggestions, and implementing them in the next version.",
+    "contribution": "Now that I have a clearer understanding of UI components, I can make one for the Game Pie project. I will talk to my groupmates about menu's and level selecting (if we implement it due to time constraints)."
+}

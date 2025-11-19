@@ -34,10 +34,13 @@ h1 {
     margin-bottom: 10px;
 }
 
+main {
+    width: 50%;
+}
+
 /* Project Image */
 #project-image {
-    width: 80%;
-    max-width: 600px;
+    max-width: 100%;
     border-radius: 8px;
     margin: 20px 0;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);

@@ -1,0 +1,80 @@
+{
+    "published": true,
+    "name": "Displaying Single-Elimination Tournament Type",
+    "dates": [
+        "24-09-2025"
+    ],
+    "goalName": "Display the layout of the single-elimination tournament type in the game UI",
+    "goal": "In tournaments, the host(s) have an overview of the matches that are about to be played. This includes the overall structure of the matches, i.e. how many rounds, players, and simultaneous matches, as well as who is placed where in this layout. Having this structure integrated in the game itself adds to the competitive experience of the game. It also helps with development as I can see what player is where in the layout for bugfixing and testing.",
+    "approach": [
+        {
+            "researchType": "Lab",
+            "researchMethod": "Wireframes",
+            "text": "I made a sketch of what the full UI of the lobby menu would look like based on the menu from R.E.P.O.:<<image 9.jpg>>"
+        },
+        {
+            "researchType": "Showroom",
+            "researchMethod": "Client Review",
+            "text": "I shared the sketch with the client, who approved of the design."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Decomposition",
+            "text": "To decide the location and size of the UI elements, I broke down the layout of the tournament type display. The player holders are spread evenly horizontal and vertical, based on the maximum amount of columns and rows. The lines connecting the player holders can be drawn using the position and size of the player holders, to which they are relative, thus not requiring absolute values apart from their line width."
+        },
+        {
+            "researchType": "Lab",
+            "researchMethod": "Wireframes",
+            "text": "To break down the distance between the elements and the whole are to place the UI elements in, I created several wireframes where I wrote how many vertical dividers there are (vertical dividers being based on the player count).\n2 players:<<image 10.png>>\n4 players:\n<<image 11.png>>\n5 players:\n<<image 12.png>>"
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Decomposition",
+            "text": "Using the wireframes, I created a breakdown of the structure's dimensions of the layout:\n<<image 13.png>>\nImportant variables are the distance d between the player holders shown in blue and the offset per column shown in red. Using this, I created a small table that has the data:\n<<image 14.png>>\nUsing this data, I created the following formulas to calculate the vertical position based on the column and row index:\ndy = vertical distance between player holders in first column.\nc = column index.\nr = row index.\nOffset Y = dy * 0.5 * (2c - 1)\nY = dy * (r + 1) * 2c\n\nThe horizontal position was easier to calculate using the following formula:\ndx = horizontal distance between player holders.\nx = dx * (c + 1)"
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature Study",
+            "text": "With the forumulas, I could work on a first version of the UI, which I accomplished using the source: <<source Unity Technologies. (2025). Creating a World Space UI | Unity UI | 1.0.0. Unity. Retrieved September 28, 2025, from https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/HOWTO-UIWorldSpace.html>>."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Tinkering",
+            "text": "Finding the right formula took a few iterations, where I adjusted the formulas and tested them."
+        },
+        {
+            "researchType": "Lab",
+            "researchMethod": "Component Test",
+            "text": "To test whether the code works, I added more players via a ContextMenu action. When the code did not work, it clearly showed as elements would have weird gaps. The right code showed the player holders as seen in the result."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Decomposition",
+            "text": "Using the player holders' distance between them (dx and dy) and their size (bw and bh), I could calculate the lengths between points on the lines. The player holders' positions are indicated in green, the points on the lines in blue:\n<<image 15.png>>"
+        },
+        {
+            "researchType": "Lab",
+            "researchMethod": "Component Test",
+            "text": "The lines rendered correctly, adjusting automatically when players are added and removed."
+        },
+        {
+            "researchType": "Showroom",
+            "researchMethod": "Product Review",
+            "text": "I showed the result to my parents, who indicated the elements showed up as they expected. I also showed the result in the next session with the company mentor and first assessor, who approved of the display, but questioned the priority of this feature."
+        },
+        {
+            "researchType": "Lab",
+            "researchMethod": "System Test",
+            "text": "To test the feature fully. I tested the product locally with 10 players. The bracket system still showed up succesfully."
+        }
+    ],
+    "normalLearnings": [
+        "I learned how Line Renderers in Unity work.",
+        "I learned how to effectively break down UI layouts.",
+        "I can derrive formulas from raw data."
+    ],
+    "specialLearnings": [],
+    "result": "The result can be seen in the video below:\n<<video https://www.youtube.com/embed/Gh9tUj_arqo>>",
+    "validation": "The component tests and product reviews ensure the quality of the result.",
+    "contribution": "Players can now see who they will play against, and hosts can use the layout to determine the length of the tournament as well as the structure. As a developer, I can see which player will play against which for debugging purposes."
+}

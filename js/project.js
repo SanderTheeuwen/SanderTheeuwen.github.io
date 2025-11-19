@@ -6,25 +6,32 @@ document.addEventListener("DOMContentLoaded", async function ()
 async function loadProject()
 {
     const params = new URLSearchParams(window.location.search);
-    const projectName = params.get("project"); // Get project name from URL
+    const projectId = params.get("project_id"); // Get project name from URL
 
-    if (!projectName)
+    if (!projectId)
     {
-        document.body.innerHTML = `<h1>Project ${projectName} not found</h1>`;
+        document.body.innerHTML = `<h1>Project ${projectId} not found</h1>`;
         return;
     }
 
     try
     {
-        var response = await fetch(`${window.location.origin}/projects/${projectName}/project.json`);
+        var response = await fetch(`${window.location.origin}/projects/${projectId}/project.json`);
         const projectData = await response.json();
 
         document.getElementById("project-title").textContent = projectData.name;
-        document.getElementById("project-image").src = projectData.image;
+        if (!projectData.image)
+        {
+            document.getElementById("project-image").className = "hidden";
+        }
+        else
+        {
+            document.getElementById("project-image").src = `${window.location.origin}/projects/${projectId}/images/${projectData.image}`;
+        }
         document.getElementById("project-description").textContent = projectData.description;
 
-        loadProducts(projectName);
-        loadDevlogs(projectName);
+        loadProducts(projectId);
+        loadDevlogs(projectId);
     }
     catch (error)
     {
@@ -32,12 +39,12 @@ async function loadProject()
     }
 }
 
-async function loadProducts(projectName)
+async function loadProducts(projectId)
 {
     const response = await fetch(`${window.location.origin}/generated/products-paths.json`);
 
     // Filter products based on project
-    const productsPaths = (await response.json()).filter((productPath) => productPath.path.startsWith("projects/" + projectName));
+    const productsPaths = (await response.json()).filter((productPath) => productPath.path.startsWith("projects/" + projectId));
 
     const productList = document.getElementById("products-list");
     for (const productPath of productsPaths)
@@ -48,18 +55,18 @@ async function loadProducts(projectName)
         if (productData.published)
         {
             const listItem = document.createElement("li");
-            listItem.innerHTML = `<a href="product.html?project=${projectName}&product=${productFileName}">${productData.name}</a>`;
+            listItem.innerHTML = `<a href="product.html?project=${projectId}&product=${productFileName}">${productData.name}</a>`;
             productList.appendChild(listItem);
         }
     }
 }
 
-async function loadDevlogs(projectName)
+async function loadDevlogs(projectId)
 {
     const response = await fetch(`${window.location.origin}/generated/devlogs-paths.json`);
 
     // Filter devlogs based on project
-    const devlogsPaths = (await response.json()).filter((devlogPath) => devlogPath.path.startsWith("projects/" + projectName));
+    const devlogsPaths = (await response.json()).filter((devlogPath) => devlogPath.path.startsWith("projects/" + projectId));
 
     const devlogList = document.getElementById("devlogs-list");
     for (const devlogPath of devlogsPaths)
@@ -70,7 +77,7 @@ async function loadDevlogs(projectName)
         if (devlogData.published)
         {
             const listItem = document.createElement("li");
-            listItem.innerHTML = `<a href="devlog.html?project=${projectName}&devlog=${devlogFileName}">${devlogData.name}</a>`;
+            listItem.innerHTML = `<a href="devlog.html?project=${projectId}&devlog=${devlogFileName}">${devlogData.name}</a>`;
             devlogList.appendChild(listItem);
         }
     }

@@ -1,0 +1,35 @@
+{
+    "published": true,
+    "name": "Unity Polishing",
+    "dates": [
+        "01-10-2021",
+        "16-10-2021"
+    ],
+    "goalName": "Make the inspector more readable, improve code quality and resource management",
+    "goal": "When creating a game, scripts, gameobjects and components can get quite messy when there are many. Some properties in scripts need to be public, while they are not interesting in the inspector. Furthermore, sloppy code and redundant code costs more resources, there must be a way to prevent the waste. Lastly, an empty error log is always nice to have.",
+    "approach": [
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Thinkering",
+            "text": ""
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Community Research",
+            "text": "<<source How to make a field in inspector to pass events like “On Click()”? - Unity Answers. (2015, May 25). Unity. https://answers.unity.com/questions/974065/how-to-make-a-field-in-inspector-to-pass-events-li.html>>\n<<source How to make a readonly property in inspector? - Unity Answers. (2014, October 1). Unity. https://answers.unity.com/questions/489942/how-to-make-a-readonly-property-in-inspector.html>>\n<<source How can I make my own event in C#? (2016, July 20). Stack Overflow. https://stackoverflow.com/questions/623451/how-can-i-make-my-own-event-in-c>>\n<<source Karlsen, L. V. (2010, September 29). Suppressing “is never used” and “is never assigned to” warnings in C#. Stack Overflow. https://stackoverflow.com/questions/3820985/suppressing-is-never-used-and-is-never-assigned-to-warnings-in-c-sharp>>"
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature Study",
+            "text": "<<source Technologies, U. (2021b, October 8). Unity - Scripting API: UnityEvent. Unity Documentation. https://docs.unity3d.com/ScriptReference/Events.UnityEvent_1.html>>\n<<source Excluding Scripts and Assets from builds. (2021, August 18). Unity Support. https://support.unity.com/hc/en-us/articles/208456906-Excluding-Scripts-and-Assets-from-builds>>\n<<source Unity/Mono - checking for DEBUG - Unity Answers. (2012, April 12). Unity. https://answers.unity.com/questions/239272/unitymono-checking-for-debug.html>>\n<<source Technologies, U. (n.d.). Unity - Scripting API: HideInInspector. Unity Documentation. Retrieved October 1, 2021, from https://docs.unity3d.com/ScriptReference/HideInInspector.html>>"
+        }
+    ],
+    "normalLearnings": [
+        "Surpressing warnings.",
+        "Excluding code from builds."
+    ],
+    "specialLearnings": [],
+    "result": "I refactored code, removing unnecessary functions and variables. Hidden things in the inspector when they have to be public but not interesting. Replaced images with raw images in UI, as raw images are less expensive. I surpressed warnings when they cannot be and would not need to be resolved.",
+    "validation": "-",
+    "contribution": "Now that the code is cleaned up and performance has been increased, the project runs better while using less resources and there is a clear and clean structure."
+}

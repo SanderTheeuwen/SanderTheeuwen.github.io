@@ -16,7 +16,31 @@
     "path": "projects/Game Pie/products/Ten pager.json"
   },
   {
-    "project": "mCon Rebound LAN multiplayer extension",
-    "path": "projects/mCon Rebound LAN multiplayer extension/products/Project plan.json"
+    "project": "Kingdoms Saviour",
+    "path": "projects/Kingdoms Saviour/products/One Page Game Design Document.json"
+  },
+  {
+    "project": "Kingdoms Saviour",
+    "path": "projects/Kingdoms Saviour/products/Pitch.json"
+  },
+  {
+    "project": "Kingdoms Saviour",
+    "path": "projects/Kingdoms Saviour/products/Prototype 1.json"
+  },
+  {
+    "project": "Kingdoms Saviour",
+    "path": "projects/Kingdoms Saviour/products/Prototype 2.json"
+  },
+  {
+    "project": "Kingdoms Saviour",
+    "path": "projects/Kingdoms Saviour/products/Ten Page Game Design Document.json"
+  },
+  {
+    "project": "mCon Rebound LAN Multiplayer Extension",
+    "path": "projects/mCon Rebound LAN Multiplayer Extension/products/Project plan.json"
+  },
+  {
+    "project": "Template",
+    "path": "projects/Template/products/Product.json"
   }
 ]

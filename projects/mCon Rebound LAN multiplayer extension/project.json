@@ -1,6 +1,7 @@
 {
-    "published": false,
-    "title": "mCon Rebound LAN multiplayer extension",
+    "id": "mCon Rebound LAN Multiplayer Extension",
+    "published": true,
+    "name": "mCon: Rebound LAN multiplayer extension",
     "description": "Semester 8 graduation project. Expanding the existing game mCon: Rebound to support multiplayer via LAN for 50 players.",
-    "image": ""
+    "image": "project.png"
 }
