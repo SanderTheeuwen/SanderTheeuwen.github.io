@@ -1,0 +1,38 @@
+{
+    "published": true,
+    "name": "Music",
+    "dates": [
+        "25-11-2021",
+        "28-11-2021",
+        "01-12-2021",
+        "14-12-2021"
+    ],
+    "goalName": "Figure out what the best music genre is for a sensitive game with a target group having a tough time",
+    "goal": "Kind Regards, will be played by young children, who are going through a rough period in their lives. To make sure the game does not feel too empty, it is a good idea to add background music. However, I need to be careful when selecting music, as different styles of music have different effects on people's mood.",
+    "approach": [
+        {
+            "researchType": "Library",
+            "researchMethod": "Expert Interview",
+            "text": ""
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature Study",
+            "text": "<<source Kop, M. (2017, June 18). Music Licensing in The Netherlands: Movies and Games. MuziekenRecht.nl. Retrieved November 25, 2021, from https://www.muziekenrecht.nl/blog/2017/6/music-licensing-in-the-netherlands-movies-games-legal-aspects>>\n<<source Moore, S. K. (2015, October 14). Theory-guided Therapeutic Function of Music to facilitate emotion regulation development in preschool-aged children. Frontiers. Retrieved December 1, 2021, from https://www.frontiersin.org/articles/10.3389/fnhum.2015.00572/full>>\n<<source Dignity With Distinction. (2021, February 11). Models of Grief. Dignity Funerals. Retrieved December 14, 2021, from https://www.dignityfunerals.co.uk/advice/models-of-grief/>>"
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Community Research",
+            "text": "<<source If I don’t monetize a game in any way, can I use copyrighted music? (n.d.). Quora. Retrieved November 25, 2021, from https://www.quora.com/If-I-dont-monetize-a-game-in-any-way-can-I-use-copyrighted-music>>"
+        }
+    ],
+    "normalLearnings": [
+        "I know which music is allowed to use in a game without getting copyright strikes"
+    ],
+    "specialLearnings": [
+        "I know how to apply the principles of music therapy through the music of a game"
+    ],
+    "result": "Although the principles of music therapy could not be applied to the game, I was able to give insights to my group to select music for the game. Research showed that calm and relaxing music works best for this game.",
+    "validation": "I verified my expectations and result with an expert and am currently setting up focus group research and playtests to see the actual results rather than a hypothesis.",
+    "contribution": "This directly contributes to the game. Next, my teammates and I are conducting the research. For my own game, I might be able to implement the principles of music therapy, if the game's aesthetics allow it."
+}

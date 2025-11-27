@@ -1,0 +1,40 @@
+{
+    "published": true,
+    "name": "Effective Meetings",
+    "dates": [
+        "03-12-2021"
+    ],
+    "goalName": "How to have clear meetings, structured and well organized?",
+    "goal": "In group projects, especially with a third party, meetings are essential for agreements and communication. Through previous experiences I learned that structured meetings and being punctual and consistant is important.",
+    "approach": [
+        {
+            "researchType": "Field",
+            "researchMethod": "Observation",
+            "text": ""
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Available Product Analysis",
+            "text": ""
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Expert Interview",
+            "text": ""
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature Study",
+            "text": "Due to the origin of the literature, I am not allowed to share certain information or evidence because of confidentiality."
+        }
+    ],
+    "normalLearnings": [
+        "I am able to create organized meetings with a consistant structure",
+        "I am able to divide meetings into sections, assigned to specific people",
+        "I am able to write clear effective summaries of meetings"
+    ],
+    "specialLearnings": [],
+    "result": "Now there is more clarity and structure in the meetings, people feel more confident in the project. The group also gives a professional impression to the client.",
+    "validation": "Peers gave feedback that the meetings are better now, and agreed on choices I made.",
+    "contribution": "Meetings are now more effective. Other interpersonal communication is lacking however, so that will be my next point of improvement."
+}

@@ -1,0 +1,24 @@
+{
+    "published": true,
+    "name": "Planning Poker",
+    "dates": [
+        "15-12-2021"
+    ],
+    "goalName": "Use 'planning poker' to get an estimated time on tasks",
+    "goal": "Getting an estimated time immensely contributes to planning (hence planning poker). These times are useful to make a structured plan for the sprint or even the whole project. Planning poker is used as a tool for this.",
+    "approach": [
+        {
+            "researchType": "Library",
+            "researchMethod": "Peer Review",
+            "text": ""
+        }
+    ],
+    "normalLearnings": [
+        "I am able to use planning poker as a tool to get an estimated time on tasks",
+        "I am more accurate in estimating a time for a task"
+    ],
+    "specialLearnings": [],
+    "result": "The evidence is a screenshot of the planning poker. The result of which is an overview of how much time the whole implementation phase is going to take.<<image 11.png>>",
+    "validation": "I performed planning poker with the group members.",
+    "contribution": "Task division is next, after which we will start completing the tasks individually. Planning poker contributes in the structure and overall plan of the project."
+}

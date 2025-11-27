@@ -1,0 +1,45 @@
+{
+    "published": true,
+    "name": "Unity Tutorial",
+    "dates": [
+        "16-01-2022",
+        "17-01-2022"
+    ],
+    "goalName": "Create a clear tutorial showing the core actions of the game.",
+    "goal": "The group got feedback that it was not clear to the player that the owl was clickable. For novice users, the game might be a bit overwhelming as well. A solution for this is a tutorial showing step by step what the player can do. It is important to make it very clear, so the young target group can understand.",
+    "approach": [
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Thinkering",
+            "text": ""
+        },
+        {
+            "researchType": "Showroom",
+            "researchMethod": "Expert Interview",
+            "text": ""
+        },
+        {
+            "researchType": "Showroom",
+            "researchMethod": "Peer Review",
+            "text": ""
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Community Research",
+            "text": "<<source Check Animation State exists before playing it - Unity Answers. (2015, April 30). Unity. Retrieved January 16, 2022, from https://answers.unity.com/questions/957649/check-animation-state-exists-before-playing-it.html>>\n<<source what number is the layer in animator controller? I don’t see any number in the animator layer window. - Unity Answers. (218–04-26). Unity. Retrieved January 16, 2022, from https://answers.unity.com/questions/1238124/what-number-is-the-layer-in-animator-controller-i.html>>\n<<source Animation events not firing - Unity Answers. (2015, September 4). Unity. Retrieved January 17, 2022, from https://answers.unity.com/questions/806949/animation-events-not-firing.html>>"
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature Study",
+            "text": "<<source How to set animator’s controller in script? - Unity Answers. (2014, October 22). Unity. Retrieved January 16, 2022, from https://answers.unity.com/questions/400648/how-to-set-animators-controller-in-script.html>>\n<<source Unity Technologies. (2022, January 7). Unity - Scripting API: Animator.StringToHash. Unity Documentation. Retrieved January 17, 2022, from https://docs.unity3d.com/ScriptReference/Animator.StringToHash.html>>"
+        }
+    ],
+    "normalLearnings": [
+        "I can create multiple layered animations in Unity",
+        "I can change animator controllers at runtime in Unity"
+    ],
+    "specialLearnings": [],
+    "result": "The result is achieved using the code seen here:<<image 8.png>><<image 9.png>><<image 10.png>>In the video below, the player is shown an explanation of every main part of the game. The player is able to go to the next tutorial stage or skip it completely by clicking the buttons.<<video https://www.youtube.com/embed/y2f-zQfGEUY>>",
+    "validation": "I verified my solution with multiple teachers and team members, along with the client, who all agreed to the good quality of it.",
+    "contribution": "This tutorial directly contributes to the end product, the game. I will continue this project by creating tests for the game."
+}

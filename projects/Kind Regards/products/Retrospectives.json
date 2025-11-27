@@ -1,0 +1,21 @@
+{
+    "published": true,
+    "type": "word",
+    "fileName": "Retrospectives.docx",
+    "title": "Retrospectives",
+    "name": "Retrospectives",
+    "description": "A collection of retrospectives for the project to improve team efficiency.",
+    "stakeholders": [
+        {
+            "type": "Team members",
+            "people": [
+                "Brian Vlaar",
+                "Dylan Pipping",
+                "Isabel Pijnenburg",
+                "Jasper Sijben",
+                "Patrick van Halm",
+                "Sander Theeuwen"
+            ]
+        }
+    ]
+}

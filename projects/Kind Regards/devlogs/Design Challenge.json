@@ -1,0 +1,43 @@
+{
+    "published": true,
+    "name": "Design Challenge",
+    "dates": [
+        "06-12-2021"
+    ],
+    "goalName": "Define a design challenge",
+    "goal": "The design challenge is the main problem to solve with a project. The mechanics, dynamics, aesthetics, and user stories are based on that challenge. In essence, the design challenge is the base of the project. A good design challenge is necessary for a successful end product.",
+    "approach": [
+        {
+            "researchType": "Library",
+            "researchMethod": "Available Product Analysis",
+            "text": ""
+        },
+        {
+            "researchType": "Showroom",
+            "researchMethod": "Peer Review",
+            "text": ""
+        },
+        {
+            "researchType": "Showroom",
+            "researchMethod": "Pitch",
+            "text": ""
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Thinkering",
+            "text": ""
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Brainstorm",
+            "text": "<<image 1.png>>"
+        }
+    ],
+    "normalLearnings": [
+        "Asking feedback (from teacher / client / pedagogy students)."
+    ],
+    "specialLearnings": [],
+    "result": "Form of solution: 2D virtual companion, gifting game.\nUsers: high schoolers around the age 12 to 14 that are on a waiting list to be helped for their loneliness.\nContext: a safe environment on a mobile device (e.g., phone).\nPerform activity: write personal diary entries, send and receive gifts with a motivational message from and to other players through their companion.\nTarget performance: make the player feel less alone.",
+    "validation": "The design challenge is verified with teachers, the pedagogy students and the client.",
+    "contribution": "Now the design challenge is defined, the group can focus on the MDA of the project and user scenarios. This will result in the ten page game design document."
+}

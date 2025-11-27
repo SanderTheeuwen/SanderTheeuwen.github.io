@@ -1,0 +1,32 @@
+{
+    "published": true,
+    "name": "Unity Flexible List",
+    "dates": [
+        "18-12-2021"
+    ],
+    "goalName": "Create a flexible request message list",
+    "goal": "For the end product, the game, a list of request messages is needed. Since the product will only be a milestone, and for expandability, the list needs to be flexible, so messages can be added or removed.",
+    "approach": [
+        {
+            "researchType": "Library",
+            "researchMethod": "Community Research",
+            "text": "<<source What if there was a way to link debug log outputs and game objects in the scene? (2012, December 13). Unity Forum. Retrieved December 18, 2021, from https://forum.unity.com/threads/what-if-there-was-a-way-to-link-debug-log-outputs-and-game-objects-in-the-scene.965660/>>\n<<source Dictionary in inspector - Unity Answers. (2014, October 22). Unity. Retrieved December 18, 2021, from https://answers.unity.com/questions/642431/dictionary-in-inspector.html>>\n<<source How To Get List of Child Game Objects - Unity Answers. (2012, January 13). Unity. Retrieved December 18, 2021, from https://answers.unity.com/questions/205391/how-to-get-list-of-child-game-objects.html>>\n<<source How to implement event sender - event receiver game objects in unity? (2019, May 27). Stack Overflow. Retrieved December 18, 2021, from https://stackoverflow.com/questions/56324224/how-to-implement-event-sender-event-receiver-game-objects-in-unity>>\n<<source How to create a new GameObject, without adding it to the scene? (2014, April 14). Game Development Stack Exchange. Retrieved December 18, 2021, from https://gamedev.stackexchange.com/questions/71713/how-to-create-a-new-gameobject-without-adding-it-to-the-scene>>\n<<source How delete or remove a component of an GameObject? - Unity Answers. (2014, December 20). Unity. Retrieved December 18, 2021, from https://answers.unity.com/questions/378930/how-delete-or-remove-a-component-of-an-gameobject.html>>\n<<source Scroll rect starting in the middle - Unity Answers. (2015, October 28). Unity. Retrieved December 18, 2021, from https://answers.unity.com/questions/1089307/scroll-rect-starting-in-the-middle.html>>\n<<source Scroll Rect - Scrolling Limit - Unity Answers. (2021, May 26). Unity. Retrieved December 18, 2021, from https://answers.unity.com/questions/1202745/scroll-rect-scrolling-limit.html>>\n<<source Markwell, J. (2015, July 10). What are the steps to instantiate a button in Unity? Game Development Stack Exchange. Retrieved December 18, 2021, from https://gamedev.stackexchange.com/questions/103718/what-are-the-steps-to-instantiate-a-button-in-unity>>\n<<source How to get the width + height of a RectTransform controlled by a Grid Layout Group? - Unity Answers. (2016, October 13). Unity. Retrieved December 18, 2021, from https://answers.unity.com/questions/919516/how-to-get-the-width-height-of-a-recttransform-con.html>>\n<<source Button.onClick.AddListener; How to Pass parameter or get which button was Clicked in Handler Method. - Unity Answers. (2017, July 12). Unity. Retrieved December 18, 2021, from https://answers.unity.com/questions/1288510/buttononclickaddlistener-how-to-pass-parameter-or.html>>\n<<source Cat Trap Studios. (2016, October 31). Unity UI Tutorial - Scroll Rect / Scroll View in 60 Seconds [Video]. YouTube. https://www.youtube.com/watch?v=oDBVRcHhc0M>>"
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature Study",
+            "text": "<<source DocFX. (2020, October 6). Scroll Rect | Unity UI | 1.0.0. Unity. Retrieved December 18, 2021, from https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/script-ScrollRect.html>>\n<<source Technologies, U. (n.d.). Unity - Scripting API: Transform.SetParent. Unity Documentation. Retrieved December 18, 2021, from https://docs.unity3d.com/ScriptReference/Transform.SetParent.html>>\n<<source DocFX. (2020a, October 6). Creating UI elements from scripting | Unity UI | 1.0.0. Unity. Retrieved December 18, 2021, from https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/HOWTO-UICreateFromScripting.html>>"
+        }
+    ],
+    "normalLearnings": [
+        "I can use ScrollRect components in the UI of Unity",
+        "I can instantiate prefabs",
+        "I can assign event listeners in multiple ways",
+        "I can instantiate prefabs without cluttering the unity hierarchy",
+        "I can create flexible scrollable UI elements in Unity"
+    ],
+    "specialLearnings": [],
+    "result": "The result is achieved using the code below:<<image 6.png>>As seen in the following video, the request messages are loaded on runtime and added to a scrollable UI element.<<video https://www.youtube.com/embed/H8bqvlnRvwI>>",
+    "validation": "I checked my work with peers, who told me it looked good.",
+    "contribution": "This directly contributes to the end product, the game. Next I will create UIs for other segments of the product."
+}

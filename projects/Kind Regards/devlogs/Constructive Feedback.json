@@ -1,0 +1,28 @@
+{
+    "published": true,
+    "name": "Constructive Feedback",
+    "dates": [
+        "30-11-2021"
+    ],
+    "goalName": "Give constructive feedback to peers' behavior in sprint 1",
+    "goal": "Feedback is crucial for self improvement, but it is a gray area between emotions and facts. To give constructive feedback is to give the other person something to work with, besides the consequence of their behavior. A very important guideline is to stay with facts, as opinions differ per person. While opinions should not be ignored, facts have more support.",
+    "approach": [
+        {
+            "researchType": "Showroom",
+            "researchMethod": "Peer Review",
+            "text": ""
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature Study",
+            "text": "<<source Corporate Finance Institute. (2019, November 7). Constructive Feedback. Retrieved November 30, 2021, from https://corporatefinanceinstitute.com/resources/careers/soft-skills/constructive-feedback/>>"
+        }
+    ],
+    "normalLearnings": [
+        "I can give constructive feedback, while focussing on facts rather than my personal opinion."
+    ],
+    "specialLearnings": [],
+    "result": "In a retrospective meeting with the group, the feedback given was accurate. My peers found the feedback useful.",
+    "validation": "-",
+    "contribution": "Now the whole group has been given feedback, we can improve our behavior. By doing that, we are more productive and efficient in the future."
+}

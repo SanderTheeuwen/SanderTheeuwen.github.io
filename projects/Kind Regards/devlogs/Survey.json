@@ -1,0 +1,34 @@
+{
+    "published": true,
+    "name": "Survey",
+    "dates": [
+        "17-01-2022",
+        "18-01-2022"
+    ],
+    "goalName": "Create a survey for the product's target users",
+    "goal": "To test the navigability, the layout of the game and if the desired mood is achieved, tests can be performed. With the results, the game can be improved to the client's and players' desires.",
+    "approach": [
+        {
+            "researchType": "Showroom",
+            "researchMethod": "Peer Review",
+            "text": ""
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Expert Interview",
+            "text": ""
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature Study",
+            "text": "<<source How to Write Good Survey & Poll Questions. (n.d.). SurveyMonkey. Retrieved January 17, 2022, from https://www.surveymonkey.com/mp/writing-survey-questions/>>\n<<source O’Conghaile, D. (2021, May 15). 7 Steps to Create Effective Surveys to Collect Community Feedback. CMX. Retrieved January 17, 2022, from https://cmxhub.com/7-steps-to-create-a-survey-and-collect-community-feedback-to-make-your-product-better/>>"
+        }
+    ],
+    "normalLearnings": [
+        "I can create surveys"
+    ],
+    "specialLearnings": [],
+    "result": "The survey I created is shown in the video below.<<video https://www.youtube.com/embed/8DjtFybl4xg>>",
+    "validation": "I showed the survey to my peers, who liked it.",
+    "contribution": "The survey helps improve the product indirectly, gathering information about the players' experience to improve the product. I will work on processing those results next."
+}

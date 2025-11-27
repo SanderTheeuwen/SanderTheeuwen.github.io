@@ -1,0 +1,30 @@
+{
+    "published": true,
+    "name": "Unity Warning Suppressors",
+    "dates": [
+        "28-12-2021",
+        "29-12-2021"
+    ],
+    "goalName": "Reduce the amount of warnings and suggestions in the debug log without compromising the code's integrity",
+    "goal": "Unity projects are bound to give warnings and suggestions in an IDE like Visual Studio. To keep a clear view of errors, the warnings and suggestions that can be justified need to be filtered out. By doing so, the debug log is kept clean and only contains warnings that require attention.",
+    "approach": [
+        {
+            "researchType": "Library",
+            "researchMethod": "Community Research",
+            "text": "<<source Disable warning messages - Unity Answers. (2015, December 3). Unity. Retrieved December 28, 2021, from https://answers.unity.com/questions/21796/disable-warning-messages.html>>"
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature Study",
+            "text": "<<source Microsoft. (2021, September 29). Suppress code analysis warnings - .NET. Microsoft Docs. Retrieved December 28, 2022, from https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/suppress-warnings>>\n<<source Microsoft. (2021, September 15). Compiler Warning (level 2) CS0162. Microsoft Docs. Retrieved December 28, 2021, from https://docs.microsoft.com/en-us/dotnet/csharp/misc/cs0162?f1url=%3FappId%3Droslyn%26k%3Dk(CS0162)>>\n<<source Microsoft. (2021b, November 29). IDE0044: Add readonly modifier - .NET. Microsoft Docs. Retrieved December 29, 2021, from https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0044>>\n<<source Microsoft. (n.d.). SuppressMessageAttribute Class (System.Diagnostics.CodeAnalysis). Microsoft Docs. Retrieved December 29, 2021, from https://docs.microsoft.com/en-us/dotnet/api/system.diagnostics.codeanalysis.suppressmessageattribute?view=net-6.0>>"
+        }
+    ],
+    "normalLearnings": [
+        "I can create suppression files for C#",
+        "I can suppress different error / warning / suggestion messages in the debug log for C#"
+    ],
+    "specialLearnings": [],
+    "result": "As seen in the picture below, the suggestions IDE0090 and IDE0044 and the warnings CS0162 and CS0649 are being suppressed throughout the whole project.<<image 4.png>>While suppression of suggestions and warnings is a solution in some cases, I need to be careful not to suppress warnings that should not be ignored.",
+    "validation": "I checked my work with my peers who approved of it.",
+    "contribution": "Now the debug log is clean, I will refactor code to increase efficiency and adherence of the SOLID principles. This directly contributes to the end product, the game itself."
+}

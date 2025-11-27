@@ -1,0 +1,42 @@
+{
+    "published": true,
+    "name": "Processing Survey Results",
+    "dates": [
+        "19-01-2022",
+        "20-01-2022"
+    ],
+    "goalName": "Process the results as far as possible and put them into charts",
+    "goal": "For the next step from completing a survey, the processing of the results is important. The viewer needs to be able to look at the results for a very small time and get a lot of information. The motto \"Show don't tell\" is also important, as images can be remembered longer than raw numbers.",
+    "approach": [
+        {
+            "researchType": "Showroom",
+            "researchMethod": "Peer Review",
+            "text": ""
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Thinkering",
+            "text": ""
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Community Research",
+            "text": "<<source Stanton, L. (2021, November 27). How to Count Cells With Text in Excel. Alphr. Retrieved January 19, 2022, from https://www.alphr.com/excel-count-cells-with-text/>>\n<<source M., S. (2021, September 5). Return list of all values that match criteria. Super User. Retrieved January 19, 2022, from https://superuser.com/questions/1169289/return-list-of-all-values-that-match-criteria>>"
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature Study",
+            "text": "<<source Cheusheva, S. (2021, October 20). How to create external reference in Excel to refer to another sheet or workbook. 4Bits Ltd. Retrieved January 19, 2022, from https://www.ablebits.com/office-addins-blog/2015/12/08/excel-reference-another-sheet-workbook/>>\n<<source Microsoft. (n.d.). Video: Create a chart. Retrieved January 19, 2022, from https://support.microsoft.com/en-us/office/video-create-a-chart-4d95c6a5-42d2-4cfc-aede-0ebf01d409a8#:%7E:text=Select%20the%20data%20for%20which,how%20your%20data%20will%20look.&text=When%20you%20find%20the%20chart%20you%20like%2C%20click%20it%20%3E%20OK>>\n<<source How to find the highest value and return adjacent cell value in Excel? (n.d.). ExtendOffice. Retrieved January 19, 2022, from https://www.extendoffice.com/documents/excel/2548-excel-find-highest-value-and-return-adjacent-cell.html>>\n<<source Guen, F. L. E. (2019, January 25). COUNTIFS - Count rows automatically in Excel. Excel Exercise. Retrieved January 19, 2022, from https://www.excel-exercise.com/countifs-count-rows-automatically-in-excel/>>\n<<source Cooksey, B. (2016, April 15). How to get excel row numbers to skip the header. Super User. Retrieved January 19, 2022, from https://superuser.com/questions/480777/how-to-get-excel-row-numbers-to-skip-the-header>>\n<<source Bruns, D. (n.d.). Excel FILTER Function. EXCELJET. Retrieved January 19, 2022, from https://exceljet.net/excel-functions/excel-filter-function>>\n<<source How to create a pie chart for YES/NO answers in Excel? (n.d.). ExtendOffice. Retrieved January 20, 2022, from https://www.extendoffice.com/documents/excel/5148-excel-yes-no-pie-chart.html>>"
+        }
+    ],
+    "normalLearnings": [
+        "I can get an avergae of several numbers in Excel",
+        "I can get the median of several numbers in Excel",
+        "I can load data from an external Excel sheet",
+        "I can create several charts with numbered data"
+    ],
+    "specialLearnings": [],
+    "result": "In the excel sheet the template is shown with the processed results. As there is a lack of results, I created two dummy results, containing very different answers to test the processing with. The numbers are processed succesfully and are shown in charts in a structured manner.<<document Processed Responses.xlsx>>",
+    "validation": "I showed the processing to project members, who were very positive about the result.",
+    "contribution": "This indirectly contributes to the end product, as the (processed) results are used to improve the product. Next, I will work on gathering suggestions based off of the results for potential future developers."
+}

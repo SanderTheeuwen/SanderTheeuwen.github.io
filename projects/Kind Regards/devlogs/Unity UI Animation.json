@@ -1,0 +1,41 @@
+{
+    "published": true,
+    "name": "UI Animation",
+    "dates": [
+        "14-12-2021",
+        "15-12-2021"
+    ],
+    "goalName": "Create a UI where, on the press of a button, an overlay is animated in and out",
+    "goal": "For the industry project I have to create a UI. When the companion (red box model) is clicked, the owl should give the player some options. This has to be done by showing an overlay, and some options to choose.",
+    "approach": [
+        {
+            "researchType": "Showroom",
+            "researchMethod": "Peer Review",
+            "text": ""
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Expert Interview",
+            "text": ""
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Thinkering",
+            "text": ""
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature Study",
+            "text": "<<source Technologies, U. (2021, December 10). Unity - Manual: Using Animation Events. Unity Documentation. Retrieved December 14, 2021, from https://docs.unity3d.com/Manual/script-AnimationWindowEvent.html>>\n<<source DocFX. (2020, October 6). Designing UI for Multiple Resolutions | Unity UI | 1.0.0. Unity. Retrieved December 14, 2021, from https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/HOWTO-UIMultiResolution.html>>"
+        }
+    ],
+    "normalLearnings": [
+        "I can add custom resolutions to a game.",
+        "I can create animation controllers using multiple animations.",
+        "I can create animation events."
+    ],
+    "specialLearnings": [],
+    "result": "As seen in the evidence, the dialogue options smoothly fade in and out. When clicking on anything except one of the options, the dialogue is closed. I had to redirect the event from the animation because the UIHome class was a component higher in the hierarchy, which can be seen here:<<image 3.png>>The result can be seen in the following video:<<video https://www.youtube.com/embed/DWG6IXCDik4>>",
+    "validation": "I validated my work through testing and reviews by both peers and a teacher.",
+    "contribution": "Now the dialogue options are finished for now, the actions themselves need to be implemented. This directly contributes to the final product."
+}

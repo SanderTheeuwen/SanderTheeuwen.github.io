@@ -1,0 +1,43 @@
+{
+    "published": true,
+    "type": "video",
+    "fileName": "https://www.youtube.com/embed/UYi6bCjcZbA",
+    "title": "Paper Prototype",
+    "name": "Paper Prototype",
+    "description": "A paper prototype for the concept of the game.",
+    "stakeholders": [
+        {
+            "type": "Team members",
+            "people": [
+                "Brian Vlaar",
+                "Dylan Pipping",
+                "Isabel Pijnenburg",
+                "Jasper Sijben",
+                "Patrick van Halm",
+                "Sander Theeuwen"
+            ]
+        },
+        {
+            "type": "External team members (pedagogy students)",
+            "people": [
+                "Hua Zhou Chen",
+                "Gaya Klaassens",
+                "Lidian van der Ende",
+                "Pieter Spooren"
+            ]
+        },
+        {
+            "type": "Teacher / first assessor",
+            "people": [
+                "Michael Schifferling",
+                "Wilrik de Loose"
+            ]
+        },
+        {
+            "type": "Client / company mentor",
+            "people": [
+                "John Koomen"
+            ]
+        }
+    ]
+}

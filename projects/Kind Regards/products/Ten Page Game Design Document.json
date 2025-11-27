@@ -1,0 +1,43 @@
+{
+    "published": true,
+    "type": "word",
+    "fileName": "Ten Page Game Design Document.docx",
+    "title": "Ten Page Game Design Document",
+    "name": "Ten Page Game Design Document",
+    "description": "An in-depth document containing the details of the design of the game.",
+    "stakeholders": [
+        {
+            "type": "Team members",
+            "people": [
+                "Brian Vlaar",
+                "Dylan Pipping",
+                "Isabel Pijnenburg",
+                "Jasper Sijben",
+                "Patrick van Halm",
+                "Sander Theeuwen"
+            ]
+        },
+        {
+            "type": "External team members (pedagogy students)",
+            "people": [
+                "Hua Zhou Chen",
+                "Gaya Klaassens",
+                "Lidian van der Ende",
+                "Pieter Spooren"
+            ]
+        },
+        {
+            "type": "Teacher / first assessor",
+            "people": [
+                "Michael Schifferling",
+                "Wilrik de Loose"
+            ]
+        },
+        {
+            "type": "Client / company mentor",
+            "people": [
+                "John Koomen"
+            ]
+        }
+    ]
+}

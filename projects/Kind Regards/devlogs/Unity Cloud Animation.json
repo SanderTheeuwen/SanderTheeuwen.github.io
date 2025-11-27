@@ -1,0 +1,24 @@
+{
+    "published": true,
+    "name": "Unity Cloud Animations",
+    "dates": [
+        "28-12-2021"
+    ],
+    "goalName": "Create non linear cloud animations",
+    "goal": "As a background animation, me and my project partners thought of moving clouds. A calm animation giving a bit of life to the player's environment. To prevent exact repetition, the animation must be flexible and non linear.",
+    "approach": [
+        {
+            "researchType": "Library",
+            "researchMethod": "Community Research",
+            "text": "<<source Li, T. (2012, April 10). Cannot Add Animation in Inspector. Unity Forum. Retrieved December 28, 2021, from https://forum.unity.com/threads/cannot-add-animation-in-inspector.378036/>>\n<<source How to make not smooth animation? - Unity Answers. (2015, February 5). Unity. Retrieved December 28, 2021, from https://answers.unity.com/questions/893479/how-to-make-not-smooth-multi-sprite-animation.html>>\n<<source Zakaria, M. (2019, December 9). Play Two Animations Simultaneously using Animator - Unity Answers. Unity. Retrieved December 28, 2021, from https://answers.unity.com/questions/741357/play-two-animation-simultaneously-using-animator.html>>"
+        }
+    ],
+    "normalLearnings": [
+        "I can create multiple layered animations",
+        "I can create constant animations"
+    ],
+    "specialLearnings": [],
+    "result": "The result is achieved using the code seen in the image:<<image 5.png>>As seen in the video below, clouds are given a random animation at a random interval.<<video https://www.youtube.com/embed/U1AAbkf2-kY>>",
+    "validation": "I checked the animations with peers, who said it was very good.",
+    "contribution": "This directly contributes to the end product, the game."
+}

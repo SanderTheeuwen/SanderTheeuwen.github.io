@@ -1,0 +1,31 @@
+{
+    "published": true,
+    "name": "UML Class Diagrams",
+    "dates": [
+        "15-12-2021",
+        "17-12-2021",
+        "25-12-2021",
+        "26-12-2021"
+    ],
+    "goalName": "Create a UML class diagram for the product",
+    "goal": "In a project which will be worked on by multiple contributers, it is very important to keep structure and a clear overview. UML class diagrams are used to describe classes and their relations, so people can see in a quick look what links to what.",
+    "approach": [
+        {
+            "researchType": "Library",
+            "researchMethod": "Available Product Analysis",
+            "text": ""
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature Study",
+            "text": "<<source UML Class Diagram Tutorial. (n.d.). Visual Paradigm. Retrieved December 15, 2021, from https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-class-diagram-tutorial/>>"
+        }
+    ],
+    "normalLearnings": [
+        "I can create clear UML class diagrams"
+    ],
+    "specialLearnings": [],
+    "result": "The diagram contains classes and their relations to each other. This UML class diagram is a work in progress, only finished at the end of the project.<<image 7.png>>",
+    "validation": "I will check my work with peers.",
+    "contribution": "This diagram contributes to the structure and overview of the project. I will continue by implementing features and updating the UML class diagram simultaniously."
+}

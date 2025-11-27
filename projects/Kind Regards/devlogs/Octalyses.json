@@ -1,0 +1,46 @@
+{
+    "published": true,
+    "name": "Octalyses",
+    "dates": [
+        "20-11-2021"
+    ],
+    "goalName": "Create four octalyses for the four phases of the player's journey",
+    "goal": "The player's journey is a 'road' from the discovery to the very end of the game. The discovery phase is where the player learns of the game's existance. In the onboarding, the player is taught the rules and mechanics of the game. The scaffolding is where the player repeatedly cycles through the core loop. In the endgame phase, the player (usually) has the ability to unlock everything. Octalyses are used to get a very fast view on how the player is motivated to explore the game within each of these four phases.",
+    "approach": [
+        {
+            "researchType": "Showroom",
+            "researchMethod": "Expert Interview",
+            "text": ""
+        },
+        {
+            "researchType": "Showroom",
+            "researchMethod": "Peer Review",
+            "text": ""
+        },
+        {
+            "researchType": "Showroom",
+            "researchMethod": "Pitch",
+            "text": ""
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Available Product Analysis",
+            "text": ""
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature Study",
+            "text": "<<source Chou, Y. (2015, July 29). The 8 Core Drives of Gamification (#7): Unpredictability & Curiosity. Yu-Kai Chou: Gamification & Behavioral Design. Retrieved November 20, 2021, from https://yukaichou.com/gamification-study/the-8-core-drives-of-gamification-7-unpredictability/>>\n<<source Chou, Y. (2015b, July 31). The 8 Core Drives of Gamification (#8): Loss & Avoidance. Yu-Kai Chou: Gamification & Behavioral Design. Retrieved November 20, 2021, from https://yukaichou.com/gamification-study/8-loss-and-avoidance/>>\n<<source Chou, Y. (2018, February 2). 4 Experience Phases in Gamification (#1): Discovery Phase. Yu-Kai Chou: Gamification & Behavioral Design. Retrieved November 20, 2021, from https://yukaichou.com/gamification-study/4-experience-phases-gamification-1-discovery-phase/>>\n<<source Chou, Y. (2019, July 18). Onboarding Experience Phase in Gamification. Yu-Kai Chou: Gamification & Behavioral Design. Retrieved November 20, 2021, from https://yukaichou.com/gamification-study/4-experience-phases-gamification-2-onboarding-phase/>>\n<<source Chou, Y. (2020, March 2). 4 Experience Phases in Gamification (#3): The Scaffolding Phase. Yu-Kai Chou: Gamification & Behavioral Design. Retrieved November 20, 2021, from https://yukaichou.com/gamification-study/4-experience-phases-gamification-3-scaffolding-phase/>>\n<<source Chou, Y. (2018b, February 2). 4 Experience Phases in Gamification (#4): The Endgame. Yu-Kai Chou: Gamification & Behavioral Design. Retrieved November 20, 2021, from https://yukaichou.com/gamification-study/4-experience-phases-gamification-4-endgame/>>\n<<source Chou, Y. (2017, November 20). White Hat vs Black Hat Gamification in the Octalysis Framework. Yu-Kai Chou: Gamification & Behavioral Design. Retrieved November 20, 2021, from https://yukaichou.com/gamification-study/white-hat-black-hat-gamification-octalysis-framework/>>\n<<source Chou, Y. (2021, March 8). Octalysis: Complete Gamification Framework - Yu-kai Chou. Yu-Kai Chou: Gamification & Behavioral Design. Retrieved November 20, 2021, from https://yukaichou.com/gamification-examples/octalysis-complete-gamification-framework/>>"
+        }
+    ],
+    "normalLearnings": [
+        "I know how to create octalyses",
+        "I know the four phases of a player's journey",
+        "I know the effects of certain core drivers based on the left brain and right brain principle",
+        "I know the effects of certain core drivers based on white hat and black hat gamification"
+    ],
+    "specialLearnings": [],
+    "result": "As seen in the image below, I managed to create four octalyses: one for each phase of the player's journey. When creating these octalyses, I took into account the scope and mechanics of the game, as well as the target users. Especially the target users caused me to focus on white hat core drivers, mainly seen in the discovery and onboarding phase. I also tried to convert left brain core drivers to right brain core drivers throughout the player's journey.<<image 2.png>>",
+    "validation": "In the pitch to the client and teachers, they approved of the octalyses.",
+    "contribution": "Now that the broad lines of the game are finished, it is time to go into the details. The next product we will make is a ten page game design document."
+}
