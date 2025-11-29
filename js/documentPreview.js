@@ -10,6 +10,7 @@ function getDocumentPreview(productData, projectName)
             link.textContent = `Download ${productData.type} document`;
             break;
         case "pdf":
+        case "txt":
             link.textContent = `Open document in new window`;
             const iframe = document.createElement("iframe");
             iframe.className = "embed";

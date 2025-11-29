@@ -16,7 +16,6 @@ function loadDocuments(text, projectName)
             {
                 case "csv":
                 case "xlsx":
-                    console.log("Test");
                     element = `</br><a class="link" href="${filePath}" target="_blank">Download ${type} document</a></br>`
                 break;
             }

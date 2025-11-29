@@ -1,0 +1,34 @@
+{
+    "published": true,
+    "name": "Natural starting physics for basketballs",
+    "dates": [
+        "23-05-2023"
+    ],
+    "goalName": "How are basketballs thrown in real life and how can this be mimicked in Unity?",
+    "goal": "In the early stages of the development, the basketballs were thrown from the same position with no effects. Every thrown ball looked the same and it was easy to say it did not look realistic.",
+    "approach": [
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Thinkering",
+            "text": "I started out by making a 'line' from where the balls were thrown. By picking a random point on this line, the basketballs were instantiated at different positions and thrown towards the basket. The balls still had the same trajectory, so to add variation, I implemented a random increment to the strength of the throw.<<image 1.png>>Next, I gave the basketballs a starting rotation. This way, the balls had a different look compared to each other, because they can be seen with different angles."
+        },
+        {
+            "researchType": "Field",
+            "researchMethod": "Focus Group",
+            "text": "A test session was held once the game's base features were finished. Together with the stakeholders, we had a feedback session where we discussed the game feel and the quality of the result to determine if the project was being developed as expected. One of the feedback points included that the balls did not have any motion."
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature Study",
+            "text": "When balls are thrown, there is usually some spin involved. Looking up how to add a starting rotation force to the balls, the first answer was perfect as a solution: <<source Technologies, U. (19-05-2023). Unity - Scripting API: Rigidbody.AddTorque. https://docs.unity3d.com/ScriptReference/Rigidbody.AddTorque.html>>. By adding torque to the rigidbody, the balls were given a spinning force at the start.<<image 2.png>>"
+        }
+    ],
+    "normalLearnings": [
+        "I learned to compare the wanted game element to the real world scenarios to create the most realistic implementation.",
+        "I learned how to add spin to an object with a Rigidbody."
+    ],
+    "specialLearnings": [],
+    "result": "As seen in the video, the balls are coming from different angles with a varying rotation and spin.<<video https://www.youtube.com/embed/kmGLeNAJWYo>>",
+    "validation": "The company mentor was satisfied with the result.",
+    "contribution": "This is part of the end product, and is used to improve the game feel."
+}

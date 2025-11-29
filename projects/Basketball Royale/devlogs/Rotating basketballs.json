@@ -1,0 +1,27 @@
+{
+    "published": true,
+    "name": "Rotating basketballs",
+    "dates": [
+        "16-05-2023",
+        "17-05-2023"
+    ],
+    "goalName": "Add rotation to basketballs without affecting the child game objects",
+    "goal": "The basketballs did not have much rotation. When they roll down a slope, their rotation would not change much, making them appear still.",
+    "approach": [
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Thinkering",
+            "text": "By looking at the physics components of the basketballs, I found out the physics material's friction was off. When enabled, it would rotate the child components like the name along with the basketballs. I tried to lock the name in place, but it did not work. Next, I made the name object a sibling of the basketball instead of a child. This however caused the names to be in a fixed position, instead of above the basketballs."
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Community Research",
+            "text": "I was out of efficient ideas, so I decided to look up solutions that did not involve setting the position of the child objects every frame. Unfortunately, all sources pointed towards this idea. It was the easiest solution, although it is more resource intensive than I would have liked."
+        }
+    ],
+    "normalLearnings": [],
+    "specialLearnings": [],
+    "result": "As seen in the video below, the basketballs rotate smoothly, while the name object stays above the balls:<<video https://www.youtube.com/embed/kmGLeNAJWYo>>In the Update function of the basketball script, the following line is added:<<image 9.png>>",
+    "validation": "I showed my work to my supervisors, explaining the solution works with the downside of having an extra statement in the Update function. They acknowledged the tradeoff, which they found acceptable. As long as it does not slow down the game, it is a suitable solution.",
+    "contribution": "The rotation of the basketballs adds to the game feel of the end product."
+}

@@ -1,0 +1,21 @@
+{
+    "published": true,
+    "name": "Victory event",
+    "dates": [
+        "06-06-2023"
+    ],
+    "goalName": "Create a victory event for the basketball arcade game mode",
+    "goal": "When a round ends, nothing really happens so far. The winner is displayed and the remaining basketballs explode. Adding a victory event adds excitement to the game feel.",
+    "approach": [
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Thinkering",
+            "text": "I decided to create a confetti effect like shown here:<<image 12.png>>To make it more arcade like and basketball like, I decided to use basketballs instead of confetti. I created a second prefab of the basketballs with a trail that includes more colors and extra bounciness. Next, I created a script to shoot basketballs at different speeds from the bottom corners."
+        }
+    ],
+    "normalLearnings": [],
+    "specialLearnings": [],
+    "result": "The result is achieved using the code shown here:<<image 13.png>>The victory basketball code is similar to regular basketballs, without the score event. They automatically explode after 3 seconds. The following video shows the result in action:<<video https://www.youtube.com/embed/a-F_MEBzQLw>>",
+    "validation": "",
+    "contribution": ""
+}

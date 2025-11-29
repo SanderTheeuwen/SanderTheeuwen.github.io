@@ -1,0 +1,39 @@
+{
+    "published": true,
+    "name": "Unity web requests",
+    "dates": [
+        "16-04-2023"
+    ],
+    "goalName": "Sending web requests in Unity",
+    "goal": "The arcade mode of the basketball game uses a Twitch overlay for players to use for throwing. The overlay has to be made invisible at times so players cannot shoot anymore.",
+    "approach": [
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature Study",
+            "text": "As I have never used webrequests before, I looked up how web requests were sent. The following sources suggested to use a from:\n<<source Technologies, U. (28-04-2023). Unity - Manual: Sending a form to an HTTP server (POST). https://docs.unity3d.com/Manual/UnityWebRequest-SendingForm.html>>\n<<source Technologies, U. (28-04-2023). Unity - Scripting API: Networking.UnityWebRequest.Put. https://docs.unity3d.com/ScriptReference/Networking.UnityWebRequest.Put.html>>"
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Expert Interview",
+            "text": "My company mentor informed me as we were creating the script that the functions mentioned were Legacy functions, meaning they were intended for older versions."
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Community Research",
+            "text": "With the following source, I managed to send web requests:\n<<source How to write HTTP post request in Unity by using UnityWebRequest? (22-05-2019). Stack Overflow. https://stackoverflow.com/questions/51926762/how-to-write-http-post-request-in-unity-by-using-unitywebrequest>>"
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature Study",
+            "text": "The data consisted of just a string containing data in json format. As the company mentor mentioned that it was not the most versatile solution, we created a class to hold the data. The data did not make it to the overlay, as we discovered using the log. Using the following source, we serialized the data correctly: <<source Technologies, U. (28-04-2023). Unity - Manual:  JSON Serialization. https://docs.unity3d.com/2020.3/Documentation/Manual/JSONSerialization.html>>."
+        }
+    ],
+    "normalLearnings": [
+        "I know how to send web requests in Unity.",
+        "I know how to serialize an object to a json string."
+    ],
+    "specialLearnings": [],
+    "result": "The data arrived successfully at the overlay and a 200 status code was sent back. The result was achieved using the code below:<<image 14.png>>",
+    "validation": "The script was made in cooperation with the company mentor, who approved of the solution.",
+    "contribution": "This directly contributes to the end product."
+}

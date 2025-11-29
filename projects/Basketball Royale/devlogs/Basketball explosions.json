@@ -1,0 +1,34 @@
+{
+    "published": true,
+    "name": "Basketball explosions",
+    "dates": [
+        "23-05-2023"
+    ],
+    "goalName": "Creating an explosion effect to destroy basketballs",
+    "goal": "With the new arcade machine model, it is possible for basketballs to be visible and motionless at the end of the round. There needs to be a way to destroy the balls without them just popping out of existence.",
+    "approach": [
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Thinkering",
+            "text": "By playing around with the particle system already added to the basketballs, I discovered the burst option in the emission. This turned out not to be the most suitable option, as it needed the emission to be turned on, leaving a trail instead."
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Community Research",
+            "text": "I looked up how to create particles on runtime, and found out it can be done using \"particleSystem.Emit\" from <<source Setting particle burst on runtime - Unity Answers. (11-05-2016). https://answers.unity.com/questions/1184980/setting-particle-burst-on-runtime.html>>. Unfortunately, this solution did not work immediately, as it was deprecated."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Thinkering",
+            "text": "Having discovered the particle system component has methods itself, I looked at what was available and came up with the following solution:<<image 7.png>>This initially did not work either, though it was visible while testing out the settings in the editor. By waiting a few seconds after the particles were emitted, the gameobject could be destroyed without it looking cut off."
+        }
+    ],
+    "normalLearnings": [
+        "I learned that emitted particles are destroyed instantly when the gameobject is destroyed.",
+        "I learned that the particle system has modules to separate responsibility."
+    ],
+    "specialLearnings": [],
+    "result": "Once the round ends, the remaining basketballs are destroyed one by one, each creating an 'explosion' of particles as seen here:<<video https://www.youtube.com/embed/kmGLeNAJWYo>>",
+    "validation": "My supervisors were satisfied with the result for now. When there is time left, it can be improved with the help of the experts at the company.",
+    "contribution": "The explosions add to the game feel of the game."
+}

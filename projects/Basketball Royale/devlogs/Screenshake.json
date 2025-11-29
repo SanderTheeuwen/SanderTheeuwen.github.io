@@ -1,0 +1,29 @@
+{
+    "published": true,
+    "name": "Screenshake",
+    "dates": [
+        "23-05-2023"
+    ],
+    "goalName": "How is screenshake implemented?",
+    "goal": "In a playtest focused on game feel, screen shake was mentioned to add extra impact to certain events in the game. Hitting the ring with a basketball is something that happens occasionally, where scoring is the biggest event. To make these events have extra impact, screenshake can help, as it is a visual cue that something happened.",
+    "approach": [
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature Study",
+            "text": "By searching for screenshake implementations, the following source came up: <<source Solanki, A. (2023, March 4). How To Make The Camera Shake In Unity? Game Development Solutions. https://gamedevsolutions.com/camera-shake-effect-in-unity3d/>>. This had the basic implementation for screenshake."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Thinkering",
+            "text": "Because my solution was for multiple intensities, I altered the script to look like this:<<image 3.png>>Because the method of the screenshake itself (DoScreenShake) is an IEnumerator, multiple screenshakes simultaniously are supported, which happens rather much through the game. By adding an intensity and duration, it is given flexibility to be reused for multiple events i.e. ring hits and scoring."
+        }
+    ],
+    "normalLearnings": [
+        "I learned how to add screenshake.",
+        "I improved my code by adding flexibility without sacrificing too many resources."
+    ],
+    "specialLearnings": [],
+    "result": "In the video below , the screenshake effect can be seen. A small screenshake when the ring of the basket gets hit, and a bigger, longer screenshake when a player scores.<<video https://www.youtube.com/embed/CUPvAk61rPA>>",
+    "validation": "The company mentor and manager were happy with the screenshake, though it was a bit too intense. Due to the flexibility, the intensity is very easily adjustable.",
+    "contribution": "This is directly implemented in the end product, and adds to the game feel."
+}

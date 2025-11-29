@@ -1,0 +1,24 @@
+{
+    "published": true,
+    "name": "Basketball explosion error",
+    "dates": [
+        "01-06-2023"
+    ],
+    "goalName": "Unity gives errors while working on the basketball explosion script",
+    "goal": "When I added the environment model to the scene, a large amount of errors showed up. I was accessing a script that had been destroyed. It was in the explosion method of the object, which confused me, as I did not understand how the object was destroyed before that.",
+    "approach": [
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Thinkering",
+            "text": "Because the console gave me the error that I was accessing a script that has been destroyed, I looked at places where I destroy the gameobject (the script itself is not directly destroyed). The basketballs are destroyed when they reach a y-position below -20, and when the explosion particles are finished. Both the explosion method and the loop through all basketball objects use IEnumerators, it can take a couple of seconds from getting the list of basketballs to destroying the basketball in the explosion method.<<image 4.png>>The above script is in the GameManager.<<image 5.png>>The above script is in the Basketball. Because it takes a couple of seconds to reach \"Destroy(gameObject)\" in the Explode function, the basketball could already have fallen below the previously mentioned y-position. Before adding the environment, basketballs would fall below the y-position before the round ended. The basketball would be destroyed, but the IEnumerator continued, and tried to destroy the ball again, resulting in an error.\n\nI thought of two solutions to deal with the problem. I could add a boolean to the basketball whether or not the explosion is happening, and disable the y-position check when it is. Or I could add two checks at the Explode method to verify if the object has been destroyed (by the y-position check). Because the latter option does not use an extra variable and is one less if-statement in the update method, this is the most resource saving method."
+        }
+    ],
+    "normalLearnings": [
+        "I learned to brainstorm possible solutions before implementing the first one I could think of.",
+        "I learned to make decisions to save the most resources."
+    ],
+    "specialLearnings": [],
+    "result": "No more errors showed up after the fix.",
+    "validation": "The errors were gone, indicating the solution works.",
+    "contribution": "This helps for a more maintainable code. The errors did not break the game, but errors should not be ignored."
+}

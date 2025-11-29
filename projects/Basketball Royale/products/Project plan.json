@@ -1,0 +1,36 @@
+{
+    "published": true,
+    "type": "word",
+    "fileName": "Project plan.docx",
+    "title": "Project Plan",
+    "name": "Project Plan",
+    "description": "The project plan containing the most crucial information for the project's organization",
+    "stakeholders": [
+        {
+            "type": "Team members",
+            "people": [
+                "Sander Theeuwen"
+            ]
+        },
+        {
+            "type": "External team members (modeler / texture artist)",
+            "people": [
+                "Finne"
+            ]
+        },
+        {
+            "type": "Teacher / assessors",
+            "people": [
+                "Erwin Bell",
+                "Lois van Zijst"
+            ]
+        },
+        {
+            "type": "Client / company mentor",
+            "people": [
+                "Jeroen van Baar",
+                "Joris Kok"
+            ]
+        }
+    ]
+}

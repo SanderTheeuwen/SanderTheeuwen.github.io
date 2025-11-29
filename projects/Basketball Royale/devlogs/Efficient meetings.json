@@ -1,0 +1,21 @@
+{
+    "published": true,
+    "name": "Efficient meetings",
+    "dates": [
+        "07-04-2023"
+    ],
+    "goalName": "Add structure and efficiency to meetings to make them effective",
+    "goal": "Meetings until now have mostly been long and repetitive. People need to know what they can expect from the meetings and the meeting must be efficient.",
+    "approach": [
+        {
+            "researchType": "Library",
+            "researchMethod": "Expert Interview",
+            "text": "In the meetings before, I explained most of my points several times. The company mentor and manager gave me feedback that it was unnecessary to repeat things. Repeating things often devalues the point where it can even bore participants. The participants also asked what the meeting was for when it was started. I started to notice how the stakeholders themselves held their meetings, and tried it myself."
+        }
+    ],
+    "normalLearnings": [],
+    "specialLearnings": [],
+    "result": "I started to announce meetings differently, stating what it was for, and what was needed from all participants. The meetings gained structure too:\n1. The goal of the meeting.\n2. What is needed to achieve the goal.\n3. Core of the meeting (the meeting itself basically).\n4. Conclusion and agreements.",
+    "validation": "It took some practise, but the company mentor said I was improving the effectiveness of the meetings.",
+    "contribution": "Effective meetings allows more time for development and adds clarity for the stakeholders of the project, building trust."
+}

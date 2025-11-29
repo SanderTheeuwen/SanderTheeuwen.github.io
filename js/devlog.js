@@ -26,28 +26,67 @@ document.addEventListener("DOMContentLoaded", async function ()
             throw "Devlog is not published";
         }
 
-        // Set title and dates
-        document.getElementById("devlog-title").innerHTML = projectName + "</br>" + devlogData.name;
-        document.getElementById("devlog-dates").innerHTML = `Dates</br>${devlogData.dates.join("</br>")}`;
-
-        // Set goal
-        document.getElementById("devlog-goalName").innerHTML = processText(devlogData.goalName, projectName);
-        document.getElementById("devlog-goal").innerHTML = processText(devlogData.goal, projectName);
-
-        // Set approach
-        const approachList = document.getElementById("devlog-approach");
-        for (const entry of devlogData.approach)
+        // Title
+        if (devlogData.name)
         {
-            const listItem = document.createElement("li");
-            listItem.innerHTML = `
+            document.getElementById("section-devlog-title").innerHTML = projectName + "</br>" + devlogData.name;
+        }
+        else
+        {
+            document.getElementById("section-devlog-title").className = "hidden";
+        }
+
+        // Dates
+        if (devlogData.dates.length != 0)
+        {
+            document.getElementById("section-devlog-dates").innerHTML = `Dates</br>${devlogData.dates.join("</br>")}`;
+        }
+        else
+        {
+            document.getElementById("section-devlog-dates").className = "hidden";
+        }
+
+        // Goal
+        if (!devlogData.goalName && !devlogData.goal)
+        {
+            document.getElementById("section-devlog-goal").className = "hidden";
+        }
+        else
+        {
+            // Name
+            if (devlogData.goalName)
+            {
+                document.getElementById("devlog-goalName").innerHTML = processText(devlogData.goalName, projectName);
+            }
+
+            // Description
+            if (devlogData.goal)
+            {
+                document.getElementById("devlog-goal").innerHTML = processText(devlogData.goal, projectName);
+            }
+        }
+
+        // Approach
+        if (devlogData.approach.length != 0)
+        {
+            const approachList = document.getElementById("devlog-approach");
+            for (const entry of devlogData.approach)
+            {
+                const listItem = document.createElement("li");
+                listItem.innerHTML = `
                 <strong class="researchType">${entry.researchType}</strong>
                 <strong>${entry.researchMethod}</strong>
                 </br>
-                <div class="approach-text">${processText(entry.text, projectName) }</div>`;
-            approachList.appendChild(listItem);
+                <div class="approach-text">${processText(entry.text, projectName)}</div>`;
+                approachList.appendChild(listItem);
+            }
+        }
+        else
+        {
+            document.getElementById("section-devlog-approach").className = "hidden";
         }
 
-        // Set normal learning outcomes
+        // Normal learning outcomes
         if (devlogData.normalLearnings.length != 0)
         {
             const normalLearningList = document.getElementById("devlog-normal-learning");
@@ -60,10 +99,10 @@ document.addEventListener("DOMContentLoaded", async function ()
         }
         else
         {
-            document.getElementById("devlog-normal-learning-section").className = "hidden";
+            document.getElementById("section-devlog-learnings-normal").className = "hidden";
         }
 
-        // Set special learning outcomes
+        // Special learning outcomes
         if (devlogData.specialLearnings.length != 0)
         {
             const specialLearningList = document.getElementById("devlog-special-learning");
@@ -76,13 +115,38 @@ document.addEventListener("DOMContentLoaded", async function ()
         }
         else
         {
-            document.getElementById("devlog-special-learning-section").className = "hidden";
+            document.getElementById("section-devlog-learnings-special").className = "hidden";
         }
 
-        // Set result, validation, and contribution
-        document.getElementById("devlog-result").innerHTML = processText(devlogData.result, projectName);
-        document.getElementById("devlog-validation").innerHTML = processText(devlogData.validation, projectName);
-        document.getElementById("devlog-contribution").innerHTML = processText(devlogData.contribution, projectName);
+        // Result
+        if (devlogData.result)
+        {
+            document.getElementById("devlog-result").innerHTML = processText(devlogData.result, projectName);
+        }
+        else
+        {
+            document.getElementById("section-devlog-result").className = "hidden";
+        }
+
+        // Validation
+        if (devlogData.validation)
+        {
+            document.getElementById("devlog-validation").innerHTML = processText(devlogData.validation, projectName);
+        }
+        else
+        {
+            document.getElementById("section-devlog-validation").className = "hidden";
+        }
+
+        // Contribution
+        if (devlogData.contribution)
+        {
+            document.getElementById("devlog-contribution").innerHTML = processText(devlogData.contribution, projectName);
+        }
+        else
+        {
+            document.getElementById("section-devlog-contribution").className = "hidden";
+        }
 
     } 
     catch (error)

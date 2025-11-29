@@ -1,0 +1,24 @@
+{
+    "published": true,
+    "name": "Unity infinite loop crash",
+    "dates": [
+        "01-06-2023"
+    ],
+    "goalName": "Unity crash resolving",
+    "goal": "While optimizing code, Unity crashed. The crash information did not look very familiar, because it never happened before. Because I optimized the code in steps, saving and testing after each step, it was easier to figure out the issue.",
+    "approach": [
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Thinkering",
+            "text": "First, I verified that the crash was caused by the code, not on accident, so I ran the game again, and it crashed again as expected. The crash report was not very clear for me.<<image 6.png>>I recognized the MemoryManager and remembered the terms \"allocating memory\", which led me to believe the issue was in an overflow of memory. From previous projects, I knew this was most of the times caused by an infinite loop, or an unintentional recursive function. In the updated code, I destroyed the gameobject in the OnDestroy function of a script attached to that gameobject. After making the function not a Unity function by renaming it, the crash no longer occurred."
+        }
+    ],
+    "normalLearnings": [
+        "I learned that Destroy does not just destroy the gameobject, it calls the OnDestroy function of every script, if it has one.",
+        "I learned what a stack overflow exception looks like in Unity."
+    ],
+    "specialLearnings": [],
+    "result": "The crash is fixed.",
+    "validation": "Since renaming the method was the only difference I made, I am certain that this was the cause of the issue.",
+    "contribution": "The crash was cause while optimizing code, which directly contributes to the solution."
+}

@@ -1,0 +1,22 @@
+{
+    "published": true,
+    "name": "Adding a purpose to the throwing direction",
+    "dates": [
+        "04-06-2023",
+        "05-06-2023"
+    ],
+    "goalName": "Adding a purpose to the throwing direction",
+    "goal": "In the basketball game's arcade mode, players can click on bars to set the point a basketball is thrown from, and a power level for the strength of the throw. The power of the shot matters a lot, as the balls can easily go under or over the basket instead of through it. The origin however, does not matter that much, so it does not add anything to the game.",
+    "approach": [
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Thinkering",
+            "text": "Logically, the further the throw, the more power is needed to throw to the same point. In this case, the difference in distance is so low that it does not affect the necessary power. To make up for this, I added a negative factor to the final strength depending on how far the x was from the middle. Afterwards, I had to readjust the throwing forces to balance it out."
+        }
+    ],
+    "normalLearnings": [],
+    "specialLearnings": [],
+    "result": "With the modified script, it takes more power to throw from the left or right than it takes when throwing from the middle. The modified script is shown below:<<image 10.png>>The result can be seen in the video below where X represents the origin of the throw, and Y is the strength.<<video https://www.youtube.com/embed/pyzr3LklVks>>",
+    "validation": "I showed the result to my old classmates, who approved of the solution.",
+    "contribution": "This directly affects the end product's throwing feature."
+}

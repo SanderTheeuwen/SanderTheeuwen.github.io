@@ -1,0 +1,22 @@
+{
+    "published": true,
+    "name": "Being a product owner",
+    "dates": [],
+    "goalName": "Being a product owner",
+    "goal": "So far, all projects have been collaborations with classmates, or there was only one stakeholder. In this project however, I have the full responsibility and need to make sure the project gets finished on my own.",
+    "approach": [
+        {
+            "researchType": "Field",
+            "researchMethod": "Problem Analysis",
+            "text": "In the design phase, there were many meetings with the managers, to make sure we were all on the same page. In the development phase, I had just a weekly meeting with the company mentor for a progress update. The planning was made very optimistic, as I planned to finish the base of the game within two weeks. I did not take setbacks or problems into account, and the company mentor quickly set me straight. He gave me an example of where he had to implement a feature, and an unexpected issue arised. If he had a very cramped planning, it would have been a big problem, but he managed to fix the issue because he added problem solving time to the planning.\n\nAnother important learning point was that I did not keep asking about things other people had to do for the project. The company had a model maker and a team of game designers. The models and textures were made by the model maker, and were requested rather late because of the planning. The team of game designers also made a texture, but for the overlay. The requests to create assets were made, but not checked upon, so I never knew if the people were working on them or not and how far they were. Luckily they were pretty quick and trustworthy, but I should have checked more."
+        }
+    ],
+    "normalLearnings": [
+        "I know to include time for debugging / problem solving in the planning.",
+        "I know to check up on stakeholders more frequently to have a vision on the progress."
+    ],
+    "specialLearnings": [],
+    "result": "In future projects, I know to make a better planning and to check up on stakeholders more frequently. After the old planning was made and deemed unrealistic, I made a new one with more realistic time management.",
+    "validation": "During the project, I remembered the old planning and reflected on them when I finished a task. It was clear that the old planning was made very optimistic. The company mentor asked me frequently if I knew the assets were worked on or not. Most of the time, it turned out that I did not know, so I took that knowledge for the future.",
+    "contribution": "A more accurate planning as well as progress reports from others both contribute towards trust to the client / manager(s)."
+}

@@ -1,0 +1,26 @@
+{
+    "published": true,
+    "name": "Importing fonts",
+    "dates": [
+        "16-05-2023"
+    ],
+    "goalName": "Importng a new font in Unity",
+    "goal": "To add to the game feel of the arcade environment, a new font has to be added.",
+    "approach": [
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Thinkering",
+            "text": "I looked at how the default font was setup in the assets. It consisted of a material and a texture. When I applied the font to a newly created material, it did not show up."
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Community Research",
+            "text": "The following source taught me how to import fonts easily: <<source How to use a font you imported into unity in Text Mesh Pro. (18-04-2021). Stack Overflow. https://stackoverflow.com/questions/67144592/how-to-use-a-font-you-imported-into-unity-in-text-mesh-pro>>. I applied the font and resized the objects in which it was used to get the desired result."
+        }
+    ],
+    "normalLearnings": [],
+    "specialLearnings": [],
+    "result": "The font showed up correctly as seen in the picture below.<<image 11.png>>",
+    "validation": "I showed my work to my supervisors, who were happy with the result.",
+    "contribution": "The digital-like font adds to the game feel because the environment is an arcade hall."
+}

@@ -1,0 +1,33 @@
+{
+    "published": true,
+    "name": "Managers / clients",
+    "dates": [
+        "05-04-2023"
+    ],
+    "goalName": "What is the best way to send updates to managers / clients from the perspectives of the developer and the managers / clients?",
+    "goal": "The schedule of a manager / client is usually very busy, where meetings must be planned very efficiently. They would like regular updates on how their project is coming along, without having to spend much effort or time. From the developers' perspective, most of their time is spent working on the project, also having meetigs planned as efficiently as possible. The updates must be quick, short, and contain all information necessary to inform the managers / clients about the progress.",
+    "approach": [
+        {
+            "researchType": "Library",
+            "researchMethod": "Best / good / bad practices",
+            "text": ""
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Expert Interview",
+            "text": ""
+        },
+        {
+            "researchType": "Field",
+            "researchMethod": "Stakeholder Analysis",
+            "text": ""
+        }
+    ],
+    "normalLearnings": [
+        "I know how to send efficient updates every day"
+],
+    "specialLearnings": [],
+    "result": "By sending a short text message every day, the managers / clients know what I have done, what I will be working on next, what potential problems are and how much progress has been made to finish the project. By adding pictures or a video (a short demo), this is much clearer, so all stakeholders are on the same line. This prevents unnecessary long meetings, and there does not need to be a specific timeslot reserved for daily updates.",
+    "validation": "The approach has been confirmed effective by the clients.",
+    "contribution": "Now that daily updates are efficient, I will focus on writing code with more quality."
+}

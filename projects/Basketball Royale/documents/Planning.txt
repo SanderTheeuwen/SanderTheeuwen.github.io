@@ -1,0 +1,59 @@
+Week 1:		Preperation
+Week 2 - 3:	MVP
+Week 4:		Field testing
+Week 5:		Arcade mode
+Week 6 - 7:	Special events + settings
+Week 8 - ?:	Polishing
+
+Week 1:		7 days		Preperation
+2 days		Get to know how extensions work
+1 day		Optional: Chat integration
+2 days		Optional: OBS integration (!stop toggles source)
+1 day		Automated testing (GitHub actions) - discarded due to time
+1 day		Project plan
+
+Week 2 - 3:	10 days		MVP
+1 day		Project setup + request list of models
+1 day		Create mock models
+1 hour		Create mock input (press button instead of chat commands)
+3 hours		Start function with chat command
+1 day		Throwing ball function
+-- part 2 --
+1 day		Scoreboard
+1 hour		Scoring event
+1 day		Rounds
+1 day		Join function with chat command
+1 day		Stop function with chat command
+0.5 days	Reset function with chat command
+1 day		Settings
+0.5 days	Replace mock models
+
+-- nieuwe planning--
+
+MILESTONE: Minimal viable product
+
+19/04/2023 - 10/05/2023: 3 weeks	Improving game feel
+0.5 days	Names above basketballs
+1 hour		Remove !join for Arcade mode
+...
+
+10/05/2023 - 31/05/2023: 3 weeks	Special events + settings
+3 hour		Base event as template: timing, activation
+3 days		Fire sprinklers
+4 days		Fire extinguisher
+1 day		Lights out
+1 day		Multiplier
+2 days		Bits
+2 days		Subscription
+3 days		Settings
+
+MILESTONE: Functionally finished product
+
+31/05/2023  - 14/06/2023: 2 weeks	Field testing and last improvements
+1 day		Create surveys
+3 hours		Testing on stream
+1 - 2 days	Implementing feedback from test results
+
+MILESTONE
+
+14/06/2023 - 21/06/2023: 1 weeks	Preperation for final assessment

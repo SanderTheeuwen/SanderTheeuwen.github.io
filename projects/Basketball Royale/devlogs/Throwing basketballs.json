@@ -1,0 +1,24 @@
+{
+    "published": true,
+    "name": "Throwing Basketballs",
+    "dates": [
+        "07-03-2023"
+    ],
+    "goalName": "How can I implement automatically thrown balls with random factors?",
+    "goal": "The main event of the basketball game is that balls are thrown at the basket, so the players score (points) and advance to the next round. In the Royale mode, the balls are thrown automatically, so there must be random factors involved that give a uniqueness to every throw.",
+    "approach": [
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Thinkering",
+            "text": "Initially, I created a point where the balls would be thrown from, with a direction vector aiming above the basket and adding a starting impulse force in that direction. With the force as a variable in the inspector, I adjusted it so it would always go through the basket. Since every basketball would follow the same trajectory, I added an empty game object with 0 volume, so it became a horizontal line, which I used as a variety of starting points from which the balls could be thrown. This however, caused some balls not to go in, which was okay. I added a random increment to the force it was thrown at, so some balls were thrown too low, and some too high.\n\nAt last, I created an enumerator which would use the length of the round and pick a random time for every joined player for their ball to be thrown. Every player would get one ball thrown for them, which is perfect because this gamemode is meant for many players."
+        }
+    ],
+    "normalLearnings": [
+        "I know how to add randomness in to game elements in several ways.",
+        "I know how to use an empty game object to determine a starting location for game objects."
+    ],
+    "specialLearnings": [],
+    "result": "As seen in the video below, balls are thrown from a random position, with a random force, at a random time within the round. Many of the thrown balls go through the basket.<<video https://www.youtube.com/embed/H2mDVUAc944>>",
+    "validation": "I showed my solution to the client and company mentor, who both approved.",
+    "contribution": "The next step is to implement rounds in the project, with the players who did not qualify out of the game."
+}

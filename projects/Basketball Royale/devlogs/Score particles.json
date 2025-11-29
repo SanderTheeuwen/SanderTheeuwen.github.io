@@ -1,0 +1,34 @@
+{
+    "published": true,
+    "name": "Score particles",
+    "dates": [
+        "17-05-2023"
+    ],
+    "goalName": "Creating particles on a basket when a ball goes through",
+    "goal": "In a meeting about game feel with expert game designers, it was pointed out that a special event should have a heavy impact on the player(s). Scoring in the basketball game is the biggest non-blocking event that can happen, so it deserves special effects. Because a game consists of video and audio and the game already has a sound when someone scores, the decision was made to add particles.",
+    "approach": [
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Thinkering",
+            "text": "The first thing I did was adding the particle system to the basket and look at the options that were there. While playing with the settings, I noticed that the particles were not rendering correctly. The color of the particles was set to change over time, but they did not."
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature Study",
+            "text": "I looked up why the particles were not changing colors, but I found no helpful solution."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Prototyping",
+            "text": "After a while, I decided to take a second look at the settings, making a small prototype with the base settings and a color. I noticed that the renderer module had a material setting that was unset. After setting it to a default particle material, it worked. The particle system worked, so I focused on making it look better. By adding gravity and a shape to the emission, the end result looks like a ring burst."
+        }
+    ],
+    "normalLearnings": [
+        "I learned particle systems need a material for colors to be applicable.",
+        "I learned how various modules of the particle system work."
+    ],
+    "specialLearnings": [],
+    "result": "As seen in the video , when a player scores, a ring of particles is emitted.<<video https://www.youtube.com/embed/kmGLeNAJWYo>>",
+    "validation": "In the test session, the participants were happy with the result.",
+    "contribution": "The particles are added to the end result to improve the game feel."
+}

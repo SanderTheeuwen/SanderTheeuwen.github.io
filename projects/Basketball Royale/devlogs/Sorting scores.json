@@ -1,0 +1,34 @@
+{
+    "published": true,
+    "name": "Sorting scores",
+    "dates": [
+        "13-05-2023"
+    ],
+    "goalName": "Sort player scores",
+    "goal": "The players' scores are currently stored in two lists: one for the players' names, one for their score. They need to be sorted several times throughout the game to display the players' scores from most to least.",
+    "approach": [
+        {
+            "researchType": "Library",
+            "researchMethod": "Community Research",
+            "text": "I started out by searching online, as surely I was not the first with the problem of sorting two lists at once. I found the following source suggesting Array.Sort: <<source Sorting an array related to another array. (26-12-2009). Stack Overflow. https://stackoverflow.com/questions/1964234/sorting-an-array-related-to-another-array>>."
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature Study",
+            "text": "As this worked only on arrays, I had to convert the lists to arrays. As the sorting did not work yet, I looked up the documentation for the method itself, found at the following source: <<source Dotnet-Bot. (n.d.). Array.Sort Method (System). Microsoft Learn. https://learn.microsoft.com/en-us/dotnet/api/system.array.sort?redirectedfrom=MSDN&view=net-7.0#System_Array_Sort_System_Array_System_Array_>>."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Thinkering",
+            "text": "As the documentation stated that it only works on arrays, I decided to change the lists to arrays everywhere. Later, the company mentor decided that a !join command to add players was not necessary as they should be added when they throw. This means that the scores should be of a variable length again, like a list, otherwise there would be a higher chance of performance issues. I came up with the idea of having a class for the scores which contains both the player name and the score. Implementing the IComparable interface, I sorted the lists manually."
+        }
+    ],
+    "normalLearnings": [
+        "I learned how to sort two arrays together.",
+        "I learned a flexible way of implementing player scores."
+    ],
+    "specialLearnings": [],
+    "result": "The code worked and was a lot cleaner.",
+    "validation": "The game was tested and the code proved to be functional.",
+    "contribution": "This directly contributes to the end product."
+}

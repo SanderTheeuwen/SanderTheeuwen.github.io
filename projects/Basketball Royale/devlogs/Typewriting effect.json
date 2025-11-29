@@ -1,0 +1,33 @@
+{
+    "published": true,
+    "name": "Typewriting effect",
+    "dates": [
+        "19-05-2023"
+    ],
+    "goalName": "Adding a typewriting effect to text fields",
+    "goal": "Text popping up does not draw a lot of attention and is not visually very appealing. In the theme of an arcade game, a digital typewriting effect can improve the game feel.",
+    "approach": [
+        {
+            "researchType": "Field",
+            "researchMethod": "Interview",
+            "text": "I held a meeting with the company's stakeholders in which we discussed how to improve game feel. The experts said that the typewriting effect would not only add to the game feel, but also draw attention at an event to that area of the screen."
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature Study",
+            "text": "I looked at the source sent to me by the expert: <<source Code Monkey. (2019, September 13). How to make Text Writing Effect in Unity [Video]. YouTube. https://www.youtube.com/watch?v=ZVh4nH8Mayg>>. This gave me an idea how to use the Update function to write the text."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Thinkering",
+            "text": "Since the code looked a bit complicated, I decided to make my own version. Aside from the base typewriter function, I added methods to add to existing text, and to clear it."
+        }
+    ],
+    "normalLearnings": [
+        "I learned how to make a typewriter effect."
+    ],
+    "specialLearnings": [],
+    "result": "The result is visible in the video here:<<video https://www.youtube.com/embed/kmGLeNAJWYo>> The log and scoreboard have the typewriter script enabled. The text appears character by character instead of appearing all at once. The code is shown below:<<image 8.png>>",
+    "validation": "The result was shown to the supervisors, who were happy with the result.",
+    "contribution": "The typewriter effect adds to the game feel of the end product."
+}

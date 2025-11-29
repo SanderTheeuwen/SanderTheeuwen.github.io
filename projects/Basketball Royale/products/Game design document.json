@@ -1,0 +1,36 @@
+{
+    "published": true,
+    "type": "pdf",
+    "fileName": "Game design document.pdf",
+    "title": "Game Design Document",
+    "name": "Game Design Document",
+    "description": "An in-depth document containing the details of the design of the game.",
+    "stakeholders": [
+        {
+            "type": "Team members",
+            "people": [
+                "Sander Theeuwen"
+            ]
+        },
+        {
+            "type": "External team members (modeler / texture artist)",
+            "people": [
+                "Finne"
+            ]
+        },
+        {
+            "type": "Teacher / assessors",
+            "people": [
+                "Erwin Bell",
+                "Lois van Zijst"
+            ]
+        },
+        {
+            "type": "Client / company mentor",
+            "people": [
+                "Jeroen van Baar",
+                "Joris Kok"
+            ]
+        }
+    ]
+}

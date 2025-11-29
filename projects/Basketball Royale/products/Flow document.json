@@ -1,0 +1,36 @@
+{
+    "published": true,
+    "type": "pdf",
+    "fileName": "Flow document.pdf",
+    "title": "Flow Document",
+    "name": "Flow Document",
+    "description": "A document describing the flow of the game.",
+    "stakeholders": [
+        {
+            "type": "Team members",
+            "people": [
+                "Sander Theeuwen"
+            ]
+        },
+        {
+            "type": "External team members (modeler / texture artist)",
+            "people": [
+                "Finne"
+            ]
+        },
+        {
+            "type": "Teacher / assessors",
+            "people": [
+                "Erwin Bell",
+                "Lois van Zijst"
+            ]
+        },
+        {
+            "type": "Client / company mentor",
+            "people": [
+                "Jeroen van Baar",
+                "Joris Kok"
+            ]
+        }
+    ]
+}
