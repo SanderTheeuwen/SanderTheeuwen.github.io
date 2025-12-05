@@ -46,17 +46,24 @@ async function loadProducts(projectId)
     // Filter products based on project
     const productsPaths = (await response.json()).filter((productPath) => productPath.path.startsWith("projects/" + projectId));
 
-    const productList = document.getElementById("products-list");
-    for (const productPath of productsPaths)
+    if (productsPaths.length == 0)
     {
-        const productFileName = productPath.path.slice(productPath.path.lastIndexOf('/') + 1, -5);// -5 to remove ".json"
-        const productData = await (await fetch("/" + productPath.path)).json();
-
-        if (productData.published)
+        document.getElementById("section-project-products").className = "hidden";
+    }
+    else
+    {
+        const productList = document.getElementById("products-list");
+        for (const productPath of productsPaths)
         {
-            const listItem = document.createElement("li");
-            listItem.innerHTML = `<a href="product.html?project=${projectId}&product=${productFileName}">${productData.name}</a>`;
-            productList.appendChild(listItem);
+            const productFileName = productPath.path.slice(productPath.path.lastIndexOf('/') + 1, -5);// -5 to remove ".json"
+            const productData = await (await fetch("/" + productPath.path)).json();
+
+            if (productData.published)
+            {
+                const listItem = document.createElement("li");
+                listItem.innerHTML = `<a href="product.html?project=${projectId}&product=${productFileName}">${productData.name}</a>`;
+                productList.appendChild(listItem);
+            }
         }
     }
 }
@@ -68,17 +75,24 @@ async function loadDevlogs(projectId)
     // Filter devlogs based on project
     const devlogsPaths = (await response.json()).filter((devlogPath) => devlogPath.path.startsWith("projects/" + projectId));
 
-    const devlogList = document.getElementById("devlogs-list");
-    for (const devlogPath of devlogsPaths)
+    if (devlogsPaths.length == 0)
     {
-        const devlogFileName = devlogPath.path.slice(devlogPath.path.lastIndexOf('/') + 1, -5);// -5 to remove ".json"
-        const devlogData = await (await fetch("/" + devlogPath.path)).json();
-
-        if (devlogData.published)
+        document.getElementById("section-project-devlogs").className = "hidden";
+    }
+    else
+    {
+        const devlogList = document.getElementById("devlogs-list");
+        for (const devlogPath of devlogsPaths)
         {
-            const listItem = document.createElement("li");
-            listItem.innerHTML = `<a href="devlog.html?project=${projectId}&devlog=${devlogFileName}">${devlogData.name}</a>`;
-            devlogList.appendChild(listItem);
+            const devlogFileName = devlogPath.path.slice(devlogPath.path.lastIndexOf('/') + 1, -5);// -5 to remove ".json"
+            const devlogData = await (await fetch("/" + devlogPath.path)).json();
+
+            if (devlogData.published)
+            {
+                const listItem = document.createElement("li");
+                listItem.innerHTML = `<a href="devlog.html?project=${projectId}&devlog=${devlogFileName}">${devlogData.name}</a>`;
+                devlogList.appendChild(listItem);
+            }
         }
     }
 }
