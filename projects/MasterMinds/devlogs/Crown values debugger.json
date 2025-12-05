@@ -1,0 +1,33 @@
+{
+    "published": true,
+    "name": "Crown values debugger",
+    "dates": [
+        "05-01-2024"
+    ],
+    "goalName": "Making a debugger for the Crown’s values",
+    "goal": "As the values from the Crown are the only input for every prototype that will be made, a debugger will be very handy for development. It does not have to be pretty, as it will not be shown to the player.",
+    "approach": [
+        {
+            "researchType": "Library",
+            "researchMethod": "Available Product Analysis",
+            "text": "I have never made a debugger before, so I decided to look how other games made it. The only example I could find was Minecraft, where details and values are listed in the most compact manner, as seen in the picture below. However, many of these values are not clear and require an explanation on what they mean.<<image 4.png>>Because most values are unclear, I decided to add clear names to the values I would present. As the debug screen above shows much information, which can cover a lot of the screen, I made the decision to make the values toggleable. The corners of the screen are good places to put the debug data. Now that I had an idea of how it would look like, it was time to figure out what values I needed the debugger to show."
+        },
+        {
+            "researchType": "Lab",
+            "researchMethod": "Problem Analysis",
+            "text": "To figure out what data must be displayed, I started by imagining what I would need when I developed and tested prototypes. I need to see how focused the user is, what the minimum and maximum limits are from the scale handler, and what the raw values are. In terms of flexibility, every component (focus, calm, etc.) can be toggled off easily and visual values (values displayed on the screen instead of the log) can be enabled and disabled."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Thinkering",
+            "text": "Now that I had all the values I needed, I started implementing. With early tests, this revealed to be a success, where I could limit the debugging to the subscription handler only. However, even though the visual values are easy to read, I decided to add colors ranging from red to green for much easier readability, as the developer does not have to read the values but can just see the color."
+        }
+    ],
+    "normalLearnings": [
+        "I can create debuggers, where flexibility is prioritized."
+    ],
+    "specialLearnings": [],
+    "result": "The debugger is made using the following code:<<image 5.png>><<image 6.png>>As seen in the video below, the raw values are shown on screen and in the debug log. After calibration, the average lowest and highest focus, which are the minimum and maximum for the scaling, are shown, together with the scaled value itself.<<video https://www.youtube.com/embed/g6eswx1ZxYE>>",
+    "validation": "The values show up correctly. When shown to teammates, they confirmed it would be useful for the development of the prototypes. They mentioned it would be too much for users themselves, but this is not a problem, since it is not meant to be shown, as it is editor only.",
+    "contribution": "This feature does not directly contribute to the products or research, but immensely contributes to the development of the prototypes, as testing will be much easier."
+}

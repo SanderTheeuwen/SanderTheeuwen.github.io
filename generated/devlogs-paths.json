@@ -76,6 +76,14 @@
     "path": "projects/Darkness Within/devlogs/Unity Powerups.json"
   },
   {
+    "project": "Deep Dive",
+    "path": "projects/Deep Dive/devlogs/Integrating Fmod.json"
+  },
+  {
+    "project": "Deep Dive",
+    "path": "projects/Deep Dive/devlogs/Project Plan.json"
+  },
+  {
     "project": "Game Pie",
     "path": "projects/Game Pie/devlogs/Analysis.json"
   },
@@ -204,6 +212,38 @@
     "path": "projects/Kingdoms Saviour/devlogs/Unity Soundscape.json"
   },
   {
+    "project": "MasterMinds",
+    "path": "projects/MasterMinds/devlogs/Creating a guide for importing packages.json"
+  },
+  {
+    "project": "MasterMinds",
+    "path": "projects/MasterMinds/devlogs/Creating a minecart model.json"
+  },
+  {
+    "project": "MasterMinds",
+    "path": "projects/MasterMinds/devlogs/Creating track models.json"
+  },
+  {
+    "project": "MasterMinds",
+    "path": "projects/MasterMinds/devlogs/Crown values debugger.json"
+  },
+  {
+    "project": "MasterMinds",
+    "path": "projects/MasterMinds/devlogs/Dividing roles.json"
+  },
+  {
+    "project": "MasterMinds",
+    "path": "projects/MasterMinds/devlogs/First focus calibration.json"
+  },
+  {
+    "project": "MasterMinds",
+    "path": "projects/MasterMinds/devlogs/Git branching strategy.json"
+  },
+  {
+    "project": "MasterMinds",
+    "path": "projects/MasterMinds/devlogs/Integrating the Neurosity SDK.json"
+  },
+  {
     "project": "mCon Rebound LAN Multiplayer Extension",
     "path": "projects/mCon Rebound LAN Multiplayer Extension/devlogs/Connecting as host and client.json"
   },
@@ -233,6 +273,10 @@
   },
   {
     "project": "Miscellaneous",
+    "path": "projects/Miscellaneous/devlogs/Destructable Wall.json"
+  },
+  {
+    "project": "Miscellaneous",
     "path": "projects/Miscellaneous/devlogs/Devlog.json"
   },
   {
@@ -254,6 +298,14 @@
   {
     "project": "Miscellaneous",
     "path": "projects/Miscellaneous/devlogs/String argument index processing.json"
+  },
+  {
+    "project": "Miscellaneous",
+    "path": "projects/Miscellaneous/devlogs/The Secret - Dead Mans Switch Design.json"
+  },
+  {
+    "project": "Miscellaneous",
+    "path": "projects/Miscellaneous/devlogs/The Secret - Dead Mans Switch Rule Cards.json"
   },
   {
     "project": "Portfolio (old)",
@@ -326,5 +378,29 @@
   {
     "project": "Template",
     "path": "projects/Template/devlogs/devlog.json"
+  },
+  {
+    "project": "The Scout",
+    "path": "projects/The Scout/devlogs/Dynamic bridge audio script.json"
+  },
+  {
+    "project": "The Scout",
+    "path": "projects/The Scout/devlogs/Footsteps using Fmod.json"
+  },
+  {
+    "project": "The Scout",
+    "path": "projects/The Scout/devlogs/Jumping, falling, and landing audio with Fmod.json"
+  },
+  {
+    "project": "The Scout",
+    "path": "projects/The Scout/devlogs/Light box.json"
+  },
+  {
+    "project": "The Scout",
+    "path": "projects/The Scout/devlogs/Mirror room design.json"
+  },
+  {
+    "project": "The Scout",
+    "path": "projects/The Scout/devlogs/Saving Loading.json"
   }
 ]

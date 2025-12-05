@@ -27,7 +27,7 @@
         "I can invoke methods based on a string input specifying a method name."
     ],
     "specialLearnings": [],
-    "result": "The solutions proved to work. Methods were invoked as expected according to the string that the user specified using the code shown below.<<image 1.png>>",
+    "result": "The solutions proved to work. Methods were invoked as expected according to the string that the user specified using the code shown below.<<image Method Invoking.png>>",
     "validation": "",
     "contribution": "Now creating commands has been simplified, I can add more commands."
 }

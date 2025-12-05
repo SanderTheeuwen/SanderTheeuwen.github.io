@@ -1,0 +1,30 @@
+{
+    "published": true,
+    "name": "Destructable Wall",
+    "dates": [
+        "22-09-2023"
+    ],
+    "goalName": "",
+    "goal": "While playing Batman: Arkham Knight, I looked at walls that can be exploded using a gadget called \"explosive gel\". When placed on such wall and activated, the wall explodes and debris flies everywhere, knocking out enemies. I thought it would be fun to recreate.",
+    "approach": [
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature Study",
+            "text": "I had no idea where to start, so I looked online for sources to help me get started, as this feature is likely not very unique. I came across the following source, which taught me step by step how to create a destructable wall: <<source BlueNothing Games. (2020, February 1). How to make Simple Destructible Wall | Unity Tutorial. [Video]. YouTube. Retrieved September 22, 2023, from https://www.youtube.com/watch?v=nY-HbnwRgGM>>."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Thinkering",
+            "text": "I followed the tutorial to a degree, creating a plane in Blender, making it thicker and placing it in Unity. The Blender model:<<image Destructable Wall Blender.png>>After adding it in Unity and adding Rigidbodies to the parts of the wall, I thought I had enough to make it work. I made a script for a sphere to either be launched at the wall or to create an explosion near the wall.<<image Destructable Wall Code.png>>"
+        }
+    ],
+    "normalLearnings": [
+        "I know how to create destructable objects in Blender.",
+        "I know how to divide a face into multiple faces using Blender.",
+        "I know how make destructable objects in Unity adhere to physics."
+    ],
+    "specialLearnings": [],
+    "result": "The wall is successfully destroyed when the ball hits it or explodes. In the former case, the wall crumbles, while in the latter, the pieces of the wall are flying backwards. The result can be seen in the video below:<<video https://www.youtube.com/embed/v5QazphxaV8>>",
+    "validation": "I showed the result to friends and peers, who thought it worked well. My peers had the feedback that this many Rigidbodies can have a negative effect on the performance of the game.",
+    "contribution": "This does not directly contribute to a product, but now I know how to create destructable objects, which can be useful in future projects."
+}

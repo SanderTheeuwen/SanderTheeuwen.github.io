@@ -1,0 +1,24 @@
+{
+    "published": true,
+    "name": "Footsteps using Fmod",
+    "dates": [
+        "02-11-2023"
+    ],
+    "goalName": "Implement footsteps using Fmod",
+    "goal": "Footsteps are one of the most iconic sounds in games. Without footsteps, games can sound very empty or static. The goal is to find and implement sounds that resemble footsteps suitable for the environment in which the game takes place, while preventing the repetitive sound to become bothersome.",
+    "approach": [
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Thinkering",
+            "text": "It has been a couple of years since I last used Fmod, so I explored what was possible in the editor. From creating the music, I knew there were multi instruments that picks a random clip of a selection. I created a script that played a footstep sound after a certain distance had been traversed, as seen below.<<image 13.png>>One thing I did not think about was that the footsteps should not be playing while the player was falling. Since vertical movement also counts towards the distance, the footsteps played while falling. I separated the audio from the Update function into an IEnumerator and modified the code to check if the player is on the ground and moving. Finally, I modified the code to use a timer instead of checking distance to prevent turning having no sound."
+        }
+    ],
+    "normalLearnings": [
+        "I can create footsteps using Fmod and Unity.",
+        "I know several ways to implement footsteps in Unity."
+    ],
+    "specialLearnings": [],
+    "result": "As seen below, the code is short and simple.<<image 14.png>>The result can be seen in the following video:<<video https://www.youtube.com/embed/EHOm9FUYkPw>>",
+    "validation": "I showed my work to peers, who approved of the solution.",
+    "contribution": "This directly contributes to the end product."
+}

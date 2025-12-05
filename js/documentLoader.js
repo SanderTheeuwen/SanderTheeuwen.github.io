@@ -12,12 +12,25 @@ function loadDocuments(text, projectName)
             const filePath = path + fileName;
 
             var element;
+            var downloadText;
             switch (type)
             {
+                case "docx":
+                    downloadText = `Download Word document`;
+                    break;
                 case "csv":
                 case "xlsx":
-                    element = `</br><a class="link" href="${filePath}" target="_blank">Download ${type} document</a></br>`
-                break;
+                    downloadText = `Download spreadsheet`;
+                    break;
+                default:
+                    downloadText = `Download ${type} document`;
+                    break;
+            }
+            switch (type)
+            {
+                default:
+                    element = `</br><a class="link" href="${filePath}" target="_blank">${downloadText}</a></br>`
+                    break;
             }
             text = text.replace(match, element);
         }

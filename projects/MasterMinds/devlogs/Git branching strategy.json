@@ -1,0 +1,28 @@
+{
+    "published": true,
+    "name": "Git branching strategy",
+    "dates": [
+        "24-11-2035"
+    ],
+    "goalName": "Create a git branching strategy that is structured and flexible",
+    "goal": "As a project starts, structure is one of the most important things. Git is a mandatory tool for managing versions of the project and for clean development. The git branching strategy must be clear and easy to user and understand, while also flexible enough for changes.",
+    "approach": [
+        {
+            "researchType": "Library",
+            "researchMethod": "Available Product Analysis",
+            "text": "I started out by looking at the git branching strategy from previous projects to gather ideas on how to approach this project. In the first project of the semester, the team used feature branches, as shown below:<<image 7.png>>The downside of this structure was that at the end of the project, there were so many branches that the project became difficult to manage, as the team was not able to see who was working on what.\nI also looked at a template that I used for previous projects, of which the source is unfortunately not available anymore:<<image 8.png>>"
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Brainstorm",
+            "text": "Using the two existing models, I discussed with the group what the best strategy was for our project. A team member suggested personal branches, which I argued would not be suitable for flexibility, as a task must be finished before starting another. We combined all ideas and created the model shown in the result."
+        }
+    ],
+    "normalLearnings": [
+        "I can combine git branching strategies to make it flexible and structured."
+    ],
+    "specialLearnings": [],
+    "result": "The git branching strategy below shows what the team will be using this project:<<image 9.png>>The main branch will contain a stable release version. The dev branch will contain all latest finished features, to have them all in one branch instead of separate ones. Every team member will have their own branch to keep things structured and know who is working on what features without having to go to the scrum board. Every feature will have its own branch and will be worked on by a single team member. After the feature is completed, the branch will be merged into the team member’s branch and into dev, after which the feature branch is deleted.",
+    "validation": "The team supported this design and found it promising.",
+    "contribution": "This branching strategy contributes to an organized and flexible control and management of the project."
+}

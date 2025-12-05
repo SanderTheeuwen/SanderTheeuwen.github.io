@@ -1,0 +1,24 @@
+{
+    "published": true,
+    "name": "Dividing roles",
+    "dates": [
+        "24-11-2024"
+    ],
+    "goalName": "Create and divide roles within the team",
+    "goal": "A project needs to have leaders and managers responsible for specific tasks or parts of the project. At the start of the project, these roles need to be decided and divided across the team.",
+    "approach": [
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Brainstorm",
+            "text": "I discussed with my teammates what roles we need for the project, and we came up with a list. We also came up with leads in specific parts of the project, such as design and programming. These people will be contacted if there are questions during development and will be involved when decisions are made in these areas."
+        }
+    ],
+    "normalLearnings": [
+        "I can create roles suitable for game design projects.",
+        "I can divide roles within a project to make every have some responsibility over the project."
+    ],
+    "specialLearnings": [],
+    "result": "The roles in the project are divided as follows:\nScrum Master - Jelmer de Rooij\nContact Person - Lucas Mols\nGit Manager - Atanas Georgiev\nNote Taker - Sander Theeuwen\nLead Designer - Sicong Nie\nLead 3D Modeling - Lucas Mols\nLead Programmer - Atanas Georgiev\nLead Sound Design - Jelmer de Rooij & Sander Theeuwen\nLead VFX - Omar Abdin\nCombined Scene Manager - Sicong Nie\nProgrammer - Everyone\n\nWith this division, everyone has some responsibility of the project.",
+    "validation": "The rest of the team agreed with this division of roles. If needed, the roles will change throughout the project.",
+    "contribution": "This division will contribute to the management and control of the project, as it is clear who to reach out to with specific problems and consult with making decisions. It also increases the proffesionality of the project, because the responsibilities of the project are divided, just like real companies."
+}

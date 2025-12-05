@@ -1,0 +1,28 @@
+{
+    "published": true,
+    "type": "word",
+    "fileName": "One Page Game Design Document Minecart Race.docx",
+    "title": "One Page Game Design Document Minecart Race",
+    "name": "One Page Game Design Document Minecart Race",
+    "description": "The document containing analyses and details about the design of the minigame Minecart Race.",
+    "stakeholders": [
+        {
+            "type": "Team members",
+            "people": [
+                "Atanas Georgiev",
+                "Jelmer de Rooi",
+                "Lucas Mols",
+                "Omar Abdin",
+                "Sander Theeuwen",
+                "Sicong Nie"
+            ]
+        },
+        {
+            "type": "Client / teacher / assessor",
+            "people": [
+                "Veerle Schepers",
+                "Wouter Boendermaker"
+            ]
+        }
+    ]
+}

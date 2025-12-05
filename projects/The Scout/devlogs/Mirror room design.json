@@ -1,0 +1,31 @@
+{
+    "published": true,
+    "name": "Mirror room design",
+    "dates": [
+        "20-09-2023"
+    ],
+    "goalName": "Create a level concept that introduces visual illusion as a mechanic",
+    "goal": "A team member's initial idea for a level mechanic was non-Euclidean, having invisible portals which mess with the expected structure of a room. As this was a difficult to teach the player and make several puzzles in a short level, I decided to come up with a toned down concept, based on visual illusion.",
+    "approach": [
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature Study",
+            "text": "To first understand what non-Euclidean means, I decided to search for a definition. In the first search, only definitions like \"geometry that is not Euclidean\" came up. When I added games in the search, I came across the following source: <<source CodeParade. (2018, August 14). Non-Euclidean Worlds engine [Video]. YouTube. Retrieved September 20, 2023, from https://www.youtube.com/watch?v=kEB11PQ9Eo8>>. This video taught me the non-Euclidean in game design means defying logic in terms of geometry. Examples of this are rooms that change when you walk around a pilar, an 'infinite' room, or the endless stairs from Super Mario 64."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Thinkering",
+            "text": "I came up with the idea of having a room with a wall that behaves like a mirror. Though some objects are the same in the room and the reflection of the room, some objects are different. Using this illusion, I created a simple example of the room and a puzzle to pitch to my teammates."
+        },
+        {
+            "researchType": "Showroom",
+            "researchMethod": "Pitch",
+            "text": "With the prototype finished, I decided to pitch the idea to my teammates."
+        }
+    ],
+    "normalLearnings": [],
+    "specialLearnings": [],
+    "result": "The image below explains the idea I came up with.<<image 3.png>>The middle divides the actual room the player is in, and the reflection (not reflected, just copied, for simplification). In this example, the player picks up a box and puts it on a platform in the actual room. In the reflection however, the box levitates and is put on a pressure plate.",
+    "validation": "The team was excited about the idea, and will potentially be included in the level itself.",
+    "contribution": "The prototype contributes to the design of the level."
+}

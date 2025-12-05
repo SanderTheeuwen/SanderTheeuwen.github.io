@@ -1,0 +1,28 @@
+{
+    "published": true,
+    "type": "word",
+    "fileName": "Project plan.docx",
+    "title": "Project plan",
+    "name": "Project plan",
+    "description": "The project plan containing the most crucial information for the project's organization",
+    "stakeholders": [
+        {
+            "type": "Team members",
+            "people": [
+                "Atanas Georgiev",
+                "Jelmer de Rooi",
+                "Lucas Mols",
+                "Omar Abdin",
+                "Sander Theeuwen",
+                "Sicong Nie"
+            ]
+        },
+        {
+            "type": "Client / teacher / assessor",
+            "people": [
+                "Veerle Schepers",
+                "Wouter Boendermaker"
+            ]
+        }
+    ]
+}

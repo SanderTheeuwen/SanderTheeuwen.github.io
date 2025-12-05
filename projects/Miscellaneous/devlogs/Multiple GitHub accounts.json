@@ -29,7 +29,7 @@
         "I know how to clear a field using --unset"
     ],
     "specialLearnings": [],
-    "result": "After a fourth commit, the accounts showed up as expected as seen in the picture below: <<image 2.png>> The name 454406 is due to the account on GitHub itself having that set as its name.",
+    "result": "After a fourth commit, the accounts showed up as expected as seen in the picture below: <<image GitHub Accounts.png>> The name 454406 is due to the account on GitHub itself having that set as its name.",
     "validation": "As seen in the picture, the different repositories have a different email set, and the commits are made by two separate accounts.",
     "contribution": "Being able to set an account per repository helps keeping projects managable and separated."
 }

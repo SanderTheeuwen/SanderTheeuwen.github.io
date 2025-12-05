@@ -1,0 +1,30 @@
+{
+    "published": true,
+    "name": "Dynamic bridge audio script",
+    "dates": [
+        "13-11-2023"
+    ],
+    "goalName": "Create a script that plays audio upon bridge movement based on the animation time",
+    "goal": "In the bridge prefab, there is a field to set the animation time. This field controls how fast the bridge extends and retracts. As the sound must match the movement, I need to figure out how to dynamically set the speed of the audio when the bridge is instantiated.",
+    "approach": [
+        {
+            "researchType": "Library",
+            "researchMethod": "Community Research",
+            "text": "I started out by looking up if there was a way to modify the speed of the audio using parameters or scripting. The following answer stated that only setPitch would modify the speed of the sound: <<source Simms, R. (2018, July 18). Change speed sound Fmod in Unity runtime. FMOD Forums. Retrieved November 13, 2023, from https: //qa.fmod.com/t/change-speed-sound-fmod-in-unity-runtime/13985/3>>."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Thinkering",
+            "text": "I thinkered around with different values for the pitch. The higher the pitch, the higher the playback speed. I tried out different values and experimented what values were suitable for what animation speeds.<<image 1.png>>Using these values, I created a formula to calculate the pitch based on the animation speed: Different formulas were used to see if they were giving the right results. In one case, Fmod gave an error where the pitch could not have a value below 0. This gave me the idea for an exponential formula, as I initially thought the pitch increased exponentially as well. After some testing, I found out that it was linear and could be solved with a simple calculation. The most suitable formula was 15 / duration."
+        }
+    ],
+    "normalLearnings": [
+        "I can modify the pitch during runtime.",
+        "I know the relation between pitch and speed is linear.",
+        "I can modify the pitch dynamically to match certain speeds."
+    ],
+    "specialLearnings": [],
+    "result": "The code used for this devlog is shown here:<<image 2.png>>The result can be seen in the video below:<<video https://www.youtube.com/embed/nmQjSNl1YKk>>",
+    "validation": "I tested my solution with different animation speeds, and the audio matched it perfectly.",
+    "contribution": "This directly contributes to the end product and allows for flexibility in bridge design."
+}

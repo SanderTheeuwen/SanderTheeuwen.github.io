@@ -8,6 +8,10 @@
     "path": "projects/Darkness Within"
   },
   {
+    "title": "Deep Dive",
+    "path": "projects/Deep Dive"
+  },
+  {
     "title": "Game Pie",
     "path": "projects/Game Pie"
   },
@@ -18,6 +22,10 @@
   {
     "title": "Kingdoms Saviour",
     "path": "projects/Kingdoms Saviour"
+  },
+  {
+    "title": "MasterMinds",
+    "path": "projects/MasterMinds"
   },
   {
     "title": "mCon Rebound LAN Multiplayer Extension",
@@ -42,5 +50,9 @@
   {
     "title": "Template",
     "path": "projects/Template"
+  },
+  {
+    "title": "The Scout",
+    "path": "projects/The Scout"
   }
 ]

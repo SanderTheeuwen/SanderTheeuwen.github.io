@@ -1,0 +1,40 @@
+{
+    "published": true,
+    "name": "Saving / Loading",
+    "dates": [
+        "10-10-2023",
+        "12-10-2023"
+    ],
+    "goalName": "Create a save and load functionality",
+    "goal": "The Scout is a short game, but long enough to play in different play sessions. The saving will be done automatically at the start of every level and at each checkpoint. The loading will be done manually by the player.",
+    "approach": [
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature Study",
+            "text": "First I needed to find out what different types of saving / loading there were and what the most suitable option was. From the following source, I concluded that file saving / loading using JSON was the most suitable approach: <<source Wirtz, B. (2023, September 30). How to Save Your Video Game in Unity: The Perfect System For You. Video Game Design and Development. Retrieved October 10, 2023, from https://www.gamedesigning.org/learn/unity-save-game/#Fundamental-Unity-Save-Game-Concepts.>>"
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Thinkering",
+            "text": "I created a simple menu for the player to load their game or start a new game:<<image 7.png>><<image 8.png>>"
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Community Research",
+            "text": "I wanted to have dynamic buttons, which disable when the slots are empty and the player clicks \"Load game\" and when the slots are not empty when the player clicks \"New game\". To add the events, I used the following source: <<source Get event sender in event handler (UnityAction)? (2010, October 3). Unity. Retrieved October 10, 2023, from https://forum.unity.com/threads/get-event-sender-in-event-handler-unityaction.265118/>>."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Thinkering",
+            "text": "When I created a loop to add the event listeners, I encountered a weird bug where the slot index would always be the same.<<image 9.png>>I searched online for solutions, but did not find any. Through breakpoints, I found that the best solution was to add a variable inside the loop as follows:<<image 10.png>>The solution worked, as the index was correct for every button click.\n\nAfter the saving and loading itself was done, I had to set the player position. This had to be done after the scene was loaded, and since the loading takes up a frame, it cannot be put in the same method as where the loading is done. Using the OnSceneLoaded event, I was able to set the player position as soon as the scene was loaded."
+        }
+    ],
+    "normalLearnings": [
+        "I know and can apply different methods of saving data.",
+        "I know how to use delegate methods with variables for event listeners."
+    ],
+    "specialLearnings": [],
+    "result": "The work is shown here:<<image 11.png>><<image 12.png>>The result can be seen below:<<video https://www.youtube.com/embed/85K8SM4tyTo>>",
+    "validation": "The code works as intended and will be tested in the next play test.",
+    "contribution": "This feature contributes directly to the end product."
+}

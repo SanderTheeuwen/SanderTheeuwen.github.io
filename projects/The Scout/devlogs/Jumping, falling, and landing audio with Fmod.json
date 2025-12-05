@@ -1,0 +1,28 @@
+{
+    "published": true,
+    "name": "Jumping, falling, and landing audio with Fmod",
+    "dates": [
+        "02-11-2023"
+    ],
+    "goalName": "Create jumping, falling, and landing audio logic using Fmod",
+    "goal": "In The Scout, footsteps are not the only sounds the player makes. Jumping and landing are indicators for the player if they are on the ground or not, and falling adds more realism to situations, especially when falling from great heights.",
+    "approach": [
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature Study",
+            "text": "I decided to look up how other people did it, and came across the following source: <<source Famà, A. (2021, December 25). Implementing Footsteps with FMOD in Unity. Alessandro Famà. Retrieved November 2, 2023, from https://alessandrofama.com/tutorials/fmod/unity/footsteps>>. Using labeled variables, they differentiated between types of floor. Similarly, I could use labels to keep track of a state of the player: grounded, jumping, and falling."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Thinkering",
+            "text": "With the labels, I messed around in Fmod to see what was possible. Using transitions and a loop in the falling region, I came up with a solution. When the script was finished, I integrated it into the PlayerAudioController, to keep the audio logic in the same place. As time was short, the audio sample for falling was not implemented, as it was deemed the least important of the samples."
+        }
+    ],
+    "normalLearnings": [
+        "I can use labeled variables in Fmod."
+    ],
+    "specialLearnings": [],
+    "result": "The pictures below show the script and Fmod setup.<<image 15.png>><<image 16.png>>The result in Unity can be seen in the following video:<<video https://www.youtube.com/embed/EHOm9FUYkPw>>",
+    "validation": "I sent the clip to my teammates, who approved of the solution.",
+    "contribution": "This directly contributes to the end product."
+}

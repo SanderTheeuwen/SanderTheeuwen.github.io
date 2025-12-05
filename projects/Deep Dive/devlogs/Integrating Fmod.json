@@ -1,0 +1,35 @@
+{
+    "published": true,
+    "name": "Intergrating Fmod",
+    "dates": [
+        "02-11-2023"
+    ],
+    "goalName": "Add Fmod to the Unity project",
+    "goal": "The music is successfully added in an Fmod project but needs to be added to the Unity project for the game to use. How Fmod affects Unity’s scenes, the Audio components, and how the audio can be used must be analyzed for a successful integration.",
+    "approach": [
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature Study",
+            "text": "I started out by searching for methods to add Fmod to a Unity project. The following source taught me how to do it: <<source Firelight Technologies. (2021, December 20). FMOD - Integration Tutorial. FMOD. Retrieved November 2, 2023, from https://www.fmod.com/docs/2.00/unity/integration-tutorial.html>>."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Thinkering",
+            "text": "I can integrate Fmod, but did not yet know what it affects. By creating a prototype seen in the picture below, I saw that Audio Sources and Listeners were changed.<<image 1.png>>The Listeners can easily be replaced by Fmod’s, but the Sources required a little more effort. The components are replaced by Event Emitters, which do not allow just a single clip by requiring a separate event to be created in the Fmod project."
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature Study",
+            "text": "The project was successfully added. To figure out how to activate the events, I decided to look up a tutorial. The following source taught me I can create Instances rather than add the component for a less cluttered Inspector window, as the logic of the audio needs to be in a separate script anyways: <<source Firelight Technologies. (2023, November 1). FMOD - Scripting API Reference | RuntimeManager (createinstance). FMOD. Retrieved November 2, 2023, from https://www.fmod.com/docs/2.02/unity/api-runtimemanager.html#createinstance>>. By using “EventInstance.start()”, the event is started."
+        }
+    ],
+    "normalLearnings": [
+        "I can integrate Fmod projects into Unity projects.",
+        "I know what Fmod affects upon integration.",
+        "I can start audio using scripts and Fmod."
+    ],
+    "specialLearnings": [],
+    "result": "I added Fmod to the project and know how to add Audio Sources to it.",
+    "validation": "When testing if the audio worked, it worked as intended.",
+    "contribution": "This directly contributes to the end product."
+}

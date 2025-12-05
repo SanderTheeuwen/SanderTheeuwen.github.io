@@ -20,6 +20,22 @@
     "path": "projects/Basketball Royale/products/Research document.json"
   },
   {
+    "project": "Deep Dive",
+    "path": "projects/Deep Dive/products/Design Document.json"
+  },
+  {
+    "project": "Deep Dive",
+    "path": "projects/Deep Dive/products/End Product.json"
+  },
+  {
+    "project": "Deep Dive",
+    "path": "projects/Deep Dive/products/Research Document.json"
+  },
+  {
+    "project": "Deep Dive",
+    "path": "projects/Deep Dive/products/Test Report.json"
+  },
+  {
     "project": "Game Pie",
     "path": "projects/Game Pie/products/One pager.json"
   },
@@ -68,11 +84,31 @@
     "path": "projects/Kingdoms Saviour/products/Ten Page Game Design Document.json"
   },
   {
+    "project": "MasterMinds",
+    "path": "projects/MasterMinds/products/One Page Game Design Document.json"
+  },
+  {
+    "project": "MasterMinds",
+    "path": "projects/MasterMinds/products/Package Importing Guide.json"
+  },
+  {
+    "project": "MasterMinds",
+    "path": "projects/MasterMinds/products/Project plan.json"
+  },
+  {
     "project": "mCon Rebound LAN Multiplayer Extension",
     "path": "projects/mCon Rebound LAN Multiplayer Extension/products/Project plan.json"
   },
   {
     "project": "Template",
     "path": "projects/Template/products/Product.json"
+  },
+  {
+    "project": "The Scout",
+    "path": "projects/The Scout/products/Design Choices Document.json"
+  },
+  {
+    "project": "The Scout",
+    "path": "projects/The Scout/products/Ten Page Game Design Document.json"
   }
 ]

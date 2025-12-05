@@ -1,0 +1,28 @@
+{
+    "published": true,
+    "type": "word",
+    "fileName": "Importing Unity packages.docx",
+    "title": "Package Importing Guide",
+    "name": "Package Importing Guide",
+    "description": "A guide on how to import the necessary packages for the project, used for teammates.",
+    "stakeholders": [
+        {
+            "type": "Team members",
+            "people": [
+                "Atanas Georgiev",
+                "Jelmer de Rooi",
+                "Lucas Mols",
+                "Omar Abdin",
+                "Sander Theeuwen",
+                "Sicong Nie"
+            ]
+        },
+        {
+            "type": "Client / teacher / assessor",
+            "people": [
+                "Veerle Schepers",
+                "Wouter Boendermaker"
+            ]
+        }
+    ]
+}

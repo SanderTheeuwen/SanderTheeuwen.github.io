@@ -1,0 +1,22 @@
+{
+    "published": true,
+    "name": "Project Plan",
+    "dates": [
+        "03-07-2023",
+        "10-07-2023"
+    ],
+    "goalName": "Create a project plan",
+    "goal": "A project plan contains the details about the project itself and contains a timeline of how the project will be developed. It also contains risks, research questions, and a testing strategy. In summary, it is an overview of the project.",
+    "approach": [
+        {
+            "researchType": "Library",
+            "researchMethod": "Available Product Analysis",
+            "text": "I looked up templates from previous projects that haven been approved. I also looked at previous research documents to come up with research questions for this project."
+        }
+    ],
+    "normalLearnings": [],
+    "specialLearnings": [],
+    "result": "The project plan is can be seen here: <<document Project Plan.docx>>",
+    "validation": "I discussed the plan with my semester coach, who gave me some questions to consider, such as for what purpose I want to research audio design but got approved overall.",
+    "contribution": "The project plan contributes to the management of the project, as it adds a structured overview of the project."
+}

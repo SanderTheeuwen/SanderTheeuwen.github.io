@@ -1,0 +1,43 @@
+{
+    "published": true,
+    "name": "First focus calibration",
+    "dates": [
+        "16-12-2023"
+    ],
+    "goalName": "First focus calibration",
+    "goal": "Internal tests showed that not everyone can focus as well as others. There are significant differences in the lower limit and upper limit with focusing. This means that the difficulty of the games depends on how well the players can focus. By scaling the input from the device, the input for the game itself will be scaled to the player’s minimum and maximum focus.",
+    "approach": [
+        {
+            "researchType": "Library",
+            "researchMethod": "Available Product Analysis",
+            "text": "I started by looking how Neurosity calibrated the device on their website, to get inspiration for my own calibration. The focus cannot be calibrated manually, but certain actions like moving the left arm or thinking about pushing can. In a timespan of around 3 minutes, the user is prompted to think about the chosen action and then not focus in intervals of 4 seconds. I now had an example of how to do the calibration."
+        },
+        {
+            "researchType": "Lab",
+            "researchMethod": "Data Analytics",
+            "text": "By testing out what values are received by focusing and not focusing, a raw dataset was created with values that are in the lower limit and the upper limit. As values sometimes peak, a deadzone will be useful for the player experience. To create a deadzone at both the lower and upper limit, the average of the 10 lowest and highest is taken, which will be the new minimum and maximum focus values, to which the input will be scaled."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Brainstorm",
+            "text": "Together with a teammate, we came up with several functions to apply the scaling. This is shown in the image below:<<image 3.png>>Result = 100 / (Max – Min) x Value\nResult = 100 / (Max – Min) x Value – 100 / (Max – Min) x Min\nResult = (Value - Min) / (Max – Min) x (100 – Deadzone) + Deadzone"
+        },
+        {
+            "researchType": "Showroom",
+            "researchMethod": "Expert Review",
+            "text": "A teacher has been shown the formulas and deemed that the bottom formula was a general math formula used for scaling, confirming that this was the suitable formula for the script."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Thinkering",
+            "text": "With the validated formula, I created and modified scripts to first calibrate the device and then enable the events that use the scaling for actual game input. I created a Canvas game object for the user to see what they must do to calibrate the device."
+        }
+    ],
+    "normalLearnings": [
+        "I can scale values according to minimum and maximum limits."
+    ],
+    "specialLearnings": [],
+    "result": "The first video shows the user calibrating the device before completing the level:<<video https://www.youtube.com/embed/JtbWpuFZOKY>>Note that the character moves much faster than without calibration, which can be seen in the following video:<<video https://www.youtube.com/embed/NPXyAelRBi8>>",
+    "validation": "The player mentioned that the focus values were accurate most of the time (the times it is not accurate relates to the raw input seeming random). The user was easily able to complete the level and can be more skilled at it with more training, as they said it is hard to actively lose focus to stop moving.",
+    "contribution": "The scaling contributes massively to the player experience, as controls are relative and made fair for every player by giving the opportunity to calibrate the device before playing."
+}

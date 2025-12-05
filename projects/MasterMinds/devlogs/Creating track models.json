@@ -1,0 +1,48 @@
+{
+    "published": true,
+    "name": "Creating track models",
+    "dates": [
+        "18-01-2024"
+    ],
+    "goalName": "Creating track models",
+    "goal": "For the minecart race prototype, minecart tracks need to be created for the player to understand the game. The tracks will have different variants, but the game will simply have straight tracks and turns to start with due to time constraints. ",
+    "approach": [
+        {
+            "researchType": "Library",
+            "researchMethod": "Available Product Analysis",
+            "text": "I started out by searching what existing products look like, to get inspiration of my own model. I decided to use the design from a Goonmaster asset, seen in the picture below because it is a clear image and the model consists of basic shapes:<<image 18.jpg>>The tracks consist of two iron beams with wooden panels. However, these tracks are meant to lay on the ground, removing the meaning of falling over and losing the game. Therefore, I decided that the tracks will be in the air, supported by long vertical beams, in the wood style of Donkey Kong Country Returns:<<image 19.jpg>>"
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Sketching",
+            "text": "As I had enough inspiration to get started, I drew some sketches to illustrate how it will look like in the prototype. I decided to make sketches as it will help realize the model by having a consistent image for reference. Here I figured out that the panels need support beams parallel to the iron beams, As the weight of the minecart will then be distributed.<<image 20.png>>"
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Thinkering",
+            "text": "The straight track was easy to create, as I can simply create cubes and cylinders and scale them to get the desired result."
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Community Research",
+            "text": "The turns were more difficult, as they require curving. I could technically do it in little increments, as I did in the sketch, making a 5 degree turn at every panel, but I wondered if there was a quicker way to do this. I found the following source, which suggested several options: <<source How to curve my mesh. (2015, July 27). Blender Stack Exchange. Retrieved January 18, 2024, from https://blender.stackexchange.com/questions/34598/how-to-curve-my-mesh>>."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Thinkering",
+            "text": "I tried to use Blender’s curve modifier: Unfortunately, I could not get the curve to work, as it deforms the object itself, as seen in the picture below:<<image 21.png>>"
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Expert Interview",
+            "text": "As I could not make the curve work, I decided to consult an expert in Blender, who showed me that I needed to subdivide the vertices on the bigger objects (the beams), after which I can proportionally drag the vertices so the rest of the object is dragged along."
+        }
+    ],
+    "normalLearnings": [
+        "I can use proportional editing in Blender."
+    ],
+    "specialLearnings": [],
+    "result": "The proportional dragging worked. After a few drags, the track looked normal and can be used in the game. The image below shows the result of the track:<<image 22.png>>",
+    "validation": "I showed my work to teammates, who approved the solution.",
+    "contribution": "The track does not contribute a lot to the product but is required for the player to understand the game."
+}

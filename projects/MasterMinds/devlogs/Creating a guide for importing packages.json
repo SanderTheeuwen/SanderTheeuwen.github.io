@@ -1,0 +1,33 @@
+{
+    "published": true,
+    "name": "Creating a guide for importing packages",
+    "dates": [
+        "21-12-2024"
+    ],
+    "goalName": "Create a guide for importing packages for the other developers of the project",
+    "goal": "For future developers, it will be handy to know what packages they need to import into the project, as they are excluded from the git repository. Since the packages need to be imported in different ways, it is most suitable to create a guide explaining how to import them.",
+    "approach": [
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Brainstorm",
+            "text": "I started to brainstorm about how to approach the guide, and believed a step-by-step guide with screenshots is a clear way in form of a document, as the reader can go through it at their own pace. A video would be a good alternative, as it would be the clearest, showing what to click and type."
+        },
+        {
+            "researchType": "Lab",
+            "researchMethod": "Roleplay",
+            "text": "To figure out what steps I needed to show, I roleplayed as a new developer. By not knowing where to go or what to download, I was able to create the first version of the guide. Starting with a clean copy of the project, I went through the process of importing the packages while creating the guide."
+        },
+        {
+            "researchType": "Showroom",
+            "researchMethod": "Peer Review",
+            "text": "I showed the guide to my peers. Although most of them got it working, there was 1 thing that I needed to change to make the guide clearer, shown in the picture below:<<image 17.png>>"
+        }
+    ],
+    "normalLearnings": [
+        "I can create step-by-step guides."
+    ],
+    "specialLearnings": [],
+    "result": "I uploaded the document in the Google Drive for my team, and every team member was able to import the packages successfully.<<document Importing Unity packages.docx>>",
+    "validation": "My team found the instructions very clear and did not have any trouble with following the guide.",
+    "contribution": "This document helps future developers get started with the project quickly, adding much value in transferal of the project."
+}

@@ -1,0 +1,39 @@
+{
+    "published": true,
+    "name": "Creating a minecart model",
+    "dates": [
+        "10-01-2024"
+    ],
+    "goalName": "Create a minecart model",
+    "goal": "The minecart race prototype needs a minecart model, as a plain cube will be too unclear for the player to understand that it functions as a minecart. It will also help in building my knowledge in Blender.",
+    "approach": [
+        {
+            "researchType": "Library",
+            "researchMethod": "Available Product Analysis",
+            "text": "I started by getting an idea of how other games designed minecarts, by looking up minecart models used in different games and came across The Legend of Zelda: Skyward Sword, which contains a minecart minigame, the main inspiration of this prototype:<<image 10.png>>I also found a second, more simplistic minecart from Gold and Goblins:<<image 11.png>>Based on these designs, I had an image of what I wanted to make myself."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Sketching",
+            "text": "To have a consistent reference to what I wanted to make, I designed a layout of the minecart’s components and made sketches of different angles, shown in the picture below:<<image 12.png>>The ‘box’ the player will be in is made of wood, with iron bars surrounding the top, an iron plate on the bottom and crossbeams at the back and front. The cart’s wheels are connected by beams, to prevent disconnected wheels from the minecart itself."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Thinkering",
+            "text": "I used Blender to create the model itself, which was not very difficult, as the minecart is made of basic shapes. The wheels required a bit more work, as they are not perfect spheres or ovals.\n\nI created a circle, made a new face of the vertices, and repeatedly extruded the face and scaled it to create the wheel as seen below:<<image 13.png>>Using booleans in some of the objects, I created the minecart:<<image 14.png>>"
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Expert Interview",
+            "text": "The final problem lied in the crossbeams, as the Booleans were not enough to make the meshes show up nicely, which can be seen in the picture below:<<image 15.png>>I asked a teammate for support, as they have more experience with Blender. They informed me that the modifiers are applied in a simplistic way when they are not permanently applied. After applying them permanently, the meshes showed up correctly."
+        }
+    ],
+    "normalLearnings": [
+        "I know how to create simple custom shapes using Blender.",
+        "I can create simple models in Blender."
+    ],
+    "specialLearnings": [],
+    "result": "The final result is shown in the picture below:<<image 16.png>>Even though the model is very simplistic, it serves its purpose for the prototype.",
+    "validation": "I showed the model to my teammates, who approved of it.",
+    "contribution": "The model is used in one of the prototypes for the project. Although it is not essential for showcasing the functionality of the Crown, it makes the prototype look nicer than basic shapes."
+}

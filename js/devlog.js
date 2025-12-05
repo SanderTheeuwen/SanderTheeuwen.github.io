@@ -23,6 +23,15 @@ document.addEventListener("DOMContentLoaded", async function ()
 
         if (!devlogData.published)
         {
+            document.getElementById("section-devlog-title").innerHTML = "Devlog is not published";
+            document.getElementById("section-devlog-dates").className = "hidden";
+            document.getElementById("section-devlog-goal").className = "hidden";
+            document.getElementById("section-devlog-approach").className = "hidden";
+            document.getElementById("section-devlog-learnings-normal").className = "hidden";
+            document.getElementById("section-devlog-learnings-special").className = "hidden";
+            document.getElementById("section-devlog-result").className = "hidden";
+            document.getElementById("section-devlog-validation").className = "hidden";
+            document.getElementById("section-devlog-contribution").className = "hidden";
             throw "Devlog is not published";
         }
 

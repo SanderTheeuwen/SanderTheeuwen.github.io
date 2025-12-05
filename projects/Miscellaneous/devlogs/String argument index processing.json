@@ -22,7 +22,7 @@
         "I can create breakdowns of complex problems to smaller simple problems."
     ],
     "specialLearnings": [],
-    "result": "The code below reduces the indices of the variables in the command text.<<image 3.png>>",
-    "validation": "The code is tested with multiple test inputs, and the outputs are processed correctly, as shown below.<<image 4.png>>",
+    "result": "The code below reduces the indices of the variables in the command text.<<image String argument index processing 1.png>>",
+    "validation": "The code is tested with multiple test inputs, and the outputs are processed correctly, as shown below.<<image String argument index processing 2.png>>",
     "contribution": "The code contributes to the flexibiltiy of the program."
 }

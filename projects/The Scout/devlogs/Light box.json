@@ -1,0 +1,49 @@
+{
+    "published": true,
+    "name": "Light box",
+    "dates": [
+        "28-09-2023"
+    ],
+    "goalName": "Create a light box that can be picked up, moved around, and released",
+    "goal": "One of The Scout's main puzzle mechanics is a light box. Players can pick these up, move them around and release them in various places to active buttons, use them as platforms etc.",
+    "approach": [
+        {
+            "researchType": "Library",
+            "researchMethod": "Available Product Analysis",
+            "text": "Since there was code made for interactables already, I studied it to see what it does."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Thinkering",
+            "text": "I created a cube and made a script to hold the cube, as seen below:<<image 4.png>>The problem with this was that the box could move through the floor, as there was no collision detection scripted.\n\nI tried to add collision detection, using the following script:<<image 5.png>>However, this affected the box very weirdly, as seen in the video below. The box' torque is increased repeatedly when it touches a wall.<<video https://www.youtube.com/embed/AM4eQhFu8Wc>>"
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Community Research",
+            "text": "As I did not have a solution at hand for the collision, I decided to look online for resources to help me fix the problem. Resources were scarcer than I predicted, but I came across the following source: <<source Picked up object goes through walls. (2021, March 26). Unity. Retrieved September 28, 2023, from https://forum.unity.com/threads/picked-up-object-goes-through-walls.1155050/>>. They used a Rigidbody for collision detection and used the velocity property to move it, instead of the Move function (which is for kinetic Rigidbodies only). I decided to use the velocity property too, and the box worked like expected."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Thinkering",
+            "text": "To make it look like the box is held by the player, I added rotation to the box as well, using the player camera's forward.<<image 6.png>>The code was basically finished and can be seen in the video below, but while testing it, I found a bug: When the block is moved towards the player by looking down, the block pushes the player. To solve this, I suggested to limit the camera so the player cannot look straight down. This would also solve the problem of being able to jump on the box while holding it, as it cannot be held under the player. However, the project leader decided it was better to implement it the way Portal did.<<video https://www.youtube.com/embed/0c2MWtr_if8>>"
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Available Product Analysis",
+            "text": "In Portal, the player holds cubes using the portal gun. There are certain rules / physics that they apply to keep the cube from behaving unexpectedly:\n- The held cube cannot be placed under or above you, as there is a minimum horizontal distance that is enforced.\n- Should the cube be pushed against a wall while held, by moving towards the wall while holding the cube, the cube loses the collision with the player. This means that the cube is inside the player in this occasion.\n- When the cube is inside the player, the cube cannot be released."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Thinkering",
+            "text": "The project leader suggested to use the Physics.IgnoreCollision method to disable the collision with the player and was thinking about how to prevent the player from releasing the box when it is inside the player. I was curious what would happen if the box was released when it was inside the player, so I decided to test it out. I added the code to disable the collision between the box and the player when the interaction is started, and to enable it when the interaction is ended. The result shows that the box is just teleported out of the way."
+        }
+    ],
+    "normalLearnings": [
+        "I can ignore specific colliders.",
+        "I can create objects that can be picked up."
+    ],
+    "specialLearnings": [],
+    "result": "As seen in the video, the box can be picked up, dragged along the walls and floor and has no collision when the player is touching it while it is held.<<video https://www.youtube.com/embed/rW67Ofd5jrY>>",
+    "validation": "The project leader was satisfied with the result.",
+    "contribution": ""
+}

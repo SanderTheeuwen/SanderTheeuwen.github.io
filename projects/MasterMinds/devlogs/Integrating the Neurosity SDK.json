@@ -1,0 +1,42 @@
+{
+    "published": true,
+    "name": "Integrating the Neurosity SDK",
+    "dates": [
+        "05-12-2023",
+        "06-12-2023",
+        "07-12-2023",
+        "13-12-2023"
+    ],
+    "goalName": "Integrating the Neurosity SDK",
+    "goal": "To make the Crown work within Unity, research must be done about what the best implementation is and how the code works to connect it to the team’s prototypes.",
+    "approach": [
+        {
+            "researchType": "Library",
+            "researchMethod": "Available Product Analysis",
+            "text": "I searched for existing implementations of Neurosity, as it would be very benificial for connecting the Crown with Unity. I found the following source: <<source Neuro Game Dev. (2022b, June 14). Neurosity web App for Unity - a minimum viable product! [Video]. YouTube. Retrieved December 7, 2023, from https://www.youtube.com/watch?v=Nkb3vyVqOVI>>. This led me to the following repository: https://github.com/neurogamedev/NeurosityWebApp-Unity.\nI also found a repository made by the developers of Neurosity itself: https://github.com/neurosity/notion-unity. I was unable to find more existing code, so it was time to make a selection."
+        },
+        {
+            "researchType": "Lab",
+            "researchMethod": "A/B Testing",
+            "text": "I created two projects to test the implementations, which turned out to be almost identical. As the solution from Neurosity was updated to a later version, I found that this solution would be the most suitable for the project."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Decomposition",
+            "text": "I went through the code file by file to see how it was constructed. The following image shows how the solution works in broad terms:<<image 1.png>>The solution has a NotionInterfacer that uses several metric handlers and displays it in the inspector. The NotionInterfacer is the most suitable place to relay the metrics to other classes, as it contains every callback for the metric handlers, because this is the endpoint of the calls (where the data is displayed in the inspector). To conclude, this will be the only place that connects to the rest of the application, meaning that it is easy to expand."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Thinkering",
+            "text": "I created a class that will be in between the Neurosity solution and the rest of the application, to keep Neurosity code separated. I created events for versatility with input in the prototypes, which can be seen in the image below:<<image 2.png>>"
+        }
+    ],
+    "normalLearnings": [
+        "I can integrate existing products into my own project.",
+        "I can analyze code and modify it to be used in the project."
+    ],
+    "specialLearnings": [],
+    "result": "I successfully integrated the existing solution into the team’s project and connected it to the first prototype. This can be seen in the following video, where the player moves by focussing.<<video https://www.youtube.com/embed/NPXyAelRBi8>>",
+    "validation": "My team used the integrated solution and found it easy to work with.",
+    "contribution": "This contributes to the base of the project, as it will be used for every prototype, this is very important for the project."
+}

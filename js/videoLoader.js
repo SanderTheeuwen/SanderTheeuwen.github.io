@@ -1,6 +1,6 @@
 function loadVideos(text)
 {
-    const matches = text.match(/<<video [^ ]*>>/g);
+    const matches = text.match(/<<video [^ ]+?>>/g);
     if (matches)
     {
         for (const match of matches)
