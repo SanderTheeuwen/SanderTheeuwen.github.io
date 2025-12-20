@@ -1,0 +1,28 @@
+{
+    "published": true,
+    "name": "Setting a desktop background",
+    "dates": [
+        "13-08-2025"
+    ],
+    "goalName": "Setting a desktop background",
+    "goal": "The downloaded image must be set as the background for the PC.",
+    "approach": [
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature Study",
+            "text": "I have not worked with backgrounds programmatically, so I decided to search for an existing solution, where I found the source <<source MrNetTek. (2019, April 24). Windows – C# – Set Wallpaper and WallpaperStyle – Lab Core | the lab of MrNetTek. Lab Core | the Lab of MrNetTek. Retrieved August 13, 2025, from https://eddiejackson.net/wp/?p=21967>>."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Thinkering",
+            "text": "I applied the solution to my code and refactored it to be more efficient for my application."
+        }
+    ],
+    "normalLearnings": [
+        "I can set a desktop background from an image."
+    ],
+    "specialLearnings": [],
+    "result": "The code works as expected and the image is set as the background successfully. This is achieved using the following code:<<image 2.png>>",
+    "validation": "I tested my program for a week, every day getting the result I expected.",
+    "contribution": "With this feature functional, the program is completed."
+}

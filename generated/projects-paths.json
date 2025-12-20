@@ -1,11 +1,19 @@
 [
   {
+    "title": "App Muter",
+    "path": "projects/App Muter"
+  },
+  {
     "title": "Basketball Royale",
     "path": "projects/Basketball Royale"
   },
   {
     "title": "Darkness Within",
     "path": "projects/Darkness Within"
+  },
+  {
+    "title": "DBD Tracker",
+    "path": "projects/DBD Tracker"
   },
   {
     "title": "Deep Dive",
@@ -36,12 +44,24 @@
     "path": "projects/Miscellaneous"
   },
   {
+    "title": "Portfolio",
+    "path": "projects/Portfolio"
+  },
+  {
     "title": "Portfolio (old)",
     "path": "projects/Portfolio (old)"
   },
   {
     "title": "Rollable",
     "path": "projects/Rollable"
+  },
+  {
+    "title": "Sounddeck",
+    "path": "projects/Sounddeck"
+  },
+  {
+    "title": "Space Backgrounds",
+    "path": "projects/Space Backgrounds"
   },
   {
     "title": "Tanks",
@@ -54,5 +74,9 @@
   {
     "title": "The Scout",
     "path": "projects/The Scout"
+  },
+  {
+    "title": "TTS",
+    "path": "projects/TTS"
   }
 ]

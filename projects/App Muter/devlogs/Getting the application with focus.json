@@ -1,0 +1,28 @@
+{
+    "published": true,
+    "name": "Getting the application with focus",
+    "dates": [
+        "27-02-2025"
+    ],
+    "goalName": "Get the process of the application that currently has focus",
+    "goal": "To mute an application, I must get the process of it. The distinction of which process to aquire is that it has focus.",
+    "approach": [
+        {
+            "researchType": "Library",
+            "researchMethod": "Community Research",
+            "text": "To get the active window, I used the following source: <<source Jorge Ferreira. (2008, September 22). How do I get the title of the current active window using c#? Stack Overflow. Retrieved February 27, 2025, from https://stackoverflow.com/questions/115868/how-do-i-get-the-title-of-the-current-active-window-using-c>>. However, this returned the window name, not the process itself."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Thinkering",
+            "text": "To get the process, I iterate through all the processes and return the one where the main handle matches the active window."
+        }
+    ],
+    "normalLearnings": [
+        "I can get the active window and its process."
+    ],
+    "specialLearnings": [],
+    "result": "As seen in the end result below, the application successfully gets the active window to mute / unmute.<<video https://www.youtube.com/embed/3nHEMH74y38>>",
+    "validation": "I tested the feature with many apps and games, all of which successfully muted.",
+    "contribution": "This feature makes sure the correct window is muted / unmuted."
+}

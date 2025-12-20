@@ -1,5 +1,9 @@
 [
   {
+    "project": "App Muter",
+    "path": "projects/App Muter/products/End Product.json"
+  },
+  {
     "project": "Basketball Royale",
     "path": "projects/Basketball Royale/products/Flow document.json"
   },
@@ -18,6 +22,10 @@
   {
     "project": "Basketball Royale",
     "path": "projects/Basketball Royale/products/Research document.json"
+  },
+  {
+    "project": "DBD Tracker",
+    "path": "projects/DBD Tracker/products/End Product.json"
   },
   {
     "project": "Deep Dive",
@@ -97,7 +105,19 @@
   },
   {
     "project": "mCon Rebound LAN Multiplayer Extension",
+    "path": "projects/mCon Rebound LAN Multiplayer Extension/products/End Product.json"
+  },
+  {
+    "project": "mCon Rebound LAN Multiplayer Extension",
     "path": "projects/mCon Rebound LAN Multiplayer Extension/products/Project plan.json"
+  },
+  {
+    "project": "Sounddeck",
+    "path": "projects/Sounddeck/products/End Product.json"
+  },
+  {
+    "project": "Space Backgrounds",
+    "path": "projects/Space Backgrounds/products/End Product.json"
   },
   {
     "project": "Template",
@@ -110,5 +130,9 @@
   {
     "project": "The Scout",
     "path": "projects/The Scout/products/Ten Page Game Design Document.json"
+  },
+  {
+    "project": "TTS",
+    "path": "projects/TTS/products/End Product.json"
   }
 ]

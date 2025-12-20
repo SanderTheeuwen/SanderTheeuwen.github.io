@@ -44,7 +44,7 @@ async function loadProducts(projectId)
     const response = await fetch(`${window.location.origin}/generated/products-paths.json`);
 
     // Filter products based on project
-    const productsPaths = (await response.json()).filter((productPath) => productPath.path.startsWith("projects/" + projectId));
+    const productsPaths = (await response.json()).filter((productPath) => productPath.path.startsWith("projects/" + projectId + "/"));
 
     if (productsPaths.length == 0)
     {
@@ -73,7 +73,7 @@ async function loadDevlogs(projectId)
     const response = await fetch(`${window.location.origin}/generated/devlogs-paths.json`);
 
     // Filter devlogs based on project
-    const devlogsPaths = (await response.json()).filter((devlogPath) => devlogPath.path.startsWith("projects/" + projectId));
+    const devlogsPaths = (await response.json()).filter((devlogPath) => devlogPath.path.startsWith("projects/" + projectId + "/"));
 
     if (devlogsPaths.length == 0)
     {

@@ -1,0 +1,16 @@
+{
+    "published": true,
+    "type": "video",
+    "fileName": "https://www.youtube.com/embed/v8E1iMT2dGc",
+    "title": "End Product",
+    "name": "End Product",
+    "description": "A showcase of the end result of the project.",
+    "stakeholders": [
+        {
+            "type": "Team members",
+            "people": [
+                "Sander Theeuwen"
+            ]
+        }
+    ]
+}

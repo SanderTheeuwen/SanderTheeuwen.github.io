@@ -1,0 +1,33 @@
+{
+    "published": true,
+    "name": "Keyboard Hook",
+    "dates": [
+        "22-04-2023"
+    ],
+    "goalName": "Create an event to capture key combinations while the window has no focus",
+    "goal": "While playing the game, it requires a lot of extra steps to tab out, press a button or key, and tab back into the game. Instead, it is most effective to press a key (combination) without having to focus the application.",
+    "approach": [
+        {
+            "researchType": "Library",
+            "researchMethod": "Community Research",
+            "text": "The following source gave me a base idea of how I could implement a keyboard hook: <<source Menol. (2019, January 10). Set global hotkeys using C#. Stack Overflow. Retrieved April 22, 2023, from https://stackoverflow.com/questions/2450373/set-global-hotkeys-using-c-sharp>>."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Thinkering",
+            "text": "Having the code to create the shortkey, I made a small UI and added the necessary code to apply the shortkeys to the UI."
+        },
+        {
+            "researchType": "Lab",
+            "researchMethod": "System Test",
+            "text": "I tested the application, which worked as intended."
+        }
+    ],
+    "normalLearnings": [
+        "I can create keyboard hooks."
+    ],
+    "specialLearnings": [],
+    "result": "The following video shows the result, where I put the focus on Notepad but am able to increment the counters without having to tab out. Finally, I added a reset shortcut to set all the states back to 0.<<video https://www.youtube.com/embed/v8E1iMT2dGc>>",
+    "validation": "Over the years, I used this program a lot. It is quick, lightweight, and incredibly helpful in the game.",
+    "contribution": "This tool helps with tracking hook states in the game so the player does not actively remember who they have hooked and how many times."
+}

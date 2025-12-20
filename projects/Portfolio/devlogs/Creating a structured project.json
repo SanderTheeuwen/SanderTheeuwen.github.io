@@ -1,0 +1,37 @@
+{
+    "published": true,
+    "name": "Creating a structured project",
+    "dates": [
+        "01-04-2025",
+        "28-04-2025"
+    ],
+    "goalName": "Creating a structured project",
+    "goal": "To keep the portfolio flexible, I must create a base structure for the projects. This must include project information, devlogs, and products.",
+    "approach": [
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Brainstorm",
+            "text": "Every project has a structure in common: There is basic project information, consisting of a name, description and an image.\n\nProjects can have devlogs that consist of a name, dates, goal, approaches (research method and sources), learning outcomes, result, validation, and contribution. This was a good starting point. I added a \"published\" property in case a devlog, product, or project was in active development.\n\nProjects can also have products: concrete deliverables. These can be in different types, such as a word document, or a video of the end product. To keep it flexible, I added a property for the type with a file name that can also be a link. Each product has a name, description, and stakeholders (divided by type, containing names)."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Thinkering",
+            "text": "For the website to find the project files, I must generate consistent paths, as I cannot have very dynamic code in GitHub Pages."
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature Study",
+            "text": "I do not have very extensive knowledge in web development, so I had to use some sources to find the methods I was looking for.\n<<source Mozilla. (n.d.). Array.prototype.filter() - JavaScript | MDN. Mmdn. Retrieved April 1, 2025, from https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter>>\n<<source Mozilla. (n.d.-b). Array.prototype.push() - JavaScript | MDN. Mmdn. Retrieved April 1, 2025, from https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push>>"
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Community Research",
+            "text": "I could also use solutions found by people who ran into the same problems:\n<<source Mendez, F. (2014, September 21). Calling a JavaScript function in another js file. Stack Overflow. Retrieved April 1, 2025, from https://stackoverflow.com/questions/25962958/calling-a-javascript-function-in-another-js-file>>"
+        }
+    ],
+    "normalLearnings": [],
+    "specialLearnings": [],
+    "result": "I implemented the structure for the projects and created a yml file so git can automatically generate the file paths.",
+    "validation": "The projects load successfully. There is a minor issue with version control and the generated files: If I forget to pull after the pipeline generates the paths, the pipeline is ahead of my branch. However, this issue is easily resolved and does not require extra action as the files are regenerated.",
+    "contribution": "I can now simply add projects, products, and devlogs by adding a folder in this project."
+}

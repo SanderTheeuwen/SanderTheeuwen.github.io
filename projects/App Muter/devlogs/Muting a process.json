@@ -1,0 +1,33 @@
+{
+    "published": true,
+    "name": "Muting a process",
+    "dates": [
+        "27-02-2025"
+    ],
+    "goalName": "Mute a process",
+    "goal": "The main feature of the App Muter is to mute an application.",
+    "approach": [
+        {
+            "researchType": "Library",
+            "researchMethod": "Community Research",
+            "text": "The following source gave me a good starting point on muting a process: <<source Simon Mourier. (2013, January 14). Controlling Volume mixer. Stack Overflow. Retrieved February 27, 2025, from https://stackoverflow.com/questions/14306048/controlling-volume-mixer/14322736#14322736>>. However, this solution seemed very dragged out, so I could probably compact it a little bit."
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Thinkering",
+            "text": "While validating the solution iteratively, I refactored the code bit by bit."
+        },
+        {
+            "researchType": "Lab",
+            "researchMethod": "System Test",
+            "text": "I gave the feature several tests while during the development."
+        }
+    ],
+    "normalLearnings": [
+        "I can mute specific processes and entire applications."
+    ],
+    "specialLearnings": [],
+    "result": "The code to achieve the result is shown here:<<image 1.png>>Some applications use multiple processes which all needed to be muted. The result can be seen here:<<video https://www.youtube.com/embed/3nHEMH74y38>>",
+    "validation": "The functionality works on every program.",
+    "contribution": "Instead of having to open the volume mixer, searching and muting an application, I am now able to mute applications with a simple keybind."
+}

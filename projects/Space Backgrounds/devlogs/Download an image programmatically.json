@@ -1,0 +1,28 @@
+{
+    "published": true,
+    "name": "Download an image programmatically",
+    "dates": [
+        "13-08-2025"
+    ],
+    "goalName": "Download an image programmatically",
+    "goal": "To set an image as desktop background, I must download it first.",
+    "approach": [
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature Study",
+            "text": "I started out by searching for the NASA API. Using this source, I found the endpoint I have to use to retrieve the image: <<source NASA. (n.d.). NASA open APIs. NASA APIs. Retrieved August 13, 2025, from https://api.nasa.gov/>>\nTo download the image, I used the following source: <<source Kulyk, O. (2024, July 25). How to download images with C#? ScrapingAnt. Retrieved August 13, 2025, from https://scrapingant.com/blog/download-image-c-sharp>>"
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Thinkering",
+            "text": "I combined the knowledge from the sources and my previous knowledge about file saving to save the image to a folder on my PC."
+        }
+    ],
+    "normalLearnings": [
+        "I can download an image from a url."
+    ],
+    "specialLearnings": [],
+    "result": "The following code saves the picture of the day made by NASA to a folder on the PC.<<image 1.png>>",
+    "validation": "I tested the code on numerous days, all giving a successful result.",
+    "contribution": "This feature is a core part of the application."
+}

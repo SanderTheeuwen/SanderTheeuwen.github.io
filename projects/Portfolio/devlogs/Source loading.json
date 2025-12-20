@@ -1,0 +1,49 @@
+{
+    "published": true,
+    "name": "Source loading",
+    "dates": [
+        "03-04-2025",
+        "05-12-2025"
+    ],
+    "goalName": "Source loading",
+    "goal": "In my products and devlogs, I have various sources: images, APA styled literature sources, videos, and documents. To display these correctly, I must create source loaders and formats to extract them from the json file and convert them into text.",
+    "approach": [
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Brainstorm",
+            "text": "The first step is to recognize the sources. I do this by adding 2 brackets on either side of the source. To identify what source needs to be loaded, I specify the type after the first brackets. Finally I add the source itself before the closing brackets: this can be a link to a YouTube video, a path to a file for images or documents, or the source for literature. This is an example:<<image ExampleSource.png>>"
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature Study",
+            "text": "To add the sources and identify them in the text, I decided to use regex. To refresh my memory and apply them into my solution, I used the following sources:\n<<source Mozilla. (n.d.-c). String.prototype.replace() - JavaScript | MDN. Mmdn. Retrieved April 3, 2025, from https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace>>\n<<source W3Schools. (n.d.-a). W3Schools.com. Retrieved April 3, 2025, from https://www.w3schools.com/js/js_regexp.asp>>\n<<source W3Schools. (n.d.-b). W3Schools.com. Retrieved April 3, 2025, from https://www.w3schools.com/jsref/jsref_obj_regexp.asp>>"
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Community Research",
+            "text": "In addition to the literature, I could also use solutions found by other developers who faced the same problems:\n<<source Poetics. (2008, July 1). how to look for the shortest match using regex, bascially the opposite of .*. LinuxQuestions.org. Retrieved December 5, 2025, from https://www.linuxquestions.org/questions/linux-newbie-8/how-to-look-for-the-shortest-match-using-regex-bascially-the-opposite-of-%2A-611801/>>"
+        },
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Thinkering",
+            "text": "Using these sources, I thinkered around and found solutions that worked. Using https://regex101.com/ to test regex, the sources were succesfully identified. Iteratively, I adjusted the code in case small changes had to be made."
+        },
+        {
+            "researchType": "Library",
+            "researchMethod": "Literature Study",
+            "text": "To display the sources themselves, I had to consult online sources:\n<<source W3Schools. (n.d.-c). W3Schools.com. Retrieved April 3, 2025, from https://www.w3schools.com/html/html_youtube.asp>>"
+        },
+        {
+            "researchType": "Library",
+            "researchMethod":"Community Research",
+            "text": "I could combine solutions from other developers to create my own:\n<<source jonbarlo. (2017, February 5). Embed YouTube video - Refused to display in a frame because it set “X-Frame-Options” to “SAMEORIGIN.” Stack Overflow. Retrieved April 3, 2025, from https://stackoverflow.com/questions/25661182/embed-youtube-video-refused-to-display-in-a-frame-because-it-set-x-frame-opti>>\n<<source Gofilord. (2014, March 21). How to display PDF file in HTML? Stack Overflow. Retrieved April 3, 2025, from https://stackoverflow.com/questions/17784037/how-to-display-pdf-file-in-html>>"
+        }
+    ],
+    "normalLearnings": [
+        "I can embed various files into my website."
+    ],
+    "specialLearnings": [],
+    "result": "As seen in devlogs and products, the files are displayed correctly.",
+    "validation": "Throughout all the devlogs and products, the sources show up as I expected.",
+    "contribution": "The sources serve as evidence or as clarification on the work."
+}

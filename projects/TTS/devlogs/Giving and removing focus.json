@@ -1,0 +1,23 @@
+{
+    "published": true,
+    "name": "Giving and removing focus",
+    "dates": [
+        "09-10-2025"
+    ],
+    "goalName": "Giving and removing focus",
+    "goal": "For fast text to speech, the application requires a hotkey to give focus to the application and remove focus when the user presses the Enter key.",
+    "approach": [
+        {
+            "researchType": "Workshop",
+            "researchMethod": "Thinkering",
+            "text": "As this was not a difficult feature, I thinkered around and found the solution."
+        }
+    ],
+    "normalLearnings": [
+        "I can give and remove focus from an application."
+    ],
+    "specialLearnings": [],
+    "result": "As seen in the video below, the application takes focus using a hotkey and removes focus when the TTS plays.<<video https://www.youtube.com/embed/pfxhOhI131w>>",
+    "validation": "I tested my solution with various other apps and games, all working correctly with my application.",
+    "contribution": "The automatic focus makes the program more efficient in usage."
+}

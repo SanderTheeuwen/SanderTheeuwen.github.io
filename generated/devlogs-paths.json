@@ -1,5 +1,13 @@
 [
   {
+    "project": "App Muter",
+    "path": "projects/App Muter/devlogs/Getting the application with focus.json"
+  },
+  {
+    "project": "App Muter",
+    "path": "projects/App Muter/devlogs/Muting a process.json"
+  },
+  {
     "project": "Basketball Royale",
     "path": "projects/Basketball Royale/devlogs/Adding a purpose to the throwing direction.json"
   },
@@ -74,6 +82,10 @@
   {
     "project": "Darkness Within",
     "path": "projects/Darkness Within/devlogs/Unity Powerups.json"
+  },
+  {
+    "project": "DBD Tracker",
+    "path": "projects/DBD Tracker/devlogs/Keyboard Hook.json"
   },
   {
     "project": "Deep Dive",
@@ -308,6 +320,14 @@
     "path": "projects/Miscellaneous/devlogs/The Secret - Dead Mans Switch Rule Cards.json"
   },
   {
+    "project": "Portfolio",
+    "path": "projects/Portfolio/devlogs/Creating a structured project.json"
+  },
+  {
+    "project": "Portfolio",
+    "path": "projects/Portfolio/devlogs/Source loading.json"
+  },
+  {
     "project": "Portfolio (old)",
     "path": "projects/Portfolio (old)/devlogs/Color switch.json"
   },
@@ -334,6 +354,14 @@
   {
     "project": "Rollable",
     "path": "projects/Rollable/devlogs/Special platforms.json"
+  },
+  {
+    "project": "Space Backgrounds",
+    "path": "projects/Space Backgrounds/devlogs/Download an image programmatically.json"
+  },
+  {
+    "project": "Space Backgrounds",
+    "path": "projects/Space Backgrounds/devlogs/Setting a desktop background.json"
   },
   {
     "project": "Tanks",
@@ -402,5 +430,9 @@
   {
     "project": "The Scout",
     "path": "projects/The Scout/devlogs/Saving Loading.json"
+  },
+  {
+    "project": "TTS",
+    "path": "projects/TTS/devlogs/Giving and removing focus.json"
   }
 ]

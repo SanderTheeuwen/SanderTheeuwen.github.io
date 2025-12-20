@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", async function ()
         document.getElementById("product-name").innerHTML = projectName + "</br>" + productData.name;
         if (productData.description)
         {
-            document.getElementById("section-product-description").innerHTML = productData.description;
+            document.getElementById("product-description").innerHTML = productData.description;
         }
         else
         {
