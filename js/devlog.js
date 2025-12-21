@@ -10,6 +10,8 @@ document.addEventListener("DOMContentLoaded", async function ()
     const devlogFileName = urlParams.get("devlog");
     const devlogPath = `/projects/${projectName}/devlogs/${devlogFileName}.json`;
 
+    document.getElementById("back").href = `project.html?project_id=${projectName}`;
+
     if (!devlogPath)
     {
         document.getElementById("devlog-title").textContent = "Devlog not found";

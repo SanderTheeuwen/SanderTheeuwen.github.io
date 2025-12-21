@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", async function ()
     const productFileName = urlParams.get("product");
     const productPath = `/projects/${projectName}/products/${productFileName}.json`;
 
+    document.getElementById("back").href = `project.html?project_id=${projectName}`;
+
     if (!productPath)
     {
         document.getElementById("product-name").textContent = "Product not found";
