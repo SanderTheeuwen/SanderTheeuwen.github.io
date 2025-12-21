@@ -92,6 +92,10 @@
     "path": "projects/Kingdoms Saviour/products/Ten Page Game Design Document.json"
   },
   {
+    "project": "Laser Bears",
+    "path": "projects/Laser Bears/products/Game Design Document.json"
+  },
+  {
     "project": "MasterMinds",
     "path": "projects/MasterMinds/products/One Page Game Design Document.json"
   },
@@ -118,10 +122,6 @@
   {
     "project": "Space Backgrounds",
     "path": "projects/Space Backgrounds/products/End Product.json"
-  },
-  {
-    "project": "Template",
-    "path": "projects/Template/products/Product.json"
   },
   {
     "project": "The Scout",

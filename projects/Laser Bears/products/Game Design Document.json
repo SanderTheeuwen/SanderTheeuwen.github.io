@@ -1,0 +1,16 @@
+{
+    "published": false,
+    "type": "word",
+    "fileName": "Game design document.docx",
+    "title": "Game Design Document",
+    "name": "Game Design Document",
+    "description": "An in-depth document containing the details of the design of the game.",
+    "stakeholders": [
+        {
+            "type": "Team members",
+            "people": [
+                "Sander Theeuwen"
+            ]
+        }
+    ]
+}

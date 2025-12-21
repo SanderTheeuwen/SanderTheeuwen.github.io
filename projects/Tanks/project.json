@@ -1,6 +1,7 @@
 {
     "published": false,
-    "title": "Tanks",
+    "id": "Tanks",
+    "name": "Tanks",
     "description": "Based on Wii Play's minigame: Tanks! In this game the player has to destroy a variety of enemy tanks.",
     "image": "project.png"
 }

@@ -224,6 +224,10 @@
     "path": "projects/Kingdoms Saviour/devlogs/Unity Soundscape.json"
   },
   {
+    "project": "Laser Bears",
+    "path": "projects/Laser Bears/devlogs/Unity Camera Movement.json"
+  },
+  {
     "project": "MasterMinds",
     "path": "projects/MasterMinds/devlogs/Creating a guide for importing packages.json"
   },
@@ -402,10 +406,6 @@
   {
     "project": "Tanks",
     "path": "projects/Tanks/devlogs/Player tank movement rotation.json"
-  },
-  {
-    "project": "Template",
-    "path": "projects/Template/devlogs/devlog.json"
   },
   {
     "project": "The Scout",

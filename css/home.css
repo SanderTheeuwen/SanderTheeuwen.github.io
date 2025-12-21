@@ -1,15 +1,5 @@
 body {
-    background-color: #121212;
-    color: #ffffff;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-    text-align: center;
-}
-
-header {
-    text-align: center;
-    padding: 20px;
+    max-width: 100%;
 }
 
 .project-grid {
@@ -20,31 +10,28 @@ header {
 }
 
 .project-card {
-    text-decoration: none;
-    /* Remove underline */
-    color: inherit;
-    /* Inherit text color */
-    display: block;
-    /* Make the entire card clickable */
-    background-color: #1e1e1e;
-    padding: 15px;
-    border-radius: 8px;
+    display: block; /* Make the entire card clickable */
     width: 250px;
+    padding: 15px;
+    color: inherit;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none; /* Remove underline */
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
+    transition: background-color 0.3s;
 }
 
-.project-card img {
+.project-card:hover {
+    background-color: #2f2f2f;
+}
+
+.project-card>img {
     width: 100%;
     height: auto;
     border-radius: 8px;
 }
 
-.project-card h3 {
-    margin: 10px 0 5px;
-}
-
-.project-card p {
-    font-size: 14px;
+.project-card>p {
     color: #b0b0b0;
 }

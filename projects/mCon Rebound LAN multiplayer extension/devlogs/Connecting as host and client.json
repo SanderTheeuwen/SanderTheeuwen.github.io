@@ -15,7 +15,7 @@
         {
             "researchType": "Library",
             "researchMethod": "Community Research",
-            "text": "Using the following source, I learned to set the IP and port of the Network Manager from Netcode for GameObjects during runtime: <<source dudemanem. (2025, January 9). How do I change Unity Transport IP Address and Port during runtime? Unity Discussions. Retrieved September 22, 2025, from https://discussions.unity.com/t/how-do-i-change-unity-transport-ip-address-and-port-during-runtime/889222/5>>.\n\nThe port I kept hardcoded at the start, but the IP is different per computer and must be retrieved automatically, for which I used the source <<source Mrchief. (2011, July 23). Get local IP address. Stack Overflow. Retrieved September 22, 2025, from https: //stackoverflow.com/questions/6803073/get-local-ip-address>>."
+            "text": "Using the following source, I learned to set the IP and port of the Network Manager from Netcode for GameObjects during runtime: <<source dudemanem. (2025, January 9). How do I change Unity Transport IP Address and Port during runtime? Unity Discussions. Retrieved September 22, 2025, from https://discussions.unity.com/t/how-do-i-change-unity-transport-ip-address-and-port-during-runtime/889222/5>>.\n\nThe port I kept hardcoded at the start, but the IP is different per computer and must be retrieved automatically, for which I used the source <<source Mrchief. (2011, July 23). Get local IP address. Stack Overflow. Retrieved September 22, 2025, from https://stackoverflow.com/questions/6803073/get-local-ip-address>>."
         },
         {
             "researchType": "Library",

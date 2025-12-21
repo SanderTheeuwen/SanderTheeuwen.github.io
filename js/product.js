@@ -18,11 +18,18 @@ document.addEventListener("DOMContentLoaded", async function ()
 
         if (!productData.published)
         {
-            document.getElementById("product-name").innerHTML = "Product is not published";
-            document.getElementById("section-product-description").className = "hidden";
-            document.getElementById("section-product-stakeholders").className = "hidden";
-            document.getElementById("section-product-preview").className = "hidden";
-            throw "Product is not published";
+            if (window.location.host != "127.0.0.1:3000")
+            {
+                document.getElementById("product-name").innerHTML = "Product is not published";
+                document.getElementById("section-product-description").className = "hidden";
+                document.getElementById("section-product-stakeholders").className = "hidden";
+                document.getElementById("section-product-preview").className = "hidden";
+                throw "Product is not published";
+            }
+            else
+            {
+                document.getElementById("header").classList.add("unpublished");
+            }
         }
 
         // Set title and description

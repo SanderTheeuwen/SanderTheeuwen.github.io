@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Devlog</title>
     <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/projectElement.css">
     <link rel="stylesheet" href="/css/devlog.css">
     <script defer src="/js/devlog.js"></script>
     <script defer src="/js/imageLoader.js"></script>
@@ -16,8 +17,8 @@
 </head>
 
 <body>
-    <header>
-        <a href="home.html">← Back to project overview</a>
+    <header id="header">
+        <a class="back" href="home.html">← Back to project overview</a>
         <h1 id="section-devlog-title">Loading...</h1>
         <p id="section-devlog-dates"></p>
     </header>
@@ -25,7 +26,7 @@
     <main>
         <section id="section-devlog-goal">
             <h2>Goal</h2>
-            <strong id="devlog-goalName"></strong>
+            <strong id="devlog-goal-name"></strong>
             <p id="devlog-goal"></p>
         </section>
         <section id="section-devlog-approach">

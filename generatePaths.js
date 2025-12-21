@@ -11,7 +11,7 @@ function readProjects()
     // Read the "projects" directory
     fs.readdirSync(projectsDir, { withFileTypes: true }).forEach(dir =>
     {
-        if (dir.isDirectory())
+        if (dir.isDirectory() && dir.name != "Template")
         {
             // Add project path
             console.log(`-- Project ${dir.name}`);

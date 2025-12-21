@@ -19,6 +19,21 @@ async function loadProject()
         var response = await fetch(`${window.location.origin}/projects/${projectId}/project.json`);
         const projectData = await response.json();
 
+        if (!projectData.published)
+        {
+            if (window.location.host != "127.0.0.1:3000")
+            {
+                document.getElementById("project-title").textContent = "Project is not published";
+                document.getElementById("project-image").className = "hidden";
+                document.getElementById("section-project-products").className = "hidden";
+                document.getElementById("section-project-devlogs").className = "hidden";
+                throw "Project is not published";
+            }
+            else
+            {
+                document.getElementById("header").classList.add("unpublished");
+            }
+        }
         document.getElementById("project-title").textContent = projectData.name;
         if (!projectData.image)
         {
@@ -58,10 +73,10 @@ async function loadProducts(projectId)
             const productFileName = productPath.path.slice(productPath.path.lastIndexOf('/') + 1, -5);// -5 to remove ".json"
             const productData = await (await fetch("/" + productPath.path)).json();
 
-            if (productData.published)
+            if (productData.published || window.location.host == "127.0.0.1:3000")
             {
                 const listItem = document.createElement("li");
-                listItem.innerHTML = `<a href="product.html?project=${projectId}&product=${productFileName}">${productData.name}</a>`;
+                listItem.innerHTML = `<a ${(!productData.published) ? "class = unpublished " : ""}href="product.html?project=${projectId}&product=${productFileName}">${productData.name}</a>`;
                 productList.appendChild(listItem);
             }
         }
@@ -87,10 +102,10 @@ async function loadDevlogs(projectId)
             const devlogFileName = devlogPath.path.slice(devlogPath.path.lastIndexOf('/') + 1, -5);// -5 to remove ".json"
             const devlogData = await (await fetch("/" + devlogPath.path)).json();
 
-            if (devlogData.published)
+            if (devlogData.published || window.location.host == "127.0.0.1:3000")
             {
                 const listItem = document.createElement("li");
-                listItem.innerHTML = `<a href="devlog.html?project=${projectId}&devlog=${devlogFileName}">${devlogData.name}</a>`;
+                listItem.innerHTML = `<a ${(!devlogData.published) ? "class = unpublished " : ""}href="devlog.html?project=${projectId}&devlog=${devlogFileName}">${devlogData.name}</a>`;
                 devlogList.appendChild(listItem);
             }
         }

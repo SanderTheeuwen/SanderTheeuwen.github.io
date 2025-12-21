@@ -23,16 +23,23 @@ document.addEventListener("DOMContentLoaded", async function ()
 
         if (!devlogData.published)
         {
-            document.getElementById("section-devlog-title").innerHTML = "Devlog is not published";
-            document.getElementById("section-devlog-dates").className = "hidden";
-            document.getElementById("section-devlog-goal").className = "hidden";
-            document.getElementById("section-devlog-approach").className = "hidden";
-            document.getElementById("section-devlog-learnings-normal").className = "hidden";
-            document.getElementById("section-devlog-learnings-special").className = "hidden";
-            document.getElementById("section-devlog-result").className = "hidden";
-            document.getElementById("section-devlog-validation").className = "hidden";
-            document.getElementById("section-devlog-contribution").className = "hidden";
-            throw "Devlog is not published";
+            if (window.location.host != "127.0.0.1:3000")
+            {
+                document.getElementById("section-devlog-title").innerHTML = "Devlog is not published";
+                document.getElementById("section-devlog-dates").className = "hidden";
+                document.getElementById("section-devlog-goal").className = "hidden";
+                document.getElementById("section-devlog-approach").className = "hidden";
+                document.getElementById("section-devlog-learnings-normal").className = "hidden";
+                document.getElementById("section-devlog-learnings-special").className = "hidden";
+                document.getElementById("section-devlog-result").className = "hidden";
+                document.getElementById("section-devlog-validation").className = "hidden";
+                document.getElementById("section-devlog-contribution").className = "hidden";
+                throw "Devlog is not published";
+            }
+            else
+            {
+                document.getElementById("header").classList.add("unpublished");
+            }
         }
 
         // Title
@@ -65,7 +72,7 @@ document.addEventListener("DOMContentLoaded", async function ()
             // Name
             if (devlogData.goalName)
             {
-                document.getElementById("devlog-goalName").innerHTML = processText(devlogData.goalName, projectName);
+                document.getElementById("devlog-goal-name").innerHTML = processText(devlogData.goalName, projectName);
             }
 
             // Description
@@ -83,7 +90,7 @@ document.addEventListener("DOMContentLoaded", async function ()
             {
                 const listItem = document.createElement("li");
                 listItem.innerHTML = `
-                <strong class="researchType">${entry.researchType}</strong>
+                <strong class="research-type">${entry.researchType}</strong>
                 <strong>${entry.researchMethod}</strong>
                 </br>
                 <div class="approach-text">${processText(entry.text, projectName)}</div>`;
