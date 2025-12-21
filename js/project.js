@@ -34,6 +34,8 @@ async function loadProject()
                 document.getElementById("header").classList.add("unpublished");
             }
         }
+
+        document.getElementById("title").innerText = "Project - " + projectData.name;
         document.getElementById("project-title").textContent = projectData.name;
         if (!projectData.image)
         {

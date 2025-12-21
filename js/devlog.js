@@ -47,6 +47,7 @@ document.addEventListener("DOMContentLoaded", async function ()
         // Title
         if (devlogData.name)
         {
+            document.getElementById("title").innerText = "Devlog - " + devlogData.name;
             document.getElementById("section-devlog-title").innerHTML = projectName + "</br>" + devlogData.name;
         }
         else

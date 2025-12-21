@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", async function ()
         }
 
         // Set title and description
+        document.getElementById("title").innerText = "Product - " + productData.name;
         document.getElementById("product-name").innerHTML = projectName + "</br>" + productData.name;
         if (productData.description)
         {
