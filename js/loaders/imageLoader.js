@@ -1,6 +1,6 @@
-function loadImages(text, projectName)
+function loadImages(text, projectId)
 {
-    var path = `/projects/${projectName}/images/`;
+    var path = `/projects/${projectId}/images/`;
 
     const matches = text.match(/<<image .+?\.[a-z]+>>/g);
     if (matches)

@@ -72,13 +72,13 @@ async function loadProducts(projectId)
         const productList = document.getElementById("products-list");
         for (const productPath of productsPaths)
         {
-            const productFileName = productPath.path.slice(productPath.path.lastIndexOf('/') + 1, -5);// -5 to remove ".json"
+            const productId = productPath.path.slice(productPath.path.lastIndexOf('/') + 1, -5);// -5 to remove ".json"
             const productData = await (await fetch("/" + productPath.path)).json();
 
             if (productData.published || window.location.host == "127.0.0.1:3000")
             {
                 const listItem = document.createElement("li");
-                listItem.innerHTML = `<a ${(!productData.published) ? "class = unpublished " : ""}href="product.html?project=${projectId}&product=${productFileName}">${productData.name}</a>`;
+                listItem.innerHTML = `<a ${(!productData.published) ? "class = unpublished " : ""}href="product.html?project_id=${projectId}&product_id=${productId}">${productData.name}</a>`;
                 productList.appendChild(listItem);
             }
         }
@@ -101,13 +101,13 @@ async function loadDevlogs(projectId)
         const devlogList = document.getElementById("devlogs-list");
         for (const devlogPath of devlogsPaths)
         {
-            const devlogFileName = devlogPath.path.slice(devlogPath.path.lastIndexOf('/') + 1, -5);// -5 to remove ".json"
+            const devlogId = devlogPath.path.slice(devlogPath.path.lastIndexOf('/') + 1, -5);// -5 to remove ".json"
             const devlogData = await (await fetch("/" + devlogPath.path)).json();
 
             if (devlogData.published || window.location.host == "127.0.0.1:3000")
             {
                 const listItem = document.createElement("li");
-                listItem.innerHTML = `<a ${(!devlogData.published) ? "class = unpublished " : ""}href="devlog.html?project=${projectId}&devlog=${devlogFileName}">${devlogData.name}</a>`;
+                listItem.innerHTML = `<a ${(!devlogData.published) ? "class = unpublished " : ""}href="devlog.html?project_id=${projectId}&devlog_id=${devlogId}">${devlogData.name}</a>`;
                 devlogList.appendChild(listItem);
             }
         }

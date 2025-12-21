@@ -2,7 +2,6 @@
     "published": true,
     "type": "word",
     "fileName": "Test report.docx",
-    "title": "Test Report",
     "name": "Test Report",
     "description": "A summary of the test results for the project.",
     "stakeholders": [

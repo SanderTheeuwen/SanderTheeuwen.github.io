@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", async function ()
             {
                 const projectResponse = await fetch(`${window.location.origin}/${projectPath.path}/project.json`);
                 const projectData = await projectResponse.json();
+                projectData.id = projectPath.path.substring(9);
 
                 // Make project visible if editing and unpublished
                 if (!projectData.published && window.location.host != "127.0.0.1:3000")

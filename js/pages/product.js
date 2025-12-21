@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", async function ()
 {
     const urlParams = new URLSearchParams(window.location.search);
-    const projectName = urlParams.get("project");
-    const productFileName = urlParams.get("product");
-    const productPath = `/projects/${projectName}/products/${productFileName}.json`;
+    const projectId = urlParams.get("project_id");
+    const productId = urlParams.get("product_id");
+    const productPath = `/projects/${projectId}/products/${productId}.json`;
 
-    document.getElementById("back").href = `project.html?project_id=${projectName}`;
+    document.getElementById("back").href = `project.html?project_id=${projectId}`;
 
     if (!productPath)
     {
@@ -15,8 +15,11 @@ document.addEventListener("DOMContentLoaded", async function ()
 
     try
     {
-        const response = await fetch(productPath);
-        const productData = await response.json();
+        const responseProject = await fetch(`/projects/${projectId}/project.json`);
+        const projectData = await responseProject.json();
+
+        const responseProduct = await fetch(productPath);
+        const productData = await responseProduct.json();
 
         if (!productData.published)
         {
@@ -36,7 +39,7 @@ document.addEventListener("DOMContentLoaded", async function ()
 
         // Set title and description
         document.getElementById("title").innerText = "Product - " + productData.name;
-        document.getElementById("product-name").innerHTML = projectName + "</br>" + productData.name;
+        document.getElementById("product-name").innerHTML = projectData.name + "</br>" + productData.name;
         if (productData.description)
         {
             document.getElementById("product-description").innerHTML = productData.description;
@@ -87,7 +90,7 @@ document.addEventListener("DOMContentLoaded", async function ()
         if (productData.type && productData.fileName)
         {
             const preview = document.getElementById("product-preview");
-            const link = getDocumentPreview(productData, projectName);
+            const link = getDocumentPreview(productData, projectId);
             preview.appendChild(link);
         }
         else
@@ -98,6 +101,6 @@ document.addEventListener("DOMContentLoaded", async function ()
     catch (error)
     {
         console.error("Error loading product:", error);
-        document.getElementById("product-title").textContent = "Failed to load product";
+        document.getElementById("product-name").textContent = "Failed to load product";
     }
 });

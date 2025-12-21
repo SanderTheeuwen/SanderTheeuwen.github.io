@@ -1,16 +1,16 @@
-function processText(text, projectName)
+function processText(text, projectId)
 {
-    return loadElements(loadSources(loadDocuments(loadVideos(loadImages(text, projectName)), projectName)));
+    return loadElements(loadSources(loadDocuments(loadVideos(loadImages(text, projectId)), projectId)));
 }
 
 document.addEventListener("DOMContentLoaded", async function ()
 {
     const urlParams = new URLSearchParams(window.location.search);
-    const projectName = urlParams.get("project");
-    const devlogFileName = urlParams.get("devlog");
-    const devlogPath = `/projects/${projectName}/devlogs/${devlogFileName}.json`;
+    const projectId = urlParams.get("project_id");
+    const devlogId = urlParams.get("devlog_id");
+    const devlogPath = `/projects/${projectId}/devlogs/${devlogId}.json`;
 
-    document.getElementById("back").href = `project.html?project_id=${projectName}`;
+    document.getElementById("back").href = `project.html?project_id=${projectId}`;
 
     if (!devlogPath)
     {
@@ -20,6 +20,9 @@ document.addEventListener("DOMContentLoaded", async function ()
 
     try
     {
+        const responseProject = await fetch(`/projects/${projectId}/project.json`);
+        const projectData = await responseProject.json();
+
         const response = await fetch(devlogPath);
         const devlogData = await response.json();
 
@@ -48,7 +51,7 @@ document.addEventListener("DOMContentLoaded", async function ()
         if (devlogData.name)
         {
             document.getElementById("title").innerText = "Devlog - " + devlogData.name;
-            document.getElementById("section-devlog-title").innerHTML = projectName + "</br>" + devlogData.name;
+            document.getElementById("section-devlog-title").innerHTML = projectData.name + "</br>" + devlogData.name;
         }
         else
         {
@@ -75,13 +78,13 @@ document.addEventListener("DOMContentLoaded", async function ()
             // Name
             if (devlogData.goalName)
             {
-                document.getElementById("devlog-goal-name").innerHTML = processText(devlogData.goalName, projectName);
+                document.getElementById("devlog-goal-name").innerHTML = processText(devlogData.goalName, projectId);
             }
 
             // Description
             if (devlogData.goal)
             {
-                document.getElementById("devlog-goal").innerHTML = processText(devlogData.goal, projectName);
+                document.getElementById("devlog-goal").innerHTML = processText(devlogData.goal, projectId);
             }
         }
 
@@ -96,7 +99,7 @@ document.addEventListener("DOMContentLoaded", async function ()
                 <strong class="research-type">${entry.researchType}</strong>
                 <strong>${entry.researchMethod}</strong>
                 </br>
-                <div class="approach-text">${processText(entry.text, projectName)}</div>`;
+                <div class="approach-text">${processText(entry.text, projectId)}</div>`;
                 approachList.appendChild(listItem);
             }
         }
@@ -140,7 +143,7 @@ document.addEventListener("DOMContentLoaded", async function ()
         // Result
         if (devlogData.result)
         {
-            document.getElementById("devlog-result").innerHTML = processText(devlogData.result, projectName);
+            document.getElementById("devlog-result").innerHTML = processText(devlogData.result, projectId);
         }
         else
         {
@@ -150,7 +153,7 @@ document.addEventListener("DOMContentLoaded", async function ()
         // Validation
         if (devlogData.validation)
         {
-            document.getElementById("devlog-validation").innerHTML = processText(devlogData.validation, projectName);
+            document.getElementById("devlog-validation").innerHTML = processText(devlogData.validation, projectId);
         }
         else
         {
@@ -160,7 +163,7 @@ document.addEventListener("DOMContentLoaded", async function ()
         // Contribution
         if (devlogData.contribution)
         {
-            document.getElementById("devlog-contribution").innerHTML = processText(devlogData.contribution, projectName);
+            document.getElementById("devlog-contribution").innerHTML = processText(devlogData.contribution, projectId);
         }
         else
         {
