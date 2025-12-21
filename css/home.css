@@ -26,6 +26,10 @@ body {
     background-color: #2f2f2f;
 }
 
+a.unpublished:hover {
+    background-color: #773f3f !important;
+}
+
 .project-card>img {
     width: 100%;
     height: auto;
