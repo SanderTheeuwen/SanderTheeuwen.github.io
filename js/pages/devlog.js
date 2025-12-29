@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", async function ()
 
         if (!devlogData.published)
         {
-            if (window.location.host != "127.0.0.1:3000")
+            if (!window.isLocal)
             {
                 document.getElementById("section-devlog-title").innerHTML = "Devlog is not published";
                 document.getElementById("section-devlog-dates").className = "hidden";

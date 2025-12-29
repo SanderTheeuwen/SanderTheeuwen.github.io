@@ -16,12 +16,12 @@ async function loadProject()
 
     try
     {
-        var response = await fetch(`${window.location.origin}/projects/${projectId}/project.json`);
+        var response = await fetch(`/projects/${projectId}/project.json`);
         const projectData = await response.json();
 
         if (!projectData.published)
         {
-            if (window.location.host != "127.0.0.1:3000")
+            if (!window.isLocal)
             {
                 document.getElementById("project-title").textContent = "Project is not published";
                 document.getElementById("project-image").className = "hidden";
@@ -43,7 +43,7 @@ async function loadProject()
         }
         else
         {
-            document.getElementById("project-image").src = `${window.location.origin}/projects/${projectId}/images/${projectData.image}`;
+            document.getElementById("project-image").src = `/projects/${projectId}/images/${projectData.image}`;
         }
         document.getElementById("project-description").textContent = projectData.description;
 
@@ -58,7 +58,7 @@ async function loadProject()
 
 async function loadProducts(projectId)
 {
-    const response = await fetch(`${window.location.origin}/generated/products-paths.json`);
+    const response = await fetch(`/generated/products-paths.json`);
 
     // Filter products based on project
     const productsPaths = (await response.json()).filter((productPath) => productPath.path.startsWith("projects/" + projectId + "/"));
@@ -75,7 +75,7 @@ async function loadProducts(projectId)
             const productId = productPath.path.slice(productPath.path.lastIndexOf('/') + 1, -5);// -5 to remove ".json"
             const productData = await (await fetch("/" + productPath.path)).json();
 
-            if (productData.published || window.location.host == "127.0.0.1:3000")
+            if (productData.published || window.isLocal)
             {
                 const listItem = document.createElement("li");
                 listItem.innerHTML = `<a ${(!productData.published) ? "class = unpublished " : ""}href="product.html?project_id=${projectId}&product_id=${productId}">${productData.name}</a>`;
@@ -87,7 +87,7 @@ async function loadProducts(projectId)
 
 async function loadDevlogs(projectId)
 {
-    const response = await fetch(`${window.location.origin}/generated/devlogs-paths.json`);
+    const response = await fetch(`/generated/devlogs-paths.json`);
 
     // Filter devlogs based on project
     const devlogsPaths = (await response.json()).filter((devlogPath) => devlogPath.path.startsWith("projects/" + projectId + "/"));
@@ -104,7 +104,7 @@ async function loadDevlogs(projectId)
             const devlogId = devlogPath.path.slice(devlogPath.path.lastIndexOf('/') + 1, -5);// -5 to remove ".json"
             const devlogData = await (await fetch("/" + devlogPath.path)).json();
 
-            if (devlogData.published || window.location.host == "127.0.0.1:3000")
+            if (devlogData.published || window.isLocal)
             {
                 const listItem = document.createElement("li");
                 listItem.innerHTML = `<a ${(!devlogData.published) ? "class = unpublished " : ""}href="devlog.html?project_id=${projectId}&devlog_id=${devlogId}">${devlogData.name}</a>`;

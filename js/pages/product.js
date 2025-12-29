@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", async function ()
 
         if (!productData.published)
         {
-            if (window.location.host != "127.0.0.1:3000")
+            if (!window.isLocal)
             {
                 document.getElementById("product-name").innerHTML = "Product is not published";
                 document.getElementById("section-product-description").className = "hidden";

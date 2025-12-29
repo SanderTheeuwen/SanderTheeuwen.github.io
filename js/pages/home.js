@@ -6,17 +6,17 @@ document.addEventListener("DOMContentLoaded", async function ()
     {
         try
         {
-            const response = await fetch(`${window.location.origin}/generated/projects-paths.json`);
+            const response = await fetch(`/generated/projects-paths.json`);
             const projectPaths = await response.json();
 
             for (const projectPath of projectPaths)
             {
-                const projectResponse = await fetch(`${window.location.origin}/${projectPath.path}/project.json`);
+                const projectResponse = await fetch(`/${projectPath.path}/project.json`);
                 const projectData = await projectResponse.json();
                 projectData.id = projectPath.path.substring(9);
 
                 // Make project visible if editing and unpublished
-                if (!projectData.published && window.location.host != "127.0.0.1:3000")
+                if (!projectData.published && !window.isLocal)
                 {
                     continue;
                 }
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", async function ()
                 else
                 {
                     projectCard.innerHTML = `
-                        <img src="${window.location.origin}/projects/${projectData.id}/images/${projectData.image}" alt="${projectData.name} picture">
+                        <img src="/projects/${projectData.id}/images/${projectData.image}" alt="${projectData.name} picture">
                         <h3>${projectData.name}</h3>
                         <p>${projectData.description}</p>
                     `;
