@@ -2,6 +2,33 @@ body {
     max-width: 100%;
 }
 
+/* About me */
+.about-me-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 85%;
+    padding: 15px;
+    margin: auto;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgb(0 0 0);
+}
+
+.about-me-card img {
+    display: block;
+    width: 10%;
+    min-width: 200px;
+}
+
+.about-me-card p {
+    display: block;
+    max-width: 65%;
+}
+
+/* Projects */
+
 .project-grid {
     display: flex;
     flex-wrap: wrap;
@@ -18,7 +45,7 @@ body {
     text-decoration: none; /* Remove underline */
     background-color: #1e1e1e;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
+    box-shadow: 0 4px 8px rgb(0 0 0);
     transition: background-color 0.3s;
 }
 

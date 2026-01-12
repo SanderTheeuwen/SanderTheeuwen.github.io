@@ -15,11 +15,40 @@
 
 <body>
     <header>
-        <h1>Portfolio Sander Theeuwen</h1>
+        <h1>Portfolio</br>Sander Theeuwen</h1>
     </header>
     
     <main>
+        <h2>About me</h2>
+        <div class="about-me-card">
+            <img src="/images/profile.jpg" alt="Profile picture">
+            <p>
+                Hi! I'm Sander Theeuwen. I'm <span id="age"></span> years old. 
+                I studied ICT at Fontys in Eindhoven in the Netherlands. 
+                I love to dive into coding and made several hobby projects. 
+                My passion lies within game design.
+                I specialize in covering edge-cases.
+                </br></br>I am mainly experienced with C# and Unity, but am open to learning more!
+                </br></br>In my free time I like to play games, often replaying them with "What happens if I do this instead?" in mind.
+            </p>
+        </div>
+
         <h2>Projects</h2>
         <div id="projectCards" class="project-grid"></div>
     </main>
 </body>
+
+<script>
+    const birth = new Date(2000, 7, 20);
+    const today = new Date();
+
+    var age = today.getFullYear() - birth.getFullYear();
+
+    const beforeBday = today.getMonth() > birth.getMonth() || (today.getMonth() === birth.getMonth() && today.getDate() >= birth.getDate());
+
+    if (!beforeBday)
+    {
+        age--;
+    }
+    document.getElementById("age").innerHTML = age;
+</script>
