@@ -2,5 +2,6 @@
     "published": true,
     "name": "Portfolio (old)",
     "description": "Website containing information about me and projects I made. This is an old project from school.",
+    "year": 2022,
     "image": "project.png"
 }

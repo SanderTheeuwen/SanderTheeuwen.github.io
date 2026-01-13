@@ -2,5 +2,6 @@
     "published": true,
     "name": "mCon: Rebound LAN multiplayer extension",
     "description": "Semester 8 graduation project. Expanding the existing game mCon: Rebound to support multiplayer via LAN for 50 players.",
+    "year": 2025,
     "image": "project.png"
 }

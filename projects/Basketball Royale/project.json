@@ -2,5 +2,6 @@
     "published": true,
     "name": "Basketball Royale",
     "description": "A game made for Twitch, using the extensions (an overlay). Designed to fill time and determine a winner in a giveaway.",
+    "year": 2023,
     "image": "project.png"
 }

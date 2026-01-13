@@ -2,5 +2,6 @@
     "published": true,
     "name": "Text To Speech",
     "description": "A tool to convert text to speech.",
+    "year": 2025,
     "image": "project.png"
 }

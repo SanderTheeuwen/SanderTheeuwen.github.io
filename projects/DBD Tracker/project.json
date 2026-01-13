@@ -2,5 +2,6 @@
     "published": true,
     "name": "DBD Tracker",
     "description": "A tool to keep track of the hook states in Dead by Daylight.",
+    "year": 2023,
     "image": "project.png"
 }

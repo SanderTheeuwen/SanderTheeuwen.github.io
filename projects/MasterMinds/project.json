@@ -2,5 +2,6 @@
     "published": true,
     "name": "MasterMinds",
     "description": "The project is a research project, where documentation and research are the most valuable deliverables. The main research question is whether or not it is possible to use the Crown (an EEG device) as input for games that are specifically designed to be controlled by brainwaves",
+    "year": 2024,
     "image": "project.png"
 }

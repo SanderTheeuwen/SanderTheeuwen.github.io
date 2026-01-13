@@ -2,5 +2,6 @@
     "published": false,
     "name": "Tanks",
     "description": "Based on Wii Play's minigame: Tanks! In this game the player has to destroy a variety of enemy tanks.",
+    "year": 2023,
     "image": "project.png"
 }

@@ -29,6 +29,25 @@ body {
 
 /* Projects */
 
+h2.projects-title {
+    margin-bottom: 0%;
+}
+
+h4 {
+    display: inline-block;
+    max-width: 10%;
+    height: 3vh;
+    padding: 5px 10px;
+    margin-top: 0%;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+h4:hover {
+    cursor: pointer;
+    background-color: #444;
+}
+
 .project-grid {
     display: flex;
     flex-wrap: wrap;

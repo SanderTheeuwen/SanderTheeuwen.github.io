@@ -2,5 +2,6 @@
     "published": true,
     "name": "Sounddeck",
     "description": "A tool to play custom sounds using hotkeys.",
+    "year": 2025,
     "image": "project.png"
 }

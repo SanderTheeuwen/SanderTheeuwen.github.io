@@ -2,5 +2,6 @@
     "published": true,
     "name": "App Muter",
     "description": "A tool to mute any application that has focus.",
+    "year": 2025,
     "image": "project.png"
 }
