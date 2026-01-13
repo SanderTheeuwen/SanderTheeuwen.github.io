@@ -8,12 +8,12 @@
     "path": "projects/Basketball Royale"
   },
   {
-    "title": "Darkness Within",
-    "path": "projects/Darkness Within"
-  },
-  {
     "title": "DBD Tracker",
     "path": "projects/DBD Tracker"
+  },
+  {
+    "title": "Darkness Within",
+    "path": "projects/Darkness Within"
   },
   {
     "title": "Deep Dive",
@@ -40,10 +40,6 @@
     "path": "projects/MasterMinds"
   },
   {
-    "title": "mCon Rebound LAN Multiplayer Extension",
-    "path": "projects/mCon Rebound LAN Multiplayer Extension"
-  },
-  {
     "title": "Miscellaneous",
     "path": "projects/Miscellaneous"
   },
@@ -68,6 +64,10 @@
     "path": "projects/Space Backgrounds"
   },
   {
+    "title": "TTS",
+    "path": "projects/TTS"
+  },
+  {
     "title": "Tanks",
     "path": "projects/Tanks"
   },
@@ -76,7 +76,11 @@
     "path": "projects/The Scout"
   },
   {
-    "title": "TTS",
-    "path": "projects/TTS"
+    "title": "Twitch Bot",
+    "path": "projects/Twitch Bot"
+  },
+  {
+    "title": "mCon Rebound LAN multiplayer extension",
+    "path": "projects/mCon Rebound LAN multiplayer extension"
   }
 ]

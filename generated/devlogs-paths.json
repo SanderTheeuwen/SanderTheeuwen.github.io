@@ -76,16 +76,16 @@
     "path": "projects/Basketball Royale/devlogs/Victory event.json"
   },
   {
+    "project": "DBD Tracker",
+    "path": "projects/DBD Tracker/devlogs/Keyboard Hook.json"
+  },
+  {
     "project": "Darkness Within",
     "path": "projects/Darkness Within/devlogs/Unity Melee, Ranged, Special attack.json"
   },
   {
     "project": "Darkness Within",
     "path": "projects/Darkness Within/devlogs/Unity Powerups.json"
-  },
-  {
-    "project": "DBD Tracker",
-    "path": "projects/DBD Tracker/devlogs/Keyboard Hook.json"
   },
   {
     "project": "Deep Dive",
@@ -260,34 +260,6 @@
     "path": "projects/MasterMinds/devlogs/Integrating the Neurosity SDK.json"
   },
   {
-    "project": "mCon Rebound LAN Multiplayer Extension",
-    "path": "projects/mCon Rebound LAN Multiplayer Extension/devlogs/Connecting as host and client.json"
-  },
-  {
-    "project": "mCon Rebound LAN Multiplayer Extension",
-    "path": "projects/mCon Rebound LAN Multiplayer Extension/devlogs/Current state analysis.json"
-  },
-  {
-    "project": "mCon Rebound LAN Multiplayer Extension",
-    "path": "projects/mCon Rebound LAN Multiplayer Extension/devlogs/Displaying Single-Elimination Tournament Type.json"
-  },
-  {
-    "project": "mCon Rebound LAN Multiplayer Extension",
-    "path": "projects/mCon Rebound LAN Multiplayer Extension/devlogs/Framework research.json"
-  },
-  {
-    "project": "mCon Rebound LAN Multiplayer Extension",
-    "path": "projects/mCon Rebound LAN Multiplayer Extension/devlogs/Match visibility.json"
-  },
-  {
-    "project": "mCon Rebound LAN Multiplayer Extension",
-    "path": "projects/mCon Rebound LAN Multiplayer Extension/devlogs/Netcode for GameObjects prototype.json"
-  },
-  {
-    "project": "mCon Rebound LAN Multiplayer Extension",
-    "path": "projects/mCon Rebound LAN Multiplayer Extension/devlogs/Requirements of the game design to support multiplayer (50 players).json"
-  },
-  {
     "project": "Miscellaneous",
     "path": "projects/Miscellaneous/devlogs/Destructable Wall.json"
   },
@@ -368,6 +340,10 @@
     "path": "projects/Space Backgrounds/devlogs/Setting a desktop background.json"
   },
   {
+    "project": "TTS",
+    "path": "projects/TTS/devlogs/Giving and removing focus.json"
+  },
+  {
     "project": "Tanks",
     "path": "projects/Tanks/devlogs/Block combiner.json"
   },
@@ -432,7 +408,31 @@
     "path": "projects/The Scout/devlogs/Saving Loading.json"
   },
   {
-    "project": "TTS",
-    "path": "projects/TTS/devlogs/Giving and removing focus.json"
+    "project": "mCon Rebound LAN multiplayer extension",
+    "path": "projects/mCon Rebound LAN multiplayer extension/devlogs/Connecting as host and client.json"
+  },
+  {
+    "project": "mCon Rebound LAN multiplayer extension",
+    "path": "projects/mCon Rebound LAN multiplayer extension/devlogs/Current state analysis.json"
+  },
+  {
+    "project": "mCon Rebound LAN multiplayer extension",
+    "path": "projects/mCon Rebound LAN multiplayer extension/devlogs/Displaying Single-Elimination Tournament Type.json"
+  },
+  {
+    "project": "mCon Rebound LAN multiplayer extension",
+    "path": "projects/mCon Rebound LAN multiplayer extension/devlogs/Framework research.json"
+  },
+  {
+    "project": "mCon Rebound LAN multiplayer extension",
+    "path": "projects/mCon Rebound LAN multiplayer extension/devlogs/Match visibility.json"
+  },
+  {
+    "project": "mCon Rebound LAN multiplayer extension",
+    "path": "projects/mCon Rebound LAN multiplayer extension/devlogs/Netcode for GameObjects prototype.json"
+  },
+  {
+    "project": "mCon Rebound LAN multiplayer extension",
+    "path": "projects/mCon Rebound LAN multiplayer extension/devlogs/Requirements of the game design to support multiplayer (50 players).json"
   }
 ]
